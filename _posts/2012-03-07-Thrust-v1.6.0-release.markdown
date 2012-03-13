@@ -5,13 +5,39 @@ category: news
 ---
 ## {{ page.title }} ##
 
-We are pleased to announce the release of Thrust v1.6, an open-source C++ library for developing high-performance parallel applications. Modeled after the C++ Standard Template Library, Thrust brings a familiar abstraction layer to the realm of parallel computing.
+We are pleased to announce the release of [Thrust] [1] v1.6, an open-source C++ library for
+developing high-performance parallel applications. Modeled after the C++ Standard Template
+Library, Thrust brings a familiar abstraction layer to the realm of parallel computing.
 
-Version 1.6 enables developers to extend and customize Thrust algorithms as well as invent entirely novel parallel backends. To showcase these powerful features in action, version 1.6 also adds support for a new backend system based on the Threading Building Blocks (TBB) library. Furthermore, the new backend enables better integration between Thrust algorithms and existing applications that already rely on TBB for intelligent task scheduling.
+Version 1.6 enables developers to [extend and customize Thrust algorithms] [2] as well as
+[invent entirely novel parallel backends] [3]. To showcase these powerful features in action, version 1.6
+also adds support for a new backend system based on the Threading Building Blocks (TBB) library.
+Furthermore, the new backend enables better integration between Thrust algorithms and
+existing applications that already rely on TBB for intelligent task scheduling.
 
-Finally, in an effort to eliminate any barriers to collaboration and the facilitate the development of new features and additional backend systems, Thrust is now hosted on Github!  Everyone is encouraged to fork Thrust on Github and advertise their enhancements.  Have you come across some important but missing functionality?  Add it and tell everyone about it.  Fixed a minor bug?  Create a pull request and see it resolved quickly.  Wish Thrust supported your favorite threading library or some exotic parallel architecture?  Start building your own backend system now!
+Finally, in an effort to eliminate any barriers to collaboration and the facilitate the
+development of new features and additional backend systems, [Thrust is now hosted on Github] [4]!
+Everyone is encouraged to [fork Thrust on Github] [5] and advertise their enhancements.  Have you
+come across some important but missing functionality?  Add it and tell everyone about it.
+Fixed a minor bug?  [Create a pull request] [6] and see it resolved quickly.  Wish Thrust supported
+your favorite threading library or some exotic parallel architecture?  Start [building your
+own backend system] [3] now!
 
-Get started with Thrust today! First download Thrust v1.6 and then follow the online quick-start guide. Refer to the online documentation for a complete list of features. Many concrete example programs and a set of introductory slides are also available.
+Get started with Thrust today! First [download Thrust v1.6] [7] and then follow the online
+[quick-start guide] [8]. Refer to the online documentation for a complete list of features.
+Many [concrete example] [9] programs and a set of [introductory slides] [10] are also available.
 
-Thrust is open-source software distributed under the OSI-approved Apache License 2.0.
+Thrust is open-source software distributed under the [OSI-approved] [11] Apache License 2.0.
+
+  [1]: http://github.com/thrust/thrust
+  [2]: http://github.com/thrust/thrust/wiki/Derived-Systems
+  [3]: http://github.com/thrust/thrust/wiki/Standalone-Systems
+  [4]: http://github.com/thrust/thrust
+  [5]: http://github.com/thrust/thrust/fork_select
+  [6]: https://github.com/thrust/thrust/pulls
+  [7]: http://github.com/downloads/thrust/thrust/thrust-1.6.0.zip
+  [8]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
+  [9]: http://github.com/downloads/thrust/thrust/examples-1.6.zip
+  [10]: http://github.com/thrust/thrust/downloads
+  [11]: http://www.opensource.org/licenses/apache2.0.php
 
