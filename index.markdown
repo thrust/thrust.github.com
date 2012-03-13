@@ -75,7 +75,7 @@ int main(void)
 {
   // generate random data serially
   thrust::host_vector<int> h_vec(100);
-  std:generate(h_vec.begin(), h_vec.end(), rand);
+  std::generate(h_vec.begin(), h_vec.end(), rand);
 
   // transfer to device and compute sum
   thrust::device_vector<int> d_vec = h_vec;
@@ -91,30 +91,3 @@ Contributors
 
 The primary developers of Thrust are [Jared Hoberock](http://github.com/jaredhoberock) and [Nathan Bell](http://research.nvidia.com/users/nathan-bell).
 
-
-<!---
-We have a solution. Let your users take advantage of the Bittorrent protol to download your files and relax your connection while saving money!
-PHPTracker is an all-in-one solution for you. It is capable of:
-
-* creating standard .torrent files from any file on your server
-* tracking client peers and managing peer announcements
-* initially seeding your file with a peer daemon which automatically shuts down once you have enough external seeders!</li>
-
-Why PHPTracker is different? Because it's not "just a tracker", it contains a seeder server too so the distribution of your files is automatic. This is a big step for the content providers to adapt this amazing technology and change the stereotype that "torrent = warez".
-
-See requirements page to see how little you need to set it up (you probably already have all).
-
-## License ##
-PHPTracker is free, released under the new (3 clause) [BSD license](/license.html "PHPTracker open-source license").
-
-## Download ##
-You can download PHPTracker
-  [from Github](https://github.com/tcz/PHPTracker/archives/master "Download PHPTracker packages").
-
-You can also clone the project with [Git](http://git-scm.com "Git version control system")
-  by running:
-
-{% highlight bash %}
-$ git clone git://github.com/tcz/PHPTracker
-{% endhighlight %}
--->
