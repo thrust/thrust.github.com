@@ -1,0 +1,69 @@
+---
+layout: default
+title: Thrust v1.2.0 release
+category: news
+---
+## {{ page.title }} ##
+
+We are pleased to announce the release of Thrust v1.2, an open-source template library for developing CUDA applications.  Modeled after the C++ Standard Template Library (STL), Thrust brings a familiar abstraction layer to the realm of GPU computing.
+
+Version 1.2 adds several new features, including:
+
+ * support for multicore CPUs via OpenMP
+ * support for CUDA 3.0 and new GPUs based on the Fermi architecture
+ * support for the Ocelot virtual machine
+ * pseudo random number generation
+ * key-value reduction
+ * set intersection
+ * and more!
+
+As the following code example shows, Thrust programs are concise and readable.
+
+{% highlight c++ %}
+#include <thrust/device_vector.h>
+#include <thrust/iterator/constant_iterator.h>
+#include <thrust/reduce.h>
+#include <string>
+
+// This example computes a run-length code for an array
+// of characters using a key-value (or segmented) reduction
+
+int main(void)
+{
+  // input data on the host
+  std::string data = "aaabbbbbcddeeeeeeeeeff";
+
+  size_t N = data.size();
+
+  // copy input data to the device
+  thrust::device_vector<char> input(data.begin(), data.end());
+
+  // allocate storage for output data and run lengths
+  thrust::device_vector<char> output(N);
+  thrust::device_vector<int>  lengths(N);
+
+  // compute run lengths
+  size_t num_runs =
+    thrust::reduce_by_key(input.begin(), input.end(),        // input key sequence
+                          thrust::constant_iterator<int>(1), // input value sequence
+                          output.begin(),                    // output key sequence
+                          lengths.begin()                    // output value sequence
+                          ).first - output.begin();          // compute the output size
+   
+  // output is now  [a,b,c,d,e,f]
+  // lengths is now [3,5,1,2,9,2]
+  return 0;
+}
+{% endhighlight %}
+
+Get started with Thrust today!  First download Thrust v1.2 and then follow the online quick-start guide.  Refer to the online documentation for a complete list of features.  Many concrete examples and a set of introductory slides are also available.
+
+Thrust is open-source software distributed under the OSI-approved Apache License v2.0.
+
+Acknowledgments
+---------------
+  * Thanks to Gregory Diamos for contributing a CUDA implementation of set_intersection
+  * Thanks to Ryuta Suzuki & Gregory Diamos for rigorously testing Thrust's unit tests and examples against Ocelot
+  * Thanks to Tom Bradley for contributing an implementation of normal_distribution
+  * Thanks to Joseph Rhoads for contributing the example summary_statistics
+

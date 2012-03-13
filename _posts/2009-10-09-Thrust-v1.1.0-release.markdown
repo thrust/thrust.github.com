@@ -1,0 +1,46 @@
+---
+layout: default
+title: Thrust v1.1.0 release
+category: news
+---
+## {{ page.title }} ##
+We are pleased to announce the release of Thrust v1.1,  an open-source template library for developing CUDA applications.  Modeled after the C++ Standard Template Library (STL), Thrust brings a familiar abstraction layer to the realm of GPU computing.
+
+Version 1.1 adds several new features, including:
+
+  * fancy iterators
+  * binary search algorithms
+  * pair and tuple types
+  * segmented scan (experimental)
+  * pinned memory support (experimental)
+  * and more!
+
+As the following code example shows, Thrust programs are concise and readable.
+
+{% highlight c++ %}
+#include <thrust/host_vector.h>
+#include <thrust/device_vector.h>
+#include <thrust/generate.h>
+#include <thrust/sort.h>
+#include <cstdlib>
+
+int main(void)
+{
+  // generate twenty random numbers on the host
+  thrust::host_vector<int> h_vec(20);
+  thrust::generate(h_vec.begin(), h_vec.end(), rand);
+
+  // transfer data to the device
+  thrust::device_vector<int> d_vec = h_vec;
+
+  // sort data on the device
+  thrust::sort(d_vec.begin(), d_vec.end());
+
+  return 0;
+}
+{% endhighlight %}
+
+Get started with Thrust today!  First download Thrust v1.1 and then follow the online tutorial.  Refer to the online documentation for a complete list of features.  Many concrete examples and a set of introductory slides are also available.
+
+Thrust is open-source software distributed under the OSI-approved Apache License v2.0.
+

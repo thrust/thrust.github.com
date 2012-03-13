@@ -1,0 +1,84 @@
+---
+layout: default
+title: Thrust v1.0.0 release
+category: news
+---
+## {{ page.title }} ##
+
+Thrust is an open-source template library for data parallel CUDA applications featuring an interface similar to the C++ Standard Template Library (STL). Thrust provides a flexible high-level interface for GPU programming that greatly enhances developer productivity while remaining high performance. Note that Thrust supersedes Komrade, the initial release of the library, and all future development will proceed under this title.
+
+Thrust is open source under the Apache 2.0 license and available now at http://thrust.googlecode.com. Download Thrust and check out the Thrust tutorial to get started.
+
+The thrust::host_vector and thrust::device_vector containers simplify memory management and transfers between host and device. Thrust provides efficient algorithms for:
+
+  * sorting – thrust::sort and thrust::sort_by_key
+  * transformations – thrust::transform
+  * reductions – thrust::reduce and thrust::transform_reduce
+  * scans – thrust::inclusive_scan and thrust::transform_inclusive_scan
+  * And many more!
+
+You can refer to the online documentation for a complete listing and join the thrust-users discussion group.
+
+As the following code example shows, Thrust programs are concise and readable.
+
+{% highlight c++ %}
+#include <thrust/host_vector.h>
+#include <thrust/device_vector.h>
+#include <thrust/generate.h>
+#include <thrust/sort.h>
+#include <cstdlib>
+
+int main(void)
+{
+    // generate random data on the host
+    thrust::host_vector<int> h_vec(20);
+    thrust::generate(h_vec.begin(), h_vec.end(), rand);
+
+    // transfer to device and sort
+    thrust::device_vector<int> d_vec = h_vec;
+    thrust::sort(d_vec.begin(), d_vec.end());
+    return 0;
+}
+{% endhighlight %}
+
+Thrust provides high-level primitives for composing interesting computations.  This example computes the norm of a vector.
+
+{% highlight c++ %}
+#include <thrust/transform_reduce.h>
+#include <thrust/functional.h>
+#include <thrust/device_vector.h>
+#include <thrust/host_vector.h>
+#include <cmath>
+
+// square<T> computes the square of a number f(x) -> x*x
+template <typename T>
+struct square
+{
+    __host__ __device__
+    T operator()(const T& x) const {
+        return x * x;
+    }
+};
+
+int main(void)
+{
+    // initialize host array
+    float x[4] = {1.0, 2.0, 3.0, 4.0};
+
+    // transfer to device
+    thrust::device_vector<float> d_x(x, x + 4);
+
+    // setup arguments
+    square<float>      unary_op;
+    thrust::plus<float> binary_op;
+    float init = 0;
+
+    // compute norm
+    float norm = std::sqrt( thrust::transform_reduce(d_x.begin(),
+                                                     d_x.end(),
+                                                     unary_op, init, binary_op) );
+    std::cout << norm << std::endl;
+    return 0;
+}
+{% endhighlight %}
+

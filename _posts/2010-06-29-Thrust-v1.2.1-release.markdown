@@ -1,0 +1,16 @@
+---
+layout: default
+title: Thrust v1.2.1 release
+category: news
+---
+## {{ page.title }} ##
+
+We are pleased to announce the release of [Thrust v1.2.1] [1], which is a compatibility release for [CUDA 3.1] [2].
+
+Thrust v1.2.1 adds support for CUDA 3.1, maintains support for CUDA 3.0, and drops support for CUDA 2.3.
+
+Thrust v1.2.1 adds no new functionality over Thrust 1.2.0.
+
+ [1]: http://code.google.com/p/thrust/downloads/list
+ [2]: http://developer.nvidia.com/object/cuda_3_1_downloads.html
+

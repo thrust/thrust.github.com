@@ -1,0 +1,5 @@
+markdown: rdiscount
+pygments: true
+#permalink: /:title.html
+permalink: /:month-:day-:year/:title.html
+#base: http://php-tracker.org

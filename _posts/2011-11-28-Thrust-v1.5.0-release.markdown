@@ -1,0 +1,18 @@
+---
+layout: default
+title: Thrust v1.5.0 release
+category: news
+---
+## {{ page.title }} ##
+
+Thrust v1.5.0 provides introduces new programmer productivity and performance
+enhancements. New functionality for creating anonymous "lambda" functions has
+been added. A faster host sort provides 2-10x faster performance for sorting
+arithmetic types on (single-threaded) CPUs. A new OpenMP sort provides 2.5x-3.0x
+speedup over the host sort using a quad-core CPU. When sorting arithmetic types
+with the OpenMP backend the combined performance improvement is 5.9x for 32-bit
+integers and ranges from 3.0x (64-bit types) to 14.2x (8-bit types). A new CUDA
+reduce_by_key implementation provides 2-3x faster performance.
+
+The CHANGELOG details the complete list of changes since v1.4.
+

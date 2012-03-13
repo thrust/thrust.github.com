@@ -1,0 +1,30 @@
+---
+layout: default
+title: Thrust v1.3.0 release
+category: news
+---
+## {{ page.title }} ##
+We are pleased to announce the release of Thrust v1.3, an open-source template library for developing CUDA applications.  Modeled after the C++ Standard Template Library (STL), Thrust brings a familiar abstraction layer to the realm of GPU computing.
+
+Version 1.3 adds several new features, including:
+
+  * a state-of-the-art sorting implementation, recently featured on Slashdot.
+  * performance improvements to stream compaction and reduction
+  * robust error reporting and failure detection
+  * support for CUDA 3.2 and gf104-based GPUs
+  * search algorithms
+  * and more!
+
+
+Get started with Thrust today!  First download Thrust v1.3 and then follow the online quick-start guide.  Refer to the online documentation for a complete list of features.  Many concrete examples and a set of introductory slides are also available.
+
+Thrust is open-source software distributed under the OSI-approved Apache License v2.0.
+
+Acknowledgments
+---------------
+  * Thanks to Duane Merrill for contributing a fast radix sort implementation
+  * Thanks to Erich Elsen for contributing an implementation of find_if
+  * Thanks to Andrew Corrigan for contributing changes which enable OpenMP in the absence of nvcc
+  * Thanks to Andrew Corrigan, Cliff Woolley, David Coeurjolly, Janick Martinez Esturo, John Bowers, Maxim Naumov, Michael Garland, and Ryuta Suzuki for bug reports
+  * Thanks to Cliff Woolley for help with testing
+
