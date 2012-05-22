@@ -7,7 +7,7 @@ category: news
 
 Last week's GPU Technology Conference featured Thrust in a number of sessions.
 
-  * Nathan Bell gave an [introductory talk](http://github.com/downloads/thrust/thrust/GTC 2012 (Part 1) - An Introduction to the Thrust Parallel Algorithms Library.pdf) motivating the use of Thrust in performance-portable parallel applications.
+  * Nathan Bell gave an [introductory talk](https://github.com/downloads/thrust/thrust/GTC%202012%20(Part%201)%20-%20An%20Introduction%20to%20the%20Thrust%20Parallel%20Algorithms%20Library.pdf) motivating the use of Thrust in performance-portable parallel applications.
 
   * Julien Demouth discussed best [practices for efficiency](http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%202)%20-%20Thrust%20by%20Example.pdf) in Thrust applications.
 
