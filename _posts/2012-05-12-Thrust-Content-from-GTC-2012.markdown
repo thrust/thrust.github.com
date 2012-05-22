@@ -17,7 +17,7 @@ Slides from these and other talks are available on the [Thrust downloads page](h
 
 [Video of Nathan and Julien's session](http://nvidia.fullviewmedia.com/gtc2012/0515-A3-S0602.html) is also available.
 
-  [1]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%201)%20-%20An%20Introduction%20to%20the%20Thrust%20Parallel%20Algorithms%20Library.pdf
-  [2]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%202)%20-%20Thrust%20by%20Example.pdf
-  [3]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%203)%20-%20What's%20new%20in%20Thrust%201.6.pdf
+  [1]: http://github.com/downloads/thrust/thrust/GTC_2012_Part_1_An_Introduction_to_the_Thrust_Parallel_Algorithms_Library.pdf 
+  [2]: http://github.com/downloads/thrust/thrust/GTC_2012_Part_2_Thrust_by_Example.pdf
+  [3]: http://github.com/downloads/thrust/thrust/GTC_2012_Part_3_Whats_New_in_Thrust_1.6.pdf 
 
