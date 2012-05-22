@@ -19,5 +19,5 @@ Slides from these and other talks are available on the [Thrust downloads page](h
 
   [1]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%201)%20-%20An%20Introduction%20to%20the%20Thrust%20Parallel%20Algorithms%20Library.pdf
   [2]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%202)%20-%20Thrust%20by%20Example.pdf
-  [3]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%203)%20-%20What's%20new%20in%20Thrust%201.6.pdf 
+  [3]: http://github.com/downloads/thrust/thrust/GTC%202012%20(Part%203)%20-%20What's%20new%20in%20Thrust%201.6.pdf
 
