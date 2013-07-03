@@ -17,17 +17,20 @@ and the set operation algorithms have been added, as well stencil versions of
 partitioning algorithms. For 32b types, new CUDA merge and set operations provide 2-15x faster
 performance while a new CUDA comparison sort provides 1.3-4x faster performance.
 
-Get started with Thrust today! First [download Thrust v1.7] [2] and then follow the online
-[quick-start guide] [3]. Refer to the [online documentation] [4] for a complete list of features.
-Many [concrete example] [5] programs and a set of [introductory slides] [6] are also available.
+Refer to the [CHANGELOG] [2] for a complete list of improvements since v1.6.  
 
-Thrust is open-source software distributed under the [OSI-approved] [7] Apache License 2.0.
+Get started with Thrust today! First [download Thrust v1.7] [3] and then follow the online
+[quick-start guide] [4]. Refer to the [online documentation] [5] for a complete list of features.
+Many [concrete example] [6] programs and a set of [introductory slides] [7] are also available.
+
+Thrust is open-source software distributed under the [OSI-approved] [8] Apache License 2.0.
 
   [1]: http://github.com/thrust/thrust
-  [2]: http://github.com/thrust/thrust/releases/v1.7.0/614/thrust-1.7.0.zip
-  [3]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
-  [4]: http://thrust.github.io/doc/modules.html 
-  [5]: http://github.com/thrust/thrust/releases/v1.7.0/615/examples-1.7.zip
-  [6]: http://thrust.googlecode.com/files/An%20Introduction%20To%20Thrust.pdf
-  [7]: http://www.opensource.org/licenses/apache2.0.php
+  [2]: http://github.com/thrust/thrust/releases/v1.7.0
+  [3]: http://github.com/thrust/thrust/releases/v1.7.0/614/thrust-1.7.0.zip
+  [4]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
+  [5]: http://thrust.github.io/doc/modules.html 
+  [6]: http://github.com/thrust/thrust/releases/v1.7.0/615/examples-1.7.zip
+  [7]: http://thrust.googlecode.com/files/An%20Introduction%20To%20Thrust.pdf
+  [8]: http://www.opensource.org/licenses/apache2.0.php
 
