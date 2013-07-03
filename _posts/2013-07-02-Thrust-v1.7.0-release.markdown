@@ -1,0 +1,33 @@
+---
+layout: default
+title: Thrust v1.7.0 release
+category: news
+---
+## {{ page.title }} ##
+
+We are pleased to announce the release of [Thrust] [1] v1.7, an open-source C++ library for
+developing high-performance parallel applications. Modeled after the C++ Standard Template
+Library, Thrust brings a familiar abstraction layer to the realm of parallel computing
+
+Thrust 1.7.0 introduces a new interface for controlling algorithm execution as
+well as several new algorithms and performance improvements. With this new
+interface, users may directly control how algorithms execute as well as details
+such as the allocation of temporary storage. Key/value versions of thrust::merge
+and the set operation algorithms have been added, as well stencil versions of
+partitioning algorithms. For 32b types, new CUDA merge and set operations provide 2-15x faster
+performance while a new CUDA comparison sort provides 1.3-4x faster performance.
+
+Get started with Thrust today! First [download Thrust v1.7] [2] and then follow the online
+[quick-start guide] [3]. Refer to the [online documentation] [4] for a complete list of features.
+Many [concrete example] [5] programs and a set of [introductory slides] [6] are also available.
+
+Thrust is open-source software distributed under the [OSI-approved] [7] Apache License 2.0.
+
+  [1]: http://github.com/thrust/thrust
+  [2]: http://github.com/thrust/thrust/releases/v1.7.0/614/thrust-1.7.0.zip
+  [3]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
+  [4]: http://thrust.github.io/doc/modules.html 
+  [5]: http://github.com/thrust/thrust/releases/v1.7.0/615/examples-1.7.zip
+  [6]: http://thrust.googlecode.com/files/An%20Introduction%20To%20Thrust.pdf
+  [7]: http://www.opensource.org/licenses/apache2.0.php
+
