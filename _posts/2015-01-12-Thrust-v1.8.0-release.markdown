@@ -9,13 +9,13 @@ We are pleased to announce the release of [Thrust] [1] v1.8, an open-source C++ 
 developing high-performance parallel applications. Modeled after the C++ Standard Template
 Library, Thrust brings a familiar abstraction layer to the realm of parallel computing
 
-Thrust 1.8.0 introduces support for algorithm invocation from CUDA __device__ code, support
+Thrust 1.8.0 introduces support for algorithm invocation from CUDA `__device__` code, support
 for CUDA streams, and algorithm performance improvements. Users may now invoke Thrust algorithms
-from CUDA __device__ code, providing a parallel algorithms library to CUDA programmers
+from CUDA `__device__` code, providing a parallel algorithms library to CUDA programmers
 authoring custom kernels, as well as allowing Thrust programmers to nest their algorithm calls
-within functors. The thrust::seq execution policy allows users to require sequential algorithm
+within functors. The `thrust::seq` execution policy allows users to require sequential algorithm
 execution in the calling thread and makes a sequential algorithms library available to individual
-CUDA threads. The .on(stream) syntax allows users to request a CUDA stream for kernels launched
+CUDA threads. The `.on(stream)` syntax allows users to request a CUDA stream for kernels launched
 during algorithm execution. Finally, new CUDA algorithm implementations provide substantial
 performance improvements.
 
