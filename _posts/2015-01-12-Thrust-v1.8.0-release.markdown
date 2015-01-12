@@ -1,0 +1,38 @@
+---
+layout: default
+title: Thrust v1.8.0 release
+category: news
+---
+## {{ page.title }} ##
+
+We are pleased to announce the release of [Thrust] [1] v1.8, an open-source C++ library for
+developing high-performance parallel applications. Modeled after the C++ Standard Template
+Library, Thrust brings a familiar abstraction layer to the realm of parallel computing
+
+Thrust 1.8.0 introduces support for algorithm invocation from CUDA __device__ code, support
+for CUDA streams, and algorithm performance improvements. Users may now invoke Thrust algorithms
+from CUDA __device__ code, providing a parallel algorithms library to CUDA programmers
+authoring custom kernels, as well as allowing Thrust programmers to nest their algorithm calls
+within functors. The thrust::seq execution policy allows users to require sequential algorithm
+execution in the calling thread and makes a sequential algorithms library available to individual
+CUDA threads. The .on(stream) syntax allows users to request a CUDA stream for kernels launched
+during algorithm execution. Finally, new CUDA algorithm implementations provide substantial
+performance improvements.
+
+Refer to the [CHANGELOG] [2] for a complete list of improvements since v1.7.
+
+Get started with Thrust today! First [download Thrust v1.8] [3] and then follow the online
+[quick-start guide] [4]. Refer to the [online documentation] [5] for a complete list of features.
+Many [concrete example] [6] programs and a set of [introductory slides] [7] are also available.
+
+Thrust is open-source software distributed under the [OSI-approved] [8] Apache License 2.0.
+
+  [1]: http://github.com/thrust/thrust
+  [2]: http://github.com/thrust/thrust/releases/v1.8.0
+  [3]: http://github.com/thrust/thrust/releases/download/1.8.0/thrust-1.8.0
+  [4]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
+  [5]: http://thrust.github.io/doc/modules.html 
+  [6]: http://github.com/thrust/thrust/releases/download/1.8.0/examples-1.8.zip
+  [7]: http://thrust.googlecode.com/files/An%20Introduction%20To%20Thrust.pdf
+  [8]: http://www.opensource.org/licenses/apache2.0.php
+
