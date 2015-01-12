@@ -27,6 +27,12 @@ Many [concrete example] [6] programs and a set of [introductory slides] [7] are 
 
 Thrust is open-source software distributed under the [OSI-approved] [8] Apache License 2.0.
 
+Acknowledgments
+---------------
+* Thanks to Sean Baxter for contributing faster CUDA reduce, merge, and scan implementations.
+* Thanks to Duane Merrill for contributing a faster CUDA radix sort implementation.
+* Thanks to Filipe Maia for contributing the implementation of thrust::complex.
+
   [1]: http://github.com/thrust/thrust
   [2]: http://github.com/thrust/thrust/releases/v1.8.0
   [3]: http://github.com/thrust/thrust/releases/download/1.8.0/thrust-1.8.0
