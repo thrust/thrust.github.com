@@ -34,7 +34,7 @@ Acknowledgments
 * Thanks to Filipe Maia for contributing the implementation of thrust::complex.
 
   [1]: http://github.com/thrust/thrust
-  [2]: http://github.com/thrust/thrust/releases/v1.8.0
+  [2]: http://github.com/thrust/thrust/blob/master/CHANGELOG
   [3]: http://github.com/thrust/thrust/releases/download/1.8.0/thrust-1.8.0.zip
   [4]: http://github.com/thrust/thrust/wiki/Quick-Start-Guide
   [5]: http://thrust.github.io/doc/modules.html 
