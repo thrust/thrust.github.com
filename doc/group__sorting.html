@@ -281,7 +281,7 @@ template&lt;typename DerivedPolicy , typename RandomAccessIterator , typename St
 <div class="line">...</div>
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span> A[N] = {1, 4, 2, 8, 5, 7};</div>
-<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A, A + N, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A, A + N, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// A is now {8, 7, 5, 4, 2, 1};</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
 <dd>
@@ -345,7 +345,7 @@ template&lt;typename RandomAccessIterator , typename StrictWeakOrdering &gt; </d
 <div class="line">...</div>
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span> A[N] = {1, 4, 2, 8, 5, 7};</div>
-<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// A is now {8, 7, 5, 4, 2, 1};</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
 <dd>
@@ -573,7 +573,7 @@ template&lt;typename DerivedPolicy , typename RandomAccessIterator1 , typename R
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span>    keys[N] = {  1,   4,   2,   8,   5,   7};</div>
 <div class="line"><span class="keywordtype">char</span> values[N] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
-<div class="line"><a class="code" href="group__sorting.html#gabe038d6107f7c824cf74120500ef45ea">thrust::sort_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + N, values, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#gabe038d6107f7c824cf74120500ef45ea">thrust::sort_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + N, values, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys is now   {  8,   7,   5,   4,   2,   1}</span></div>
 <div class="line"><span class="comment">// values is now {&#39;d&#39;, &#39;f&#39;, &#39;e&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
@@ -648,7 +648,7 @@ template&lt;typename RandomAccessIterator1 , typename RandomAccessIterator2 , ty
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span>    keys[N] = {  1,   4,   2,   8,   5,   7};</div>
 <div class="line"><span class="keywordtype">char</span> values[N] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
-<div class="line"><a class="code" href="group__sorting.html#gabe038d6107f7c824cf74120500ef45ea">thrust::sort_by_key</a>(keys, keys + N, values, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#gabe038d6107f7c824cf74120500ef45ea">thrust::sort_by_key</a>(keys, keys + N, values, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys is now   {  8,   7,   5,   4,   2,   1}</span></div>
 <div class="line"><span class="comment">// values is now {&#39;d&#39;, &#39;f&#39;, &#39;e&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
@@ -846,7 +846,7 @@ template&lt;typename DerivedPolicy , typename RandomAccessIterator , typename St
 <div class="line">...</div>
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span> A[N] = {1, 4, 2, 8, 5, 7};</div>
-<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// A is now {8, 7, 5, 4, 2, 1};</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/stable_sort.html">http://www.sgi.com/tech/stl/stable_sort.html</a> </dd>
 <dd>
@@ -911,7 +911,7 @@ template&lt;typename RandomAccessIterator , typename StrictWeakOrdering &gt; </d
 <div class="line">...</div>
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span> A[N] = {1, 4, 2, 8, 5, 7};</div>
-<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#ga1099d781e06c43805be06a918f7b7499">thrust::sort</a>(A, A + N, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// A is now {8, 7, 5, 4, 2, 1};</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/stable_sort.html">http://www.sgi.com/tech/stl/stable_sort.html</a> </dd>
 <dd>
@@ -1139,7 +1139,7 @@ template&lt;typename DerivedPolicy , typename RandomAccessIterator1 , typename R
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span>    keys[N] = {  1,   4,   2,   8,   5,   7};</div>
 <div class="line"><span class="keywordtype">char</span> values[N] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
-<div class="line"><a class="code" href="group__sorting.html#gac6960b926c89bc29ffcfb4f451a4f2ef">thrust::stable_sort_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + N, values, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#gac6960b926c89bc29ffcfb4f451a4f2ef">thrust::stable_sort_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + N, values, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys is now   {  8,   7,   5,   4,   2,   1}</span></div>
 <div class="line"><span class="comment">// values is now {&#39;d&#39;, &#39;f&#39;, &#39;e&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
@@ -1214,7 +1214,7 @@ template&lt;typename RandomAccessIterator1 , typename RandomAccessIterator2 , ty
 <div class="line">const <span class="keywordtype">int</span> N = 6;</div>
 <div class="line"><span class="keywordtype">int</span>    keys[N] = {  1,   4,   2,   8,   5,   7};</div>
 <div class="line"><span class="keywordtype">char</span> values[N] = {<span class="charliteral">&#39;a&#39;</span>, <span class="charliteral">&#39;b&#39;</span>, <span class="charliteral">&#39;c&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39;e&#39;</span>, <span class="charliteral">&#39;f&#39;</span>};</div>
-<div class="line"><a class="code" href="group__sorting.html#gac6960b926c89bc29ffcfb4f451a4f2ef">thrust::stable_sort_by_key</a>(keys, keys + N, values, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="group__sorting.html#gac6960b926c89bc29ffcfb4f451a4f2ef">thrust::stable_sort_by_key</a>(keys, keys + N, values, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys is now   {  8,   7,   5,   4,   2,   1}</span></div>
 <div class="line"><span class="comment">// values is now {&#39;d&#39;, &#39;f&#39;, &#39;e&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/sort.html">http://www.sgi.com/tech/stl/sort.html</a> </dd>
@@ -1228,7 +1228,7 @@ template&lt;typename RandomAccessIterator1 , typename RandomAccessIterator2 , ty
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

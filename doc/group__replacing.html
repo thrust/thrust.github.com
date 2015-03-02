@@ -148,7 +148,7 @@ template&lt;typename DerivedPolicy , typename ForwardIterator , typename T &gt; 
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace</code> to replace a value of interest in a <code>device_vector</code> with another using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
+<p>The following code snippet demonstrates how to use <code>replace</code> to replace a value of interest in a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code> with another using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="execution__policy_8h.html">thrust/execution_policy.h</a>&gt;</span></div>
@@ -228,7 +228,7 @@ template&lt;typename ForwardIterator , typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace</code> to replace a value of interest in a <code>device_vector</code> with another.</p>
+<p>The following code snippet demonstrates how to use <code>replace</code> to replace a value of interest in a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code> with another.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"></div>
@@ -337,7 +337,7 @@ template&lt;typename DerivedPolicy , typename InputIterator , typename OutputIte
 <div class="line">A[2] = 3;</div>
 <div class="line">A[3] = 1;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#gab119bc701dca7490c02e97485c6bd42d">thrust::replace_copy</a>(<a class="code" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a>, A.begin(), A.end(), B.begin(), 1, 99);</div>
 <div class="line"></div>
@@ -428,7 +428,7 @@ template&lt;typename InputIterator , typename OutputIterator , typename T &gt; <
 <div class="line">A[2] = 3;</div>
 <div class="line">A[3] = 1;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#gab119bc701dca7490c02e97485c6bd42d">thrust::replace_copy</a>(A.begin(), A.end(), B.begin(), 1, 99);</div>
 <div class="line"></div>
@@ -541,7 +541,7 @@ template&lt;typename DerivedPolicy , typename InputIterator , typename OutputIte
 <div class="line">A[2] =  2;</div>
 <div class="line">A[3] = -1;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line">is_less_than_zero pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#gadcf709bfffd7a4d7db6e5b1da251fc07">thrust::replace_copy_if</a>(<a class="code" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a>, A.begin(), A.end(), B.begin(), pred, 0);</div>
@@ -643,7 +643,7 @@ template&lt;typename InputIterator , typename OutputIterator , typename Predicat
 <div class="line">A[2] =  2;</div>
 <div class="line">A[3] = -1;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line">is_less_than_zero pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#gadcf709bfffd7a4d7db6e5b1da251fc07">thrust::replace_copy_if</a>(A.begin(), A.end(), B.begin(), pred, 0);</div>
@@ -765,13 +765,13 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <div class="line">A[2] =  30;</div>
 <div class="line">A[3] =  40;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; S(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> S(4);</div>
 <div class="line">S[0] = -1;</div>
 <div class="line">S[1] =  0;</div>
 <div class="line">S[2] = -1;</div>
 <div class="line">S[3] =  0;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line">is_less_than_zero pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#ga9953891234efd44b09942f7d6381ff79">thrust::replace_if</a>(<a class="code" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a>, A.begin(), A.end(), S.begin(), B.begin(), pred, 0);</div>
@@ -879,13 +879,13 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <div class="line">A[2] =  30;</div>
 <div class="line">A[3] =  40;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; S(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> S(4);</div>
 <div class="line">S[0] = -1;</div>
 <div class="line">S[1] =  0;</div>
 <div class="line">S[2] = -1;</div>
 <div class="line">S[3] =  0;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; B(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> B(4);</div>
 <div class="line">is_less_than_zero pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__replacing.html#ga9953891234efd44b09942f7d6381ff79">thrust::replace_if</a>(A.begin(), A.end(), S.begin(), B.begin(), pred, 0);</div>
@@ -961,7 +961,7 @@ template&lt;typename DerivedPolicy , typename ForwardIterator , typename Predica
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code>device_vector's</code> negative elements with <code>0</code> using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
+<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a>'s</code> negative elements with <code>0</code> using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="execution__policy_8h.html">thrust/execution_policy.h</a>&gt;</span></div>
@@ -1053,7 +1053,7 @@ template&lt;typename ForwardIterator , typename Predicate , typename T &gt; </di
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code>device_vector's</code> negative elements with <code>0</code>.</p>
+<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a>'s</code> negative elements with <code>0</code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line">...</div>
@@ -1161,7 +1161,7 @@ template&lt;typename DerivedPolicy , typename ForwardIterator , typename InputIt
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code>device_vector's</code> element with <code>0</code> when its corresponding stencil element is less than zero using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
+<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a>'s</code> element with <code>0</code> when its corresponding stencil element is less than zero using the <code><a class="el" href="group__execution__policies.html#ga94c99802fa134cd8bb068b48f1623ff8">thrust::device</a></code> execution policy for parallelization:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="execution__policy_8h.html">thrust/execution_policy.h</a>&gt;</span></div>
@@ -1183,7 +1183,7 @@ template&lt;typename DerivedPolicy , typename ForwardIterator , typename InputIt
 <div class="line">A[2] =  30;</div>
 <div class="line">A[3] =  40;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; S(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> S(4);</div>
 <div class="line">S[0] = -1;</div>
 <div class="line">S[1] =  0;</div>
 <div class="line">S[2] = -1;</div>
@@ -1266,7 +1266,7 @@ template&lt;typename ForwardIterator , typename InputIterator , typename Predica
   </table>
   </dd>
 </dl>
-<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code>device_vector's</code> element with <code>0</code> when its corresponding stencil element is less than zero.</p>
+<p>The following code snippet demonstrates how to use <code>replace_if</code> to replace a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a>'s</code> element with <code>0</code> when its corresponding stencil element is less than zero.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="replace_8h.html">thrust/replace.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"></div>
@@ -1287,7 +1287,7 @@ template&lt;typename ForwardIterator , typename InputIterator , typename Predica
 <div class="line">A[2] =  30;</div>
 <div class="line">A[3] =  40;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; S(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> S(4);</div>
 <div class="line">S[0] = -1;</div>
 <div class="line">S[1] =  0;</div>
 <div class="line">S[2] = -1;</div>
@@ -1310,7 +1310,7 @@ template&lt;typename ForwardIterator , typename InputIterator , typename Predica
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -103,7 +103,7 @@ struct thrust::device_execution_policy&lt; DerivedPolicy &gt;</h3>
 <div class="line">  <a class="code" href="group__modifying.html#ga14cba62489aee67ffa6348eb74997b57">thrust::for_each</a>(exec, data, data + 4, ignore_argument());</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// dispatch thrust::transform whose behavior our policy inherits</span></div>
-<div class="line">  <a class="code" href="group__transformations.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(exec, data, data, + 4, data, thrust::identity&lt;int&gt;());</div>
+<div class="line">  <a class="code" href="group__transformations.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(exec, data, data, + 4, data, <a class="code" href="structthrust_1_1identity.html">thrust::identity&lt;int&gt;</a>());</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -116,7 +116,7 @@ struct thrust::device_execution_policy&lt; DerivedPolicy &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

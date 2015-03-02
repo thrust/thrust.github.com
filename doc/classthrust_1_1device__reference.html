@@ -160,7 +160,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;int&gt; vec(1, 13);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> vec(1, 13);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classthrust_1_1device__reference.html">thrust::device_reference&lt;int&gt;</a> ref_to_thirteen = vec[0];</div>
 <div class="line"></div>
@@ -176,7 +176,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;int&gt; vec(1, 13);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> vec(1, 13);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classthrust_1_1device__reference.html">thrust::device_reference&lt;int&gt;</a> ref_to_thirteen = vec[0];</div>
 <div class="line"></div>
@@ -186,13 +186,13 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-</div><!-- fragment --><p>Of course, we needn't explicitly create a <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> in the previous example, because one is returned by <code>device_vector's</code> bracket operator. A more natural way to print the value of a <code>device_vector</code> element might be:</p>
+</div><!-- fragment --><p>Of course, we needn't explicitly create a <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> in the previous example, because one is returned by <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a>'s</code> bracket operator. A more natural way to print the value of a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code> element might be:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;int&gt; vec(1, 13);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> vec(1, 13);</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; vec[0] &lt;&lt; std::endl;</div>
 <div class="line"></div>
@@ -212,7 +212,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;foo&gt; foo_vec(1);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;foo&gt;</a> foo_vec(1);</div>
 <div class="line"></div>
 <div class="line">  <a class="code" href="classthrust_1_1device__reference.html">thrust::device_reference&lt;foo&gt;</a> foo_ref = foo_vec[0];</div>
 <div class="line"></div>
@@ -230,7 +230,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;foo&gt; foo_vec(1);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;foo&gt;</a> foo_vec(1);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// create a local host-side foo object</span></div>
 <div class="line">  foo host_foo;</div>
@@ -250,7 +250,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;int&gt; vec(1,13);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> vec(1,13);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// vec[0] must be cast to int when passing to printf</span></div>
 <div class="line">  printf(<span class="stringliteral">&quot;%d\n&quot;</span>, (<span class="keywordtype">int</span>) vec[0]);</div>
@@ -259,7 +259,7 @@ class thrust::device_reference&lt; T &gt;</h3>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a> </dd>
 <dd>
-device_vector </dd></dl>
+<a class="el" href="classthrust_1_1device__vector.html">device_vector</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="add8f2f40c1f72de722ecd9fdc53778eb"></a>
 <div class="memitem">
@@ -1277,7 +1277,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

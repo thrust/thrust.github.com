@@ -87,7 +87,7 @@ class thrust::permutation_iterator&lt; ElementIterator, IndexIterator &gt;</h3>
 <li>the reindexing scheme that defines how the elements of <code>V</code> will be permuted.</li>
 </ul>
 <p>Note that <code><a class="el" href="classthrust_1_1permutation__iterator.html">permutation_iterator</a></code> is not limited to strict permutations of the given range <code>V</code>. The distance between begin and end of the reindexing iterators is allowed to be smaller compared to the size of the range <code>V</code>, in which case the <code><a class="el" href="classthrust_1_1permutation__iterator.html">permutation_iterator</a></code> only provides a "permutation" of a subrange of <code>V</code>. The indices neither need to be unique. In this same context, it must be noted that the past-the-end <code><a class="el" href="classthrust_1_1permutation__iterator.html">permutation_iterator</a></code> is completely defined by means of the past-the-end iterator to the indices.</p>
-<p>The following code snippet demonstrates how to create a <code><a class="el" href="classthrust_1_1permutation__iterator.html">permutation_iterator</a></code> which represents a reordering of the contents of a <code>device_vector</code>.</p>
+<p>The following code snippet demonstrates how to create a <code><a class="el" href="classthrust_1_1permutation__iterator.html">permutation_iterator</a></code> which represents a reordering of the contents of a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="permutation__iterator_8h.html">thrust/iterator/permutation_iterator.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line">...</div>
@@ -101,14 +101,14 @@ class thrust::permutation_iterator&lt; ElementIterator, IndexIterator &gt;</h3>
 <div class="line">values[6] = 70.0f;</div>
 <div class="line">values[7] = 80.0f;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; indices(4);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> indices(4);</div>
 <div class="line">indices[0] = 2;</div>
 <div class="line">indices[1] = 6;</div>
 <div class="line">indices[2] = 1;</div>
 <div class="line">indices[3] = 3;</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;float&gt;::iterator ElementIterator;</div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;int&gt;::iterator   IndexIterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;::iterator</a> ElementIterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;::iterator</a>   IndexIterator;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="classthrust_1_1permutation__iterator.html">thrust::permutation_iterator&lt;ElementIterator,IndexIterator&gt;</a> iter(values.begin(), indices.begin());</div>
 <div class="line"></div>
@@ -256,7 +256,7 @@ template&lt;typename OtherElementIterator , typename OtherIndexIterator &gt; </d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:31 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -462,7 +462,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[3];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#gadbd3cc430040aef1ead1a8885bd2bdc6">thrust::set_difference</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 6, A2, A2 + 5, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#gadbd3cc430040aef1ead1a8885bd2bdc6">thrust::set_difference</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 6, A2, A2 + 5, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result is now {6, 4, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_difference.html">http://www.sgi.com/tech/stl/set_difference.html</a> </dd>
 <dd>
@@ -565,7 +565,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[3];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#gadbd3cc430040aef1ead1a8885bd2bdc6">thrust::set_difference</a>(A1, A1 + 6, A2, A2 + 5, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#gadbd3cc430040aef1ead1a8885bd2bdc6">thrust::set_difference</a>(A1, A1 + 6, A2, A2 + 5, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result is now {6, 4, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_difference.html">http://www.sgi.com/tech/stl/set_difference.html</a> </dd>
 <dd>
@@ -957,7 +957,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[3];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[3];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga062e76cd283cffd5391ef8254b45910a">thrust::set_difference_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga062e76cd283cffd5391ef8254b45910a">thrust::set_difference_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys_result is now {0, 4, 6}</span></div>
 <div class="line"><span class="comment">// vals_result is now {0, 0, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="group__set__operations.html#ga1b19cdab25f1dd1bafbe356296e7c0b8">set_union_by_key</a></code> </dd>
@@ -1086,7 +1086,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[3];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[3];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga062e76cd283cffd5391ef8254b45910a">thrust::set_difference_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga062e76cd283cffd5391ef8254b45910a">thrust::set_difference_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys_result is now {0, 4, 6}</span></div>
 <div class="line"><span class="comment">// vals_result is now {0, 0, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="group__set__operations.html#ga1b19cdab25f1dd1bafbe356296e7c0b8">set_union_by_key</a></code> </dd>
@@ -1392,7 +1392,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[3];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga7e9671d6d44c7c384fa84bd4170eb431">thrust::set_intersection</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 6, A2, A2 + 7, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga7e9671d6d44c7c384fa84bd4170eb431">thrust::set_intersection</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 6, A2, A2 + 7, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result is now {5, 3, 1}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_intersection.html">http://www.sgi.com/tech/stl/set_intersection.html</a> </dd>
 <dd>
@@ -1493,7 +1493,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[3];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga7e9671d6d44c7c384fa84bd4170eb431">thrust::set_intersection</a>(A1, A1 + 6, A2, A2 + 7, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga7e9671d6d44c7c384fa84bd4170eb431">thrust::set_intersection</a>(A1, A1 + 6, A2, A2 + 7, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result is now {5, 3, 1}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_intersection.html">http://www.sgi.com/tech/stl/set_intersection.html</a> </dd>
 <dd>
@@ -1863,7 +1863,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[7];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[7];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#gac9db7cdc6dc16466f46f8cdd29a4310e">thrust::set_intersection_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 7, A_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#gac9db7cdc6dc16466f46f8cdd29a4310e">thrust::set_intersection_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 7, A_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// keys_result is now {5, 3, 1}</span></div>
 <div class="line"><span class="comment">// vals_result is now {0, 0, 0}</span></div>
@@ -1985,7 +1985,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[7];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[7];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#gac9db7cdc6dc16466f46f8cdd29a4310e">thrust::set_intersection_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 7, A_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#gac9db7cdc6dc16466f46f8cdd29a4310e">thrust::set_intersection_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 7, A_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// keys_result is now {5, 3, 1}</span></div>
 <div class="line"><span class="comment">// vals_result is now {0, 0, 0}</span></div>
@@ -3234,7 +3234,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[11];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga974aed5fabc60590b7efa20464021caf">thrust::set_union</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 7, A2, A2 + 5, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga974aed5fabc60590b7efa20464021caf">thrust::set_union</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A1, A1 + 7, A2, A2 + 5, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result = {12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_union.html">http://www.sgi.com/tech/stl/set_union.html</a> </dd>
 <dd>
@@ -3339,7 +3339,7 @@ The resulting range shall not overlap with either input range.</dd></dl>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> result[11];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga974aed5fabc60590b7efa20464021caf">thrust::set_union</a>(A1, A1 + 7, A2, A2 + 5, result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><span class="keywordtype">int</span> *result_end = <a class="code" href="group__set__operations.html#ga974aed5fabc60590b7efa20464021caf">thrust::set_union</a>(A1, A1 + 7, A2, A2 + 5, result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// result = {12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a href="http://www.sgi.com/tech/stl/set_union.html">http://www.sgi.com/tech/stl/set_union.html</a> </dd>
 <dd>
@@ -3733,7 +3733,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[11];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[11];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">thrust::set_symmetric_difference_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">thrust::set_symmetric_difference_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys_result is now {12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}</span></div>
 <div class="line"><span class="comment">// vals_result is now { 0,  1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">set_symmetric_difference_by_key</a></code> </dd>
@@ -3862,7 +3862,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 <div class="line"><span class="keywordtype">int</span> keys_result[11];</div>
 <div class="line"><span class="keywordtype">int</span> vals_result[11];</div>
 <div class="line"></div>
-<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">thrust::set_symmetric_difference_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, thrust::greater&lt;int&gt;());</div>
+<div class="line"><a class="code" href="structthrust_1_1pair.html">thrust::pair&lt;int*,int*&gt;</a> end = <a class="code" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">thrust::set_symmetric_difference_by_key</a>(A_keys, A_keys + 6, B_keys, B_keys + 5, A_vals, B_vals, keys_result, vals_result, <a class="code" href="structthrust_1_1greater.html">thrust::greater&lt;int&gt;</a>());</div>
 <div class="line"><span class="comment">// keys_result is now {12, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0}</span></div>
 <div class="line"><span class="comment">// vals_result is now { 0,  1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0}</span></div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><code><a class="el" href="group__set__operations.html#ga00e191876364d0e340765fc8f90895cd">set_symmetric_difference_by_key</a></code> </dd>
@@ -3880,7 +3880,7 @@ The resulting ranges shall not overlap with any input range.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

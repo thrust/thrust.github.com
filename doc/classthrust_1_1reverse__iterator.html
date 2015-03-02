@@ -82,7 +82,7 @@ class thrust::reverse_iterator&lt; BidirectionalIterator &gt;</h3>
 
 <p><code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> is an iterator which represents a pointer into a reversed view of a given range. In this way, <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> allows backwards iteration through a bidirectional input range.</p>
 <p>It is important to note that although <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> is constructed from a given iterator, it points to the element preceding it. In this way, the past-the-end <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> of a given range points to the element preceding the first element of the input range. By the same token, the first <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> of a given range is constructed from a past-the-end iterator of the original range yet points to the last element of the input.</p>
-<p>The following code snippet demonstrates how to create a <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> which represents a reversed view of the contents of a <code>device_vector</code>.</p>
+<p>The following code snippet demonstrates how to create a <code><a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a></code> which represents a reversed view of the contents of a <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="reverse__iterator_8h.html">thrust/iterator/reverse_iterator.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line">...</div>
@@ -92,7 +92,7 @@ class thrust::reverse_iterator&lt; BidirectionalIterator &gt;</h3>
 <div class="line">v[2] = 2.0f;</div>
 <div class="line">v[3] = 3.0f;</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;float&gt;::iterator Iterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;::iterator</a> Iterator;</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// note that we point the iterator to the *end* of the device_vector</span></div>
 <div class="line"><a class="code" href="classthrust_1_1reverse__iterator.html">thrust::reverse_iterator&lt;Iterator&gt;</a> iter(values.end());</div>
@@ -104,7 +104,7 @@ class thrust::reverse_iterator&lt; BidirectionalIterator &gt;</h3>
 <div class="line">iter[3]; <span class="comment">// returns 0.0f;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// iter[4] is an out-of-bounds error</span></div>
-</div><!-- fragment --><p>Since reversing a range is a common operation, containers like <code>device_vector</code> have nested typedefs for declaration shorthand and methods for constructing reverse_iterators. The following code snippet is equivalent to the previous:</p>
+</div><!-- fragment --><p>Since reversing a range is a common operation, containers like <code><a class="el" href="classthrust_1_1device__vector.html">device_vector</a></code> have nested typedefs for declaration shorthand and methods for constructing reverse_iterators. The following code snippet is equivalent to the previous:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line">...</div>
 <div class="line">thrust::device_vector&lt;<span class="keywordtype">float</span>&gt; v(4);</div>
@@ -128,7 +128,7 @@ class thrust::reverse_iterator&lt; BidirectionalIterator &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="comment">// similarly, rend() points to the end of the reversed sequence:</span></div>
 <div class="line">assert(values.rend() == (iter + 4));</div>
-</div><!-- fragment --><p>Finally, the following code snippet demonstrates how to use <a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a> to perform a reversed prefix sum operation on the contents of a device_vector:</p>
+</div><!-- fragment --><p>Finally, the following code snippet demonstrates how to use <a class="el" href="classthrust_1_1reverse__iterator.html">reverse_iterator</a> to perform a reversed prefix sum operation on the contents of a <a class="el" href="classthrust_1_1device__vector.html">device_vector</a>:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="scan_8h.html">thrust/scan.h</a>&gt;</span></div>
 <div class="line">...</div>
@@ -139,7 +139,7 @@ class thrust::reverse_iterator&lt; BidirectionalIterator &gt;</h3>
 <div class="line">v[3] = 3;</div>
 <div class="line">v[4] = 4;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;int&gt; result(5);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> result(5);</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// exclusive scan v into result in reverse</span></div>
 <div class="line"><a class="code" href="group__prefixsums.html#ga0f1b7e1931f6ccd83c67c8cfde7c8144">thrust::exclusive_scan</a>(v.rbegin(), v.rend(), result.begin());</div>
@@ -250,7 +250,7 @@ template&lt;typename OtherBidirectionalIterator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:31 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

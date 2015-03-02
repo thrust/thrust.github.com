@@ -137,7 +137,7 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <p><code>exclusive_scan_by_key</code> computes an exclusive segmented prefix</p>
 <p>This version of <code>exclusive_scan_by_key</code> uses the value <code>0</code> to initialize the exclusive scan operation.</p>
 <p>This version of <code>exclusive_scan_by_key</code> assumes <code>plus</code> as the associative operator used to perform the prefix sum. When the input and output sequences are the same, the scan is performed in-place.</p>
-<p>This version of <code>exclusive_scan_by_key</code> assumes <code>equal_to</code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
+<p>This version of <code>exclusive_scan_by_key</code> assumes <code><a class="el" href="structthrust_1_1equal__to.html">equal_to</a></code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
 <p>Refer to the most general form of <code>exclusive_scan_by_key</code> for additional details.</p>
 <p>The algorithm's execution is parallelized as determined by <code>exec</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -208,7 +208,7 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <p><code>exclusive_scan_by_key</code> computes an exclusive segmented prefix</p>
 <p>This version of <code>exclusive_scan_by_key</code> uses the value <code>0</code> to initialize the exclusive scan operation.</p>
 <p>This version of <code>exclusive_scan_by_key</code> assumes <code>plus</code> as the associative operator used to perform the prefix sum. When the input and output sequences are the same, the scan is performed in-place.</p>
-<p>This version of <code>exclusive_scan_by_key</code> assumes <code>equal_to</code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
+<p>This version of <code>exclusive_scan_by_key</code> assumes <code><a class="el" href="structthrust_1_1equal__to.html">equal_to</a></code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
 <p>Refer to the most general form of <code>exclusive_scan_by_key</code> for additional details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -485,7 +485,7 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> init = 5;</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#ga1c90ddaacc12dd7daafaa8e18fefb3b9">thrust::exclusive_scan_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, key, key + 10, vals, vals, init, binary_pred); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -572,7 +572,7 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> init = 5;</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#ga1c90ddaacc12dd7daafaa8e18fefb3b9">thrust::exclusive_scan_by_key</a>(key, key + 10, vals, vals, init, binary_pred); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -689,8 +689,8 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> init = 5;</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
-<div class="line">thrust::plus&lt;int&gt;     binary_op;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1plus.html">thrust::plus&lt;int&gt;</a>     binary_op;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#ga1c90ddaacc12dd7daafaa8e18fefb3b9">thrust::exclusive_scan_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, key, key + 10, vals, vals, init, binary_pred, binary_op); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -796,8 +796,8 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> init = 5;</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
-<div class="line">thrust::plus&lt;int&gt;     binary_op;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1plus.html">thrust::plus&lt;int&gt;</a>     binary_op;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#ga1c90ddaacc12dd7daafaa8e18fefb3b9">thrust::exclusive_scan_by_key</a>(key, key + 10, vals, vals, init, binary_pred, binary_op); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -852,7 +852,7 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
       </table>
 </div><div class="memdoc">
 <p><code>inclusive_scan_by_key</code> computes an inclusive key-value or 'segmented' prefix sum operation. The term 'inclusive' means that each result includes the corresponding input operand in the partial sum. The term 'segmented' means that the partial sums are broken into distinct segments. In other words, within each segment a separate inclusive scan operation is computed. Refer to the code sample below for example usage.</p>
-<p>This version of <code>inclusive_scan_by_key</code> assumes <code>equal_to</code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1)</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
+<p>This version of <code>inclusive_scan_by_key</code> assumes <code><a class="el" href="structthrust_1_1equal__to.html">equal_to</a></code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1)</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
 <p>This version of <code>inclusive_scan_by_key</code> assumes <code>plus</code> as the associative operator used to perform the prefix sum. When the input and output sequences are the same, the scan is performed in-place.</p>
 <p>The algorithm's execution is parallelized as determined by <code>exec</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -933,7 +933,7 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
       </table>
 </div><div class="memdoc">
 <p><code>inclusive_scan_by_key</code> computes an inclusive key-value or 'segmented' prefix sum operation. The term 'inclusive' means that each result includes the corresponding input operand in the partial sum. The term 'segmented' means that the partial sums are broken into distinct segments. In other words, within each segment a separate inclusive scan operation is computed. Refer to the code sample below for example usage.</p>
-<p>This version of <code>inclusive_scan_by_key</code> assumes <code>equal_to</code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1)</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
+<p>This version of <code>inclusive_scan_by_key</code> assumes <code><a class="el" href="structthrust_1_1equal__to.html">equal_to</a></code> as the binary predicate used to compare adjacent keys. Specifically, consecutive iterators <code>i</code> and <code>i+1</code> in the range <code>[first1, last1)</code> belong to the same segment if <code>*i == *(i+1)</code>, and belong to different segments otherwise.</p>
 <p>This version of <code>inclusive_scan_by_key</code> assumes <code>plus</code> as the associative operator used to perform the prefix sum. When the input and output sequences are the same, the scan is performed in-place.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1058,7 +1058,7 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <div class="line">int data[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};</div>
 <div class="line"><span class="keywordtype">int</span> keys[10] = {0, 0, 0, 1, 1, 2, 3, 3, 3, 3};</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#gae84dddc63b198eb91cdf28e19cd2effc">thrust::inclusive_scan_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + 10, vals, vals, binary_pred); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -1145,7 +1145,7 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <div class="line"><span class="keywordtype">int</span> data[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};</div>
 <div class="line"><span class="keywordtype">int</span> keys[10] = {0, 0, 0, 1, 1, 2, 3, 3, 3, 3};</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#gae84dddc63b198eb91cdf28e19cd2effc">thrust::inclusive_scan_by_key</a>(keys, keys + 10, vals, vals, binary_pred); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -1251,8 +1251,8 @@ template&lt;typename DerivedPolicy , typename InputIterator1 , typename InputIte
 <div class="line">int data[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};</div>
 <div class="line"><span class="keywordtype">int</span> keys[10] = {0, 0, 0, 1, 1, 2, 3, 3, 3, 3};</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
-<div class="line">thrust::plus&lt;int&gt;     binary_op;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1plus.html">thrust::plus&lt;int&gt;</a>     binary_op;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#gae84dddc63b198eb91cdf28e19cd2effc">thrust::inclusive_scan_by_key</a>(<a class="code" href="group__execution__policies.html#ga98394c05ebaaac46c17cf0ec970695e0">thrust::host</a>, keys, keys + 10, vals, vals, binary_pred, binary_op); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -1347,8 +1347,8 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 <div class="line"><span class="keywordtype">int</span> data[10] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};</div>
 <div class="line"><span class="keywordtype">int</span> keys[10] = {0, 0, 0, 1, 1, 2, 3, 3, 3, 3};</div>
 <div class="line"></div>
-<div class="line">thrust::equal_to&lt;int&gt; binary_pred;</div>
-<div class="line">thrust::plus&lt;int&gt;     binary_op;</div>
+<div class="line"><a class="code" href="structthrust_1_1equal__to.html">thrust::equal_to&lt;int&gt;</a> binary_pred;</div>
+<div class="line"><a class="code" href="structthrust_1_1plus.html">thrust::plus&lt;int&gt;</a>     binary_op;</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="group__segmentedprefixsums.html#gae84dddc63b198eb91cdf28e19cd2effc">thrust::inclusive_scan_by_key</a>(keys, keys + 10, vals, vals, binary_pred, binary_op); <span class="comment">// in-place scan</span></div>
 <div class="line"></div>
@@ -1362,7 +1362,7 @@ template&lt;typename InputIterator1 , typename InputIterator2 , typename OutputI
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:30 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

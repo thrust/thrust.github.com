@@ -76,430 +76,547 @@
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>thrust</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Operation&gt; <span class="keyword">struct </span>unary_traits;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__traits.html">   34</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Operation&gt; <span class="keyword">struct </span><a class="code" href="structthrust_1_1unary__traits.html">unary_traits</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Operation&gt; <span class="keyword">struct </span>binary_traits;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__traits.html">   36</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Operation&gt; <span class="keyword">struct </span><a class="code" href="structthrust_1_1binary__traits.html">binary_traits</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Argument,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         <span class="keyword">typename</span> Result&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">struct </span>unary_function</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__function.html">   70</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1unary__function.html">unary_function</a></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">typedef</span> Argument argument_type;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__function.html#add99fadcf35ce6b0c8fab6ca0a6d7479">   75</a></span>&#160;  <span class="keyword">typedef</span> Argument <a class="code" href="structthrust_1_1unary__function.html#add99fadcf35ce6b0c8fab6ca0a6d7479">argument_type</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">typedef</span> Result   result_type;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__function.html#acba3e9e21e7a3ec6e856f5f402bbdc2b">   80</a></span>&#160;  <span class="keyword">typedef</span> Result   <a class="code" href="structthrust_1_1unary__function.html#acba3e9e21e7a3ec6e856f5f402bbdc2b">result_type</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}; <span class="comment">// end unary_function</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Argument1,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;         <span class="keyword">typename</span> Argument2,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;         <span class="keyword">typename</span> Result&gt;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">struct </span>binary_function</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__function.html">  111</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1binary__function.html">binary_function</a></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">typedef</span> Argument1 first_argument_type;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__function.html#a9b3cc1d4c5164dfc135269b9d0775eb1">  116</a></span>&#160;  <span class="keyword">typedef</span> Argument1 <a class="code" href="structthrust_1_1binary__function.html#a9b3cc1d4c5164dfc135269b9d0775eb1">first_argument_type</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">typedef</span> Argument2 second_argument_type;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__function.html#ae0ae5ce7917836da8a4c60ea1748816f">  121</a></span>&#160;  <span class="keyword">typedef</span> Argument2 <a class="code" href="structthrust_1_1binary__function.html#ae0ae5ce7917836da8a4c60ea1748816f">second_argument_type</a>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">typedef</span> Result    result_type;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__function.html#ab5e983a91c8a78e7425306a0d338a522">  126</a></span>&#160;  <span class="keyword">typedef</span> Result    <a class="code" href="structthrust_1_1binary__function.html#ab5e983a91c8a78e7425306a0d338a522">result_type</a>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}; <span class="comment">// end binary_function</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">struct </span>plus</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="structthrust_1_1plus.html">  175</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1plus.html">plus</a></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1plus.html#abb9a17e1b144d9390c61c8677d812a7d">first_argument_type</a>;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1plus.html#a816da1dcd50d577b04793e19a0f1e02d">second_argument_type</a>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1plus.html#a1a533a2fa811b322d94dd98299bdaa6e">result_type</a>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs + rhs;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1plus.html#a03198abcc0864f722ae275075b98371c">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs + rhs;}</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}; <span class="comment">// end plus</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">struct </span>minus</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="structthrust_1_1minus.html">  231</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1minus.html">minus</a></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minus.html#a52e61c0fea0a1ad2b2227751f1c3081f">first_argument_type</a>;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minus.html#acf8c6758ee4a150e33d0d5c236290cee">second_argument_type</a>;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minus.html#a2990970bda79970ea05ff74e70788ec3">result_type</a>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs - rhs;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1minus.html#afbbc10449d679ebc88b7eb647646f1d6">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs - rhs;}</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}; <span class="comment">// end minus</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">struct </span>multiplies</div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="structthrust_1_1multiplies.html">  287</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1multiplies.html">multiplies</a></div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1multiplies.html#a17ac8de13340919446a13a42aaf71198">first_argument_type</a>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1multiplies.html#aaf7ada41ef4491fa33cc12597a387c86">second_argument_type</a>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1multiplies.html#aa43a33801f0eaec9d76ece2d7c83dc1b">result_type</a>;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs * rhs;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1multiplies.html#a69070a6a27c5a804495475896f223a04">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs * rhs;}</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}; <span class="comment">// end multiplies</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">struct </span>divides</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="structthrust_1_1divides.html">  343</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1divides.html">divides</a></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1divides.html#a1d940e3303698676913747ef9b6b9fb3">first_argument_type</a>;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1divides.html#a3a6c1e41948c2e343d2da0ea8b024670">second_argument_type</a>;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1divides.html#a5a9908ff189f7d8b4da65cd25bfa76c2">result_type</a>;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs / rhs;}</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1divides.html#af0a3778a9e74734a24161565c29197c5">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs / rhs;}</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}; <span class="comment">// end divides</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">struct </span>modulus</div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="structthrust_1_1modulus.html">  399</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1modulus.html">modulus</a></div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;{</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1modulus.html#a57ed078f75c2aeb243659c8c589d5ca1">first_argument_type</a>;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1modulus.html#a4d7e7438ff6ea69402dce6f9eb5e0a9c">second_argument_type</a>;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1modulus.html#a0faac8651757e376077ae266a3a4bf39">result_type</a>;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs % rhs;}</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1modulus.html#adc5eff8ab38ba77465b8ec111219eff0">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs % rhs;}</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}; <span class="comment">// end modulus</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">struct </span>negate</div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="structthrust_1_1negate.html">  452</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1negate.html">negate</a></div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;{</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="keyword">typedef</span> T argument_type;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1negate.html#a25132d3f4fe85bf205a3e8f199b3895d">argument_type</a>;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1negate.html#a2505412c4159584377e0d19a871d2af8">result_type</a>;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> -x;}</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1negate.html#a7eca00927a653deb3c558922e5ec7d0c">operator()</a>(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> -x;}</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}; <span class="comment">// end negate</span></div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="keyword">struct </span>equal_to</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1equal__to.html">equal_to</a></div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1equal__to.html#a3ca5e0eaf963998967b2af9853af6491">first_argument_type</a>;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1equal__to.html#adfc35977643a5bef6863950e3b15363b">second_argument_type</a>;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1equal__to.html#ac169b355fdcfd73a7e1bb671f2e5a010">result_type</a>;</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs == rhs;}</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1equal__to.html#a0f32d9c8bab5264df5f9171f8e4d34e7">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs == rhs;}</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;}; <span class="comment">// end equal_to</span></div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword">struct </span>not_equal_to</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;{</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1not__equal__to.html#aa42c9e2b305fe3b2a0c96e9a60b01be2">first_argument_type</a>;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1not__equal__to.html#af267a9ad3135b80ccb69445d79d2fa5b">second_argument_type</a>;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1not__equal__to.html#ae57f2f0541f081f7a0df4e1aa801b7c9">result_type</a>;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs != rhs;}</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1not__equal__to.html#a301821b0af7def8500a4eeade0785cf4">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs != rhs;}</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}; <span class="comment">// end not_equal_to</span></div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="keyword">struct </span>greater</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;{</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1greater.html#ab84d56b1e1c0bd0ffb84ebf75c033bee">first_argument_type</a>;</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1greater.html#ac4d040a5ef14cb36d23a089d0c917c12">second_argument_type</a>;</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1greater.html#a483228716b2478525c0aa4cb6c21bb44">result_type</a>;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &gt; rhs;}</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1greater.html#af4cfd2ac9948a561d509bca956a7c4ce">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &gt; rhs;}</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}; <span class="comment">// end greater</span></div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keyword">struct </span>less</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1less.html#a80fc56b3670800fdcd46660789024fb7">first_argument_type</a>;</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1less.html#a36a01c5808b71c012b2ea90d962313dd">second_argument_type</a>;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1less.html#ad1c3efb2d05baa4d284c682aae248087">result_type</a>;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs;}</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1less.html#ae92891359d591e73a413b04029fe9751">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs;}</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}; <span class="comment">// end less</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="keyword">struct </span>greater_equal</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;{</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1greater__equal.html#a993fafbabaa4803510efbfe5d1e18489">first_argument_type</a>;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1greater__equal.html#ac6ba40a148d0e5c3e41092e71d0ea057">second_argument_type</a>;</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1greater__equal.html#a70c0ff242c6b72bc80808bede085dd5b">result_type</a>;</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &gt;= rhs;}</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1greater__equal.html#ae35f3590102166092e6db120a43cd006">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &gt;= rhs;}</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;}; <span class="comment">// end greater_equal</span></div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keyword">struct </span>less_equal</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;{</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1less__equal.html#a1d099d17e084e73d50fa9728021c2219">first_argument_type</a>;</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1less__equal.html#a184e0f501a2caa337f1d507fdbaf3733">second_argument_type</a>;</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1less__equal.html#afed07af9e329cee36a447acc66e686ea">result_type</a>;</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt;= rhs;}</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1less__equal.html#a634298df9a9e7e16ef1a91af217fc1ec">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt;= rhs;}</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;}; <span class="comment">// end less_equal</span></div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="keyword">struct </span>logical_and</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;{</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__and.html#ad3d87f755f8d48bf1ebf143029979de7">first_argument_type</a>;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__and.html#a33c2049d6341bc2d7e4331a2296f3cee">second_argument_type</a>;</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &amp;&amp; rhs;}</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__and.html#a2d784ad9466de4854860f7274c8c37de">result_type</a>;</div>
+<div class="line"><a name="l00719"></a><span class="lineno"><a class="line" href="structthrust_1_1logical__and.html#acb9c21e767033d62082c639f35f36fe6">  719</a></span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__and.html#acb9c21e767033d62082c639f35f36fe6">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &amp;&amp; rhs;}</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;}; <span class="comment">// end logical_and</span></div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="keyword">struct </span>logical_or</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__or.html#a9e80932b2eede446b0c5b74097806a92">first_argument_type</a>;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__or.html#a8423409d58f51661128476c00dcf1fec">second_argument_type</a>;</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs || rhs;}</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__or.html#a96c7b2c26556ca49060aa3e363d1636d">result_type</a>;</div>
+<div class="line"><a name="l00753"></a><span class="lineno"><a class="line" href="structthrust_1_1logical__or.html#a2313e2a5403f79adbf9ce43797cf5ff2">  753</a></span>&#160;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__or.html#a2313e2a5403f79adbf9ce43797cf5ff2">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs || rhs;}</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;}; <span class="comment">// end logical_or</span></div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;<span class="keyword">struct </span>logical_not</div>
 <div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;{</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__not.html#a6c2e6632e54cee99e888ec44c891279b">first_argument_type</a>;</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1logical__not.html#a912397d5cfdd24d7ff8d228a2e3b34aa">second_argument_type</a>;</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> !x;}</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__not.html#a493e10d20e7609ffb920fcc58bcab245">result_type</a>;</div>
+<div class="line"><a name="l00801"></a><span class="lineno"><a class="line" href="structthrust_1_1logical__not.html#a825fb406f0c4471350b5b8dae930306b">  801</a></span>&#160;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  __host__ __device__ <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1logical__not.html#a825fb406f0c4471350b5b8dae930306b">operator()</a>(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> !x;}</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;}; <span class="comment">// end logical_not</span></div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="keyword">struct </span>bit_and</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00849"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__and.html#aebb29986e5fb789b6da3195ee513c7fd">  849</a></span>&#160;{</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__and.html#aebb29986e5fb789b6da3195ee513c7fd">first_argument_type</a>;</div>
+<div class="line"><a name="l00854"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__and.html#a9faac6185332cd492afcc2e9de3f36cd">  854</a></span>&#160;</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__and.html#a9faac6185332cd492afcc2e9de3f36cd">second_argument_type</a>;</div>
+<div class="line"><a name="l00859"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__and.html#a5dab405f5dfc1babbb8efb2366249014">  859</a></span>&#160;</div>
+<div class="line"><a name="l00863"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__and.html#a4b538f3a8a2908726e400a2b0422d6bc">  863</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__and.html#a5dab405f5dfc1babbb8efb2366249014">result_type</a>;</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &amp; rhs;}</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1bit__and.html#a4b538f3a8a2908726e400a2b0422d6bc">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &amp; rhs;}</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;}; <span class="comment">// end bit_and</span></div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;<span class="keyword">struct </span>bit_or</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;{</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00904"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__or.html#a514c4300640adbbe7fdcdcee1f83db10">  904</a></span>&#160;{</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__or.html#a514c4300640adbbe7fdcdcee1f83db10">first_argument_type</a>;</div>
+<div class="line"><a name="l00909"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__or.html#a4ac3b3d32025267f2c6f3a0c542caf5b">  909</a></span>&#160;</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__or.html#a4ac3b3d32025267f2c6f3a0c542caf5b">second_argument_type</a>;</div>
+<div class="line"><a name="l00914"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__or.html#a22a0c55fbb00adf458d6185b5e97b468">  914</a></span>&#160;</div>
+<div class="line"><a name="l00918"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__or.html#a3d59c014b3df60bf94f5eabf255f87c4">  918</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__or.html#a22a0c55fbb00adf458d6185b5e97b468">result_type</a>;</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs | rhs;}</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1bit__or.html#a3d59c014b3df60bf94f5eabf255f87c4">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs | rhs;}</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;}; <span class="comment">// end bit_or</span></div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="keyword">struct </span>bit_xor</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;{</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l00959"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__xor.html#a0f8877c685709060ba664f4a22769e3b">  959</a></span>&#160;{</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__xor.html#a0f8877c685709060ba664f4a22769e3b">first_argument_type</a>;</div>
+<div class="line"><a name="l00964"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__xor.html#ad7c80d0bda243f7559b34d884edbe156">  964</a></span>&#160;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__xor.html#ad7c80d0bda243f7559b34d884edbe156">second_argument_type</a>;</div>
+<div class="line"><a name="l00969"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__xor.html#a03fa09694623cfd67a1ac0fe47ac2612">  969</a></span>&#160;</div>
+<div class="line"><a name="l00973"></a><span class="lineno"><a class="line" href="structthrust_1_1bit__xor.html#ab39070cb9de8c930844bce8cce5870df">  973</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1bit__xor.html#a03fa09694623cfd67a1ac0fe47ac2612">result_type</a>;</div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs ^ rhs;}</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1bit__xor.html#ab39070cb9de8c930844bce8cce5870df">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs ^ rhs;}</div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;}; <span class="comment">// end bit_xor</span></div>
 <div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="keyword">struct </span>identity</div>
+<div class="line"><a name="l01009"></a><span class="lineno"><a class="line" href="structthrust_1_1identity.html#a4fc242fa645a4c1f53e7b69d19a487f6"> 1009</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1identity.html">identity</a></div>
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;{</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;  <span class="keyword">typedef</span> T argument_type;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"><a class="line" href="structthrust_1_1identity.html#ae1b9d4c0d3530900d5c55939d629cc5b"> 1014</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1identity.html#a4fc242fa645a4c1f53e7b69d19a487f6">argument_type</a>;</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1identity.html#ae1b9d4c0d3530900d5c55939d629cc5b">result_type</a>;</div>
 <div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  __host__ __device__ <span class="keyword">const</span> T &amp;operator()(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> x;}</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  __host__ __device__ <span class="keyword">const</span> T &amp;<a class="code" href="structthrust_1_1identity.html#ab49295ededef504245bff6c1151f25c2">operator()</a>(<span class="keyword">const</span> T &amp;x)<span class="keyword"> const </span>{<span class="keywordflow">return</span> x;}</div>
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;}; <span class="comment">// end identity</span></div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;<span class="keyword">struct </span>maximum</div>
+<div class="line"><a name="l01051"></a><span class="lineno"><a class="line" href="structthrust_1_1maximum.html#aacd14366929f751152012689e6331331"> 1051</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1maximum.html">maximum</a></div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;{</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"><a class="line" href="structthrust_1_1maximum.html#a77753b2d3d9275385cb62edb4872f716"> 1056</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1maximum.html#aacd14366929f751152012689e6331331">first_argument_type</a>;</div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l01061"></a><span class="lineno"><a class="line" href="structthrust_1_1maximum.html#a2ed63433e6513dce34f3cbc7179b382f"> 1061</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1maximum.html#a77753b2d3d9275385cb62edb4872f716">second_argument_type</a>;</div>
 <div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1maximum.html#a2ed63433e6513dce34f3cbc7179b382f">result_type</a>;</div>
 <div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs ? rhs : lhs;}</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1maximum.html#aa74152b956e2ae2d3d824703f834660d">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs ? rhs : lhs;}</div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;}; <span class="comment">// end maximum</span></div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;</div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="keyword">struct </span>minimum</div>
+<div class="line"><a name="l01098"></a><span class="lineno"><a class="line" href="structthrust_1_1minimum.html#a05dc920a11f559093d4251e591bc05a3"> 1098</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1minimum.html">minimum</a></div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;{</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;  <span class="keyword">typedef</span> T first_argument_type;</div>
+<div class="line"><a name="l01103"></a><span class="lineno"><a class="line" href="structthrust_1_1minimum.html#aa1dba1049dbfd6b8405074159f0facab"> 1103</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minimum.html#a05dc920a11f559093d4251e591bc05a3">first_argument_type</a>;</div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  <span class="keyword">typedef</span> T second_argument_type;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"><a class="line" href="structthrust_1_1minimum.html#ad72ad3d9072e412dceef933dbad7cddf"> 1108</a></span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minimum.html#aa1dba1049dbfd6b8405074159f0facab">second_argument_type</a>;</div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;  <span class="keyword">typedef</span> T result_type;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;  <span class="keyword">typedef</span> T <a class="code" href="structthrust_1_1minimum.html#ad72ad3d9072e412dceef933dbad7cddf">result_type</a>;</div>
 <div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  __host__ __device__ T operator()(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs ? lhs : rhs;}</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;  __host__ __device__ T <a class="code" href="structthrust_1_1minimum.html#a65db0d4d8d929247d2ce842797b34ea0">operator()</a>(<span class="keyword">const</span> T &amp;lhs, <span class="keyword">const</span> T &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs &lt; rhs ? lhs : rhs;}</div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;}; <span class="comment">// end minimum</span></div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;</div>
 <div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;<span class="keyword">struct </span>project1st</div>
+<div class="line"><a name="l01139"></a><span class="lineno"><a class="line" href="structthrust_1_1project1st.html#ae5b669bb582f2cf0eb9d25d20964e394"> 1139</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1project1st.html">project1st</a></div>
 <div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;{</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;  <span class="keyword">typedef</span> T1 first_argument_type;</div>
+<div class="line"><a name="l01144"></a><span class="lineno"><a class="line" href="structthrust_1_1project1st.html#ae3906bdf66266016c2c532a224d7a0fd"> 1144</a></span>&#160;  <span class="keyword">typedef</span> T1 <a class="code" href="structthrust_1_1project1st.html#ae5b669bb582f2cf0eb9d25d20964e394">first_argument_type</a>;</div>
 <div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;  <span class="keyword">typedef</span> T2 second_argument_type;</div>
+<div class="line"><a name="l01149"></a><span class="lineno"><a class="line" href="structthrust_1_1project1st.html#ab675abcbb09febace0781a1493431437"> 1149</a></span>&#160;  <span class="keyword">typedef</span> T2 <a class="code" href="structthrust_1_1project1st.html#ae3906bdf66266016c2c532a224d7a0fd">second_argument_type</a>;</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;  <span class="keyword">typedef</span> T1 result_type;</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;  <span class="keyword">typedef</span> T1 <a class="code" href="structthrust_1_1project1st.html#ab675abcbb09febace0781a1493431437">result_type</a>;</div>
 <div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  __host__ __device__ <span class="keyword">const</span> T1 &amp;operator()(<span class="keyword">const</span> T1 &amp;lhs, <span class="keyword">const</span> T2 &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs;}</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;  __host__ __device__ <span class="keyword">const</span> T1 &amp;<a class="code" href="structthrust_1_1project1st.html#a3c191d875b22f76624a94692b753eb7b">operator()</a>(<span class="keyword">const</span> T1 &amp;lhs, <span class="keyword">const</span> T2 &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> lhs;}</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;}; <span class="comment">// end project1st</span></div>
 <div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;</div>
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;<span class="keyword">struct </span>project2nd</div>
+<div class="line"><a name="l01180"></a><span class="lineno"><a class="line" href="structthrust_1_1project2nd.html#a557659fa2a7826aec4b5a36cf804fb9b"> 1180</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrust_1_1project2nd.html">project2nd</a></div>
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;{</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;  <span class="keyword">typedef</span> T1 first_argument_type;</div>
+<div class="line"><a name="l01185"></a><span class="lineno"><a class="line" href="structthrust_1_1project2nd.html#ae7d3d1f293e5996cdafb850894a9cb67"> 1185</a></span>&#160;  <span class="keyword">typedef</span> T1 <a class="code" href="structthrust_1_1project2nd.html#a557659fa2a7826aec4b5a36cf804fb9b">first_argument_type</a>;</div>
 <div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;  <span class="keyword">typedef</span> T2 second_argument_type;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"><a class="line" href="structthrust_1_1project2nd.html#a67d7f79876e55073f0b8d26db402ff92"> 1190</a></span>&#160;  <span class="keyword">typedef</span> T2 <a class="code" href="structthrust_1_1project2nd.html#ae7d3d1f293e5996cdafb850894a9cb67">second_argument_type</a>;</div>
 <div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;  <span class="keyword">typedef</span> T2 result_type;</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;  <span class="keyword">typedef</span> T2 <a class="code" href="structthrust_1_1project2nd.html#a67d7f79876e55073f0b8d26db402ff92">result_type</a>;</div>
 <div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;  __host__ __device__ <span class="keyword">const</span> T2 &amp;operator()(<span class="keyword">const</span> T1 &amp;lhs, <span class="keyword">const</span> T2 &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> rhs;}</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;  __host__ __device__ <span class="keyword">const</span> T2 &amp;<a class="code" href="structthrust_1_1project2nd.html#a00537a490225b1eed87692778eb79b2c">operator()</a>(<span class="keyword">const</span> T1 &amp;lhs, <span class="keyword">const</span> T2 &amp;rhs)<span class="keyword"> const </span>{<span class="keywordflow">return</span> rhs;}</div>
 <div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;}; <span class="comment">// end project2nd</span></div>
 <div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;<span class="comment">// odds and ends</span></div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Predicate&gt;</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;<span class="keyword">struct </span>unary_negate </div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    : <span class="keyword">public</span> thrust::unary_function&lt;typename Predicate::argument_type, bool&gt;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__negate.html#a5fa0f16affb645867ae56f067ad5bca8"> 1225</a></span>&#160;    : <span class="keyword">public</span> <a class="code" href="structthrust_1_1unary__function.html">thrust::unary_function</a>&lt;typename Predicate::argument_type, bool&gt;</div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;{</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;  <span class="keyword">explicit</span> unary_negate(Predicate p) : pred(p){}</div>
+<div class="line"><a name="l01230"></a><span class="lineno"><a class="line" href="structthrust_1_1unary__negate.html#a6023a7c1d67f63e644c899c47ce7d58f"> 1230</a></span>&#160;  __host__ __device__</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structthrust_1_1unary__negate.html#a5fa0f16affb645867ae56f067ad5bca8">unary_negate</a>(Predicate p) : pred(p){}</div>
 <div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;</div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;  <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <span class="keyword">typename</span> Predicate::argument_type&amp; x) { <span class="keywordflow">return</span> !pred(x); }</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1unary__negate.html#a6023a7c1d67f63e644c899c47ce7d58f">operator()</a>(<span class="keyword">const</span> <span class="keyword">typename</span> Predicate::argument_type&amp; x) { <span class="keywordflow">return</span> !pred(x); }</div>
 <div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;  Predicate pred;</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;}; <span class="comment">// end unary_negate</span></div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;  unary_negate&lt;Predicate&gt; not1(<span class="keyword">const</span> Predicate &amp;pred);</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Predicate&gt;</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;<span class="keyword">struct </span>binary_negate</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;    : <span class="keyword">public</span> thrust::binary_function&lt;typename Predicate::first_argument_type,</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;                                     typename Predicate::second_argument_type,</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;                                     bool&gt;</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;{</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;  <span class="keyword">explicit</span> binary_negate(Predicate p) : pred(p){}</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;  <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <span class="keyword">typename</span> Predicate::first_argument_type&amp; x, <span class="keyword">const</span> <span class="keyword">typename</span> Predicate::second_argument_type&amp; y)</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;  { </div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;      <span class="keywordflow">return</span> !pred(x,y); </div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;  }</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;  Predicate pred;</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;}; <span class="comment">// end binary_negate</span></div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> BinaryPredicate&gt;</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;  __host__ __device__</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;  binary_negate&lt;BinaryPredicate&gt; not2(<span class="keyword">const</span> BinaryPredicate &amp;pred);</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;<span class="keyword">namespace </span>placeholders</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;{</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;0&gt;::type _1;</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;0&gt;::type _1;</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;1&gt;::type _2;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;1&gt;::type _2;</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;2&gt;::type _3;</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;2&gt;::type _3;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;3&gt;::type _4;</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;3&gt;::type _4;</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;4&gt;::type _5;</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;4&gt;::type _5;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;5&gt;::type _6;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;5&gt;::type _6;</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;6&gt;::type _7;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;6&gt;::type _7;</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;7&gt;::type _8;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;7&gt;::type _8;</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;8&gt;::type _9;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;8&gt;::type _9;</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;9&gt;::type _10;</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;9&gt;::type _10;</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;} <span class="comment">// end placeholders</span></div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;} <span class="comment">// end thrust</span></div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;<span class="preprocessor">#include &lt;thrust/detail/functional.inl&gt;</span></div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;<span class="preprocessor">#include &lt;thrust/detail/functional/operators.h&gt;</span></div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;  Predicate pred;</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;}; <span class="comment">// end unary_negate</span></div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;  __host__ __device__</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;  unary_negate&lt;Predicate&gt; <a class="code" href="group__function__object__adaptors.html#gabbb973566242fd692f159d8ab39cf5e9">not1</a>(<span class="keyword">const</span> Predicate &amp;pred);</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Predicate&gt;</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;<span class="keyword">struct </span>binary_negate</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;    : <span class="keyword">public</span> <a class="code" href="structthrust_1_1binary__function.html">thrust::binary_function</a>&lt;typename Predicate::first_argument_type,</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                                     typename Predicate::second_argument_type,</div>
+<div class="line"><a name="l01279"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__negate.html#a7942fecaf5a2ef270e75fc15dbff50c5"> 1279</a></span>&#160;                                     bool&gt;</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;{</div>
+<div class="line"><a name="l01284"></a><span class="lineno"><a class="line" href="structthrust_1_1binary__negate.html#a665d619461b3cc47a7088c4b30cbbffa"> 1284</a></span>&#160;  __host__ __device__</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structthrust_1_1binary__negate.html#a7942fecaf5a2ef270e75fc15dbff50c5">binary_negate</a>(Predicate p) : pred(p){}</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;  __host__ __device__</div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structthrust_1_1binary__negate.html#a665d619461b3cc47a7088c4b30cbbffa">operator()</a>(<span class="keyword">const</span> <span class="keyword">typename</span> Predicate::first_argument_type&amp; x, <span class="keyword">const</span> <span class="keyword">typename</span> Predicate::second_argument_type&amp; y)</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;  { </div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;      <span class="keywordflow">return</span> !pred(x,y); </div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;  }</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;  Predicate pred;</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;}; <span class="comment">// end binary_negate</span></div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> BinaryPredicate&gt;</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;  __host__ __device__</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;  binary_negate&lt;BinaryPredicate&gt; <a class="code" href="group__function__object__adaptors.html#gaffb30cb5d0791282f46544c8156a41b3">not2</a>(<span class="keyword">const</span> BinaryPredicate &amp;pred);</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;<span class="keyword">namespace </span>placeholders</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;{</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;0&gt;::type _1;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;0&gt;::type _1;</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;1&gt;::type _2;</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;1&gt;::type _2;</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;2&gt;::type _3;</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;2&gt;::type _3;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;3&gt;::type _4;</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;3&gt;::type _4;</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;4&gt;::type _5;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;4&gt;::type _5;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;5&gt;::type _6;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;5&gt;::type _6;</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;6&gt;::type _7;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;6&gt;::type _7;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;7&gt;::type _8;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;7&gt;::type _8;</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;8&gt;::type _9;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;8&gt;::type _9;</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="preprocessor">#ifdef __CUDA_ARCH__</span></div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> __device__ thrust::detail::functional::placeholder&lt;9&gt;::type _10;</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <span class="keyword">const</span> thrust::detail::functional::placeholder&lt;9&gt;::type _10;</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;} <span class="comment">// end placeholders</span></div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;} <span class="comment">// end thrust</span></div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;<span class="preprocessor">#include &lt;thrust/detail/functional.inl&gt;</span></div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;<span class="preprocessor">#include &lt;thrust/detail/functional/operators.h&gt;</span></div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;</div>
+<div class="ttc" id="structthrust_1_1bit__or_html_a4ac3b3d32025267f2c6f3a0c542caf5b"><div class="ttname"><a href="structthrust_1_1bit__or.html#a4ac3b3d32025267f2c6f3a0c542caf5b">thrust::bit_or::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:909</div></div>
+<div class="ttc" id="structthrust_1_1logical__not_html_a6c2e6632e54cee99e888ec44c891279b"><div class="ttname"><a href="structthrust_1_1logical__not.html#a6c2e6632e54cee99e888ec44c891279b">thrust::logical_not::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:787</div></div>
+<div class="ttc" id="structthrust_1_1negate_html_a7eca00927a653deb3c558922e5ec7d0c"><div class="ttname"><a href="structthrust_1_1negate.html#a7eca00927a653deb3c558922e5ec7d0c">thrust::negate::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;x) const </div><div class="ttdef"><b>Definition:</b> functional.h:466</div></div>
+<div class="ttc" id="structthrust_1_1bit__xor_html_a0f8877c685709060ba664f4a22769e3b"><div class="ttname"><a href="structthrust_1_1bit__xor.html#a0f8877c685709060ba664f4a22769e3b">thrust::bit_xor::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:959</div></div>
+<div class="ttc" id="structthrust_1_1not__equal__to_html_af267a9ad3135b80ccb69445d79d2fa5b"><div class="ttname"><a href="structthrust_1_1not__equal__to.html#af267a9ad3135b80ccb69445d79d2fa5b">thrust::not_equal_to::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:532</div></div>
+<div class="ttc" id="structthrust_1_1logical__not_html_a493e10d20e7609ffb920fcc58bcab245"><div class="ttname"><a href="structthrust_1_1logical__not.html#a493e10d20e7609ffb920fcc58bcab245">thrust::logical_not::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:797</div></div>
+<div class="ttc" id="structthrust_1_1maximum_html"><div class="ttname"><a href="structthrust_1_1maximum.html">thrust::maximum</a></div><div class="ttdef"><b>Definition:</b> functional.h:1046</div></div>
+<div class="ttc" id="structthrust_1_1minus_html_acf8c6758ee4a150e33d0d5c236290cee"><div class="ttname"><a href="structthrust_1_1minus.html#acf8c6758ee4a150e33d0d5c236290cee">thrust::minus::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:241</div></div>
+<div class="ttc" id="structthrust_1_1not__equal__to_html_a301821b0af7def8500a4eeade0785cf4"><div class="ttname"><a href="structthrust_1_1not__equal__to.html#a301821b0af7def8500a4eeade0785cf4">thrust::not_equal_to::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:541</div></div>
+<div class="ttc" id="structthrust_1_1greater_html_a483228716b2478525c0aa4cb6c21bb44"><div class="ttname"><a href="structthrust_1_1greater.html#a483228716b2478525c0aa4cb6c21bb44">thrust::greater::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:571</div></div>
+<div class="ttc" id="structthrust_1_1less__equal_html_a634298df9a9e7e16ef1a91af217fc1ec"><div class="ttname"><a href="structthrust_1_1less__equal.html#a634298df9a9e7e16ef1a91af217fc1ec">thrust::less_equal::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:677</div></div>
+<div class="ttc" id="structthrust_1_1bit__and_html_a9faac6185332cd492afcc2e9de3f36cd"><div class="ttname"><a href="structthrust_1_1bit__and.html#a9faac6185332cd492afcc2e9de3f36cd">thrust::bit_and::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:854</div></div>
+<div class="ttc" id="structthrust_1_1logical__or_html_a96c7b2c26556ca49060aa3e363d1636d"><div class="ttname"><a href="structthrust_1_1logical__or.html#a96c7b2c26556ca49060aa3e363d1636d">thrust::logical_or::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:749</div></div>
+<div class="ttc" id="structthrust_1_1project2nd_html_a00537a490225b1eed87692778eb79b2c"><div class="ttname"><a href="structthrust_1_1project2nd.html#a00537a490225b1eed87692778eb79b2c">thrust::project2nd::operator()</a></div><div class="ttdeci">__host__ __device__ const T2 &amp; operator()(const T1 &amp;lhs, const T2 &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:1194</div></div>
+<div class="ttc" id="structthrust_1_1multiplies_html_aaf7ada41ef4491fa33cc12597a387c86"><div class="ttname"><a href="structthrust_1_1multiplies.html#aaf7ada41ef4491fa33cc12597a387c86">thrust::multiplies::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:297</div></div>
+<div class="ttc" id="structthrust_1_1divides_html_af0a3778a9e74734a24161565c29197c5"><div class="ttname"><a href="structthrust_1_1divides.html#af0a3778a9e74734a24161565c29197c5">thrust::divides::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:362</div></div>
+<div class="ttc" id="structthrust_1_1modulus_html_adc5eff8ab38ba77465b8ec111219eff0"><div class="ttname"><a href="structthrust_1_1modulus.html#adc5eff8ab38ba77465b8ec111219eff0">thrust::modulus::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:418</div></div>
+<div class="ttc" id="structthrust_1_1modulus_html"><div class="ttname"><a href="structthrust_1_1modulus.html">thrust::modulus</a></div><div class="ttdef"><b>Definition:</b> functional.h:399</div></div>
+<div class="ttc" id="structthrust_1_1bit__and_html_a4b538f3a8a2908726e400a2b0422d6bc"><div class="ttname"><a href="structthrust_1_1bit__and.html#a4b538f3a8a2908726e400a2b0422d6bc">thrust::bit_and::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:863</div></div>
+<div class="ttc" id="structthrust_1_1logical__and_html_acb9c21e767033d62082c639f35f36fe6"><div class="ttname"><a href="structthrust_1_1logical__and.html#acb9c21e767033d62082c639f35f36fe6">thrust::logical_and::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:719</div></div>
+<div class="ttc" id="structthrust_1_1minus_html_afbbc10449d679ebc88b7eb647646f1d6"><div class="ttname"><a href="structthrust_1_1minus.html#afbbc10449d679ebc88b7eb647646f1d6">thrust::minus::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:250</div></div>
+<div class="ttc" id="structthrust_1_1project2nd_html"><div class="ttname"><a href="structthrust_1_1project2nd.html">thrust::project2nd</a></div><div class="ttdef"><b>Definition:</b> functional.h:1175</div></div>
+<div class="ttc" id="structthrust_1_1less_html_ae92891359d591e73a413b04029fe9751"><div class="ttname"><a href="structthrust_1_1less.html#ae92891359d591e73a413b04029fe9751">thrust::less::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:609</div></div>
+<div class="ttc" id="structthrust_1_1maximum_html_aacd14366929f751152012689e6331331"><div class="ttname"><a href="structthrust_1_1maximum.html#aacd14366929f751152012689e6331331">thrust::maximum::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1051</div></div>
+<div class="ttc" id="structthrust_1_1logical__not_html_a825fb406f0c4471350b5b8dae930306b"><div class="ttname"><a href="structthrust_1_1logical__not.html#a825fb406f0c4471350b5b8dae930306b">thrust::logical_not::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;x) const </div><div class="ttdef"><b>Definition:</b> functional.h:801</div></div>
+<div class="ttc" id="structthrust_1_1minus_html_a52e61c0fea0a1ad2b2227751f1c3081f"><div class="ttname"><a href="structthrust_1_1minus.html#a52e61c0fea0a1ad2b2227751f1c3081f">thrust::minus::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:236</div></div>
+<div class="ttc" id="structthrust_1_1minus_html_a2990970bda79970ea05ff74e70788ec3"><div class="ttname"><a href="structthrust_1_1minus.html#a2990970bda79970ea05ff74e70788ec3">thrust::minus::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:246</div></div>
+<div class="ttc" id="structthrust_1_1maximum_html_aa74152b956e2ae2d3d824703f834660d"><div class="ttname"><a href="structthrust_1_1maximum.html#aa74152b956e2ae2d3d824703f834660d">thrust::maximum::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:1065</div></div>
+<div class="ttc" id="structthrust_1_1unary__traits_html"><div class="ttname"><a href="structthrust_1_1unary__traits.html">thrust::unary_traits</a></div><div class="ttdef"><b>Definition:</b> functional.h:34</div></div>
+<div class="ttc" id="structthrust_1_1unary__function_html"><div class="ttname"><a href="structthrust_1_1unary__function.html">thrust::unary_function</a></div><div class="ttdef"><b>Definition:</b> functional.h:70</div></div>
+<div class="ttc" id="structthrust_1_1less_html_ad1c3efb2d05baa4d284c682aae248087"><div class="ttname"><a href="structthrust_1_1less.html#ad1c3efb2d05baa4d284c682aae248087">thrust::less::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:605</div></div>
+<div class="ttc" id="structthrust_1_1plus_html"><div class="ttname"><a href="structthrust_1_1plus.html">thrust::plus</a></div><div class="ttdef"><b>Definition:</b> functional.h:175</div></div>
+<div class="ttc" id="structthrust_1_1negate_html_a2505412c4159584377e0d19a871d2af8"><div class="ttname"><a href="structthrust_1_1negate.html#a2505412c4159584377e0d19a871d2af8">thrust::negate::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:462</div></div>
+<div class="ttc" id="structthrust_1_1project1st_html_ab675abcbb09febace0781a1493431437"><div class="ttname"><a href="structthrust_1_1project1st.html#ab675abcbb09febace0781a1493431437">thrust::project1st::result_type</a></div><div class="ttdeci">T1 result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:1149</div></div>
+<div class="ttc" id="structthrust_1_1equal__to_html_a0f32d9c8bab5264df5f9171f8e4d34e7"><div class="ttname"><a href="structthrust_1_1equal__to.html#a0f32d9c8bab5264df5f9171f8e4d34e7">thrust::equal_to::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:507</div></div>
+<div class="ttc" id="structthrust_1_1modulus_html_a0faac8651757e376077ae266a3a4bf39"><div class="ttname"><a href="structthrust_1_1modulus.html#a0faac8651757e376077ae266a3a4bf39">thrust::modulus::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:414</div></div>
+<div class="ttc" id="structthrust_1_1equal__to_html_a3ca5e0eaf963998967b2af9853af6491"><div class="ttname"><a href="structthrust_1_1equal__to.html#a3ca5e0eaf963998967b2af9853af6491">thrust::equal_to::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:493</div></div>
+<div class="ttc" id="structthrust_1_1negate_html"><div class="ttname"><a href="structthrust_1_1negate.html">thrust::negate</a></div><div class="ttdef"><b>Definition:</b> functional.h:452</div></div>
+<div class="ttc" id="structthrust_1_1equal__to_html_adfc35977643a5bef6863950e3b15363b"><div class="ttname"><a href="structthrust_1_1equal__to.html#adfc35977643a5bef6863950e3b15363b">thrust::equal_to::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:498</div></div>
+<div class="ttc" id="structthrust_1_1equal__to_html_ac169b355fdcfd73a7e1bb671f2e5a010"><div class="ttname"><a href="structthrust_1_1equal__to.html#ac169b355fdcfd73a7e1bb671f2e5a010">thrust::equal_to::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:503</div></div>
+<div class="ttc" id="structthrust_1_1maximum_html_a2ed63433e6513dce34f3cbc7179b382f"><div class="ttname"><a href="structthrust_1_1maximum.html#a2ed63433e6513dce34f3cbc7179b382f">thrust::maximum::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:1061</div></div>
+<div class="ttc" id="structthrust_1_1multiplies_html_aa43a33801f0eaec9d76ece2d7c83dc1b"><div class="ttname"><a href="structthrust_1_1multiplies.html#aa43a33801f0eaec9d76ece2d7c83dc1b">thrust::multiplies::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:302</div></div>
+<div class="ttc" id="structthrust_1_1project1st_html_ae5b669bb582f2cf0eb9d25d20964e394"><div class="ttname"><a href="structthrust_1_1project1st.html#ae5b669bb582f2cf0eb9d25d20964e394">thrust::project1st::first_argument_type</a></div><div class="ttdeci">T1 first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1139</div></div>
+<div class="ttc" id="structthrust_1_1project1st_html_a3c191d875b22f76624a94692b753eb7b"><div class="ttname"><a href="structthrust_1_1project1st.html#a3c191d875b22f76624a94692b753eb7b">thrust::project1st::operator()</a></div><div class="ttdeci">__host__ __device__ const T1 &amp; operator()(const T1 &amp;lhs, const T2 &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:1153</div></div>
+<div class="ttc" id="structthrust_1_1binary__function_html_a9b3cc1d4c5164dfc135269b9d0775eb1"><div class="ttname"><a href="structthrust_1_1binary__function.html#a9b3cc1d4c5164dfc135269b9d0775eb1">thrust::binary_function::first_argument_type</a></div><div class="ttdeci">Argument1 first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:116</div></div>
+<div class="ttc" id="structthrust_1_1plus_html_abb9a17e1b144d9390c61c8677d812a7d"><div class="ttname"><a href="structthrust_1_1plus.html#abb9a17e1b144d9390c61c8677d812a7d">thrust::plus::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:180</div></div>
+<div class="ttc" id="structthrust_1_1less__equal_html_a184e0f501a2caa337f1d507fdbaf3733"><div class="ttname"><a href="structthrust_1_1less__equal.html#a184e0f501a2caa337f1d507fdbaf3733">thrust::less_equal::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:668</div></div>
+<div class="ttc" id="structthrust_1_1minimum_html_a05dc920a11f559093d4251e591bc05a3"><div class="ttname"><a href="structthrust_1_1minimum.html#a05dc920a11f559093d4251e591bc05a3">thrust::minimum::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1098</div></div>
+<div class="ttc" id="structthrust_1_1minimum_html_ad72ad3d9072e412dceef933dbad7cddf"><div class="ttname"><a href="structthrust_1_1minimum.html#ad72ad3d9072e412dceef933dbad7cddf">thrust::minimum::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:1108</div></div>
+<div class="ttc" id="structthrust_1_1multiplies_html_a69070a6a27c5a804495475896f223a04"><div class="ttname"><a href="structthrust_1_1multiplies.html#a69070a6a27c5a804495475896f223a04">thrust::multiplies::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:306</div></div>
+<div class="ttc" id="structthrust_1_1divides_html_a5a9908ff189f7d8b4da65cd25bfa76c2"><div class="ttname"><a href="structthrust_1_1divides.html#a5a9908ff189f7d8b4da65cd25bfa76c2">thrust::divides::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:358</div></div>
+<div class="ttc" id="structthrust_1_1project2nd_html_a67d7f79876e55073f0b8d26db402ff92"><div class="ttname"><a href="structthrust_1_1project2nd.html#a67d7f79876e55073f0b8d26db402ff92">thrust::project2nd::result_type</a></div><div class="ttdeci">T2 result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:1190</div></div>
+<div class="ttc" id="structthrust_1_1greater__equal_html_ae35f3590102166092e6db120a43cd006"><div class="ttname"><a href="structthrust_1_1greater__equal.html#ae35f3590102166092e6db120a43cd006">thrust::greater_equal::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:643</div></div>
+<div class="ttc" id="structthrust_1_1less_html_a80fc56b3670800fdcd46660789024fb7"><div class="ttname"><a href="structthrust_1_1less.html#a80fc56b3670800fdcd46660789024fb7">thrust::less::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:595</div></div>
+<div class="ttc" id="structthrust_1_1greater_html_af4cfd2ac9948a561d509bca956a7c4ce"><div class="ttname"><a href="structthrust_1_1greater.html#af4cfd2ac9948a561d509bca956a7c4ce">thrust::greater::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:575</div></div>
+<div class="ttc" id="structthrust_1_1binary__function_html"><div class="ttname"><a href="structthrust_1_1binary__function.html">thrust::binary_function</a></div><div class="ttdef"><b>Definition:</b> functional.h:111</div></div>
+<div class="ttc" id="structthrust_1_1multiplies_html"><div class="ttname"><a href="structthrust_1_1multiplies.html">thrust::multiplies</a></div><div class="ttdef"><b>Definition:</b> functional.h:287</div></div>
+<div class="ttc" id="structthrust_1_1project2nd_html_a557659fa2a7826aec4b5a36cf804fb9b"><div class="ttname"><a href="structthrust_1_1project2nd.html#a557659fa2a7826aec4b5a36cf804fb9b">thrust::project2nd::first_argument_type</a></div><div class="ttdeci">T1 first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1180</div></div>
+<div class="ttc" id="structthrust_1_1identity_html"><div class="ttname"><a href="structthrust_1_1identity.html">thrust::identity</a></div><div class="ttdef"><b>Definition:</b> functional.h:1004</div></div>
+<div class="ttc" id="structthrust_1_1multiplies_html_a17ac8de13340919446a13a42aaf71198"><div class="ttname"><a href="structthrust_1_1multiplies.html#a17ac8de13340919446a13a42aaf71198">thrust::multiplies::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:292</div></div>
+<div class="ttc" id="group__function__object__adaptors_html_gaffb30cb5d0791282f46544c8156a41b3"><div class="ttname"><a href="group__function__object__adaptors.html#gaffb30cb5d0791282f46544c8156a41b3">thrust::not2</a></div><div class="ttdeci">__host__ __device__ binary_negate&lt; BinaryPredicate &gt; not2(const BinaryPredicate &amp;pred)</div></div>
+<div class="ttc" id="structthrust_1_1binary__negate_html_a7942fecaf5a2ef270e75fc15dbff50c5"><div class="ttname"><a href="structthrust_1_1binary__negate.html#a7942fecaf5a2ef270e75fc15dbff50c5">thrust::binary_negate::binary_negate</a></div><div class="ttdeci">__host__ __device__ binary_negate(Predicate p)</div><div class="ttdef"><b>Definition:</b> functional.h:1279</div></div>
+<div class="ttc" id="structthrust_1_1binary__negate_html_a665d619461b3cc47a7088c4b30cbbffa"><div class="ttname"><a href="structthrust_1_1binary__negate.html#a665d619461b3cc47a7088c4b30cbbffa">thrust::binary_negate::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const typename Predicate::first_argument_type &amp;x, const typename Predicate::second_argument_type &amp;y)</div><div class="ttdef"><b>Definition:</b> functional.h:1284</div></div>
+<div class="ttc" id="structthrust_1_1greater__equal_html_ac6ba40a148d0e5c3e41092e71d0ea057"><div class="ttname"><a href="structthrust_1_1greater__equal.html#ac6ba40a148d0e5c3e41092e71d0ea057">thrust::greater_equal::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:634</div></div>
+<div class="ttc" id="structthrust_1_1greater__equal_html_a993fafbabaa4803510efbfe5d1e18489"><div class="ttname"><a href="structthrust_1_1greater__equal.html#a993fafbabaa4803510efbfe5d1e18489">thrust::greater_equal::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:629</div></div>
+<div class="ttc" id="structthrust_1_1bit__and_html_aebb29986e5fb789b6da3195ee513c7fd"><div class="ttname"><a href="structthrust_1_1bit__and.html#aebb29986e5fb789b6da3195ee513c7fd">thrust::bit_and::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:849</div></div>
+<div class="ttc" id="structthrust_1_1minimum_html_a65db0d4d8d929247d2ce842797b34ea0"><div class="ttname"><a href="structthrust_1_1minimum.html#a65db0d4d8d929247d2ce842797b34ea0">thrust::minimum::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:1112</div></div>
+<div class="ttc" id="structthrust_1_1not__equal__to_html_ae57f2f0541f081f7a0df4e1aa801b7c9"><div class="ttname"><a href="structthrust_1_1not__equal__to.html#ae57f2f0541f081f7a0df4e1aa801b7c9">thrust::not_equal_to::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:537</div></div>
+<div class="ttc" id="structthrust_1_1equal__to_html"><div class="ttname"><a href="structthrust_1_1equal__to.html">thrust::equal_to</a></div><div class="ttdef"><b>Definition:</b> functional.h:488</div></div>
+<div class="ttc" id="structthrust_1_1divides_html_a3a6c1e41948c2e343d2da0ea8b024670"><div class="ttname"><a href="structthrust_1_1divides.html#a3a6c1e41948c2e343d2da0ea8b024670">thrust::divides::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:353</div></div>
+<div class="ttc" id="structthrust_1_1bit__xor_html_ad7c80d0bda243f7559b34d884edbe156"><div class="ttname"><a href="structthrust_1_1bit__xor.html#ad7c80d0bda243f7559b34d884edbe156">thrust::bit_xor::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:964</div></div>
+<div class="ttc" id="structthrust_1_1unary__function_html_add99fadcf35ce6b0c8fab6ca0a6d7479"><div class="ttname"><a href="structthrust_1_1unary__function.html#add99fadcf35ce6b0c8fab6ca0a6d7479">thrust::unary_function::argument_type</a></div><div class="ttdeci">Argument argument_type</div><div class="ttdoc">The type of the function object&#39;s argument. </div><div class="ttdef"><b>Definition:</b> functional.h:75</div></div>
+<div class="ttc" id="structthrust_1_1minimum_html_aa1dba1049dbfd6b8405074159f0facab"><div class="ttname"><a href="structthrust_1_1minimum.html#aa1dba1049dbfd6b8405074159f0facab">thrust::minimum::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1103</div></div>
+<div class="ttc" id="structthrust_1_1greater_html_ab84d56b1e1c0bd0ffb84ebf75c033bee"><div class="ttname"><a href="structthrust_1_1greater.html#ab84d56b1e1c0bd0ffb84ebf75c033bee">thrust::greater::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:561</div></div>
+<div class="ttc" id="structthrust_1_1bit__or_html_a22a0c55fbb00adf458d6185b5e97b468"><div class="ttname"><a href="structthrust_1_1bit__or.html#a22a0c55fbb00adf458d6185b5e97b468">thrust::bit_or::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:914</div></div>
+<div class="ttc" id="structthrust_1_1project1st_html"><div class="ttname"><a href="structthrust_1_1project1st.html">thrust::project1st</a></div><div class="ttdef"><b>Definition:</b> functional.h:1134</div></div>
+<div class="ttc" id="structthrust_1_1binary__function_html_ab5e983a91c8a78e7425306a0d338a522"><div class="ttname"><a href="structthrust_1_1binary__function.html#ab5e983a91c8a78e7425306a0d338a522">thrust::binary_function::result_type</a></div><div class="ttdeci">Result result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:126</div></div>
+<div class="ttc" id="structthrust_1_1bit__and_html_a5dab405f5dfc1babbb8efb2366249014"><div class="ttname"><a href="structthrust_1_1bit__and.html#a5dab405f5dfc1babbb8efb2366249014">thrust::bit_and::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:859</div></div>
+<div class="ttc" id="structthrust_1_1plus_html_a03198abcc0864f722ae275075b98371c"><div class="ttname"><a href="structthrust_1_1plus.html#a03198abcc0864f722ae275075b98371c">thrust::plus::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:194</div></div>
+<div class="ttc" id="structthrust_1_1less_html_a36a01c5808b71c012b2ea90d962313dd"><div class="ttname"><a href="structthrust_1_1less.html#a36a01c5808b71c012b2ea90d962313dd">thrust::less::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:600</div></div>
+<div class="ttc" id="structthrust_1_1minimum_html"><div class="ttname"><a href="structthrust_1_1minimum.html">thrust::minimum</a></div><div class="ttdef"><b>Definition:</b> functional.h:1093</div></div>
+<div class="ttc" id="structthrust_1_1identity_html_ae1b9d4c0d3530900d5c55939d629cc5b"><div class="ttname"><a href="structthrust_1_1identity.html#ae1b9d4c0d3530900d5c55939d629cc5b">thrust::identity::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:1014</div></div>
+<div class="ttc" id="structthrust_1_1binary__traits_html"><div class="ttname"><a href="structthrust_1_1binary__traits.html">thrust::binary_traits</a></div><div class="ttdef"><b>Definition:</b> functional.h:36</div></div>
+<div class="ttc" id="structthrust_1_1logical__and_html_a2d784ad9466de4854860f7274c8c37de"><div class="ttname"><a href="structthrust_1_1logical__and.html#a2d784ad9466de4854860f7274c8c37de">thrust::logical_and::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:715</div></div>
+<div class="ttc" id="structthrust_1_1unary__function_html_acba3e9e21e7a3ec6e856f5f402bbdc2b"><div class="ttname"><a href="structthrust_1_1unary__function.html#acba3e9e21e7a3ec6e856f5f402bbdc2b">thrust::unary_function::result_type</a></div><div class="ttdeci">Result result_type</div><div class="ttdoc">The type of the function object&#39;s result. </div><div class="ttdef"><b>Definition:</b> functional.h:80</div></div>
+<div class="ttc" id="structthrust_1_1divides_html_a1d940e3303698676913747ef9b6b9fb3"><div class="ttname"><a href="structthrust_1_1divides.html#a1d940e3303698676913747ef9b6b9fb3">thrust::divides::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:348</div></div>
+<div class="ttc" id="structthrust_1_1less__equal_html_afed07af9e329cee36a447acc66e686ea"><div class="ttname"><a href="structthrust_1_1less__equal.html#afed07af9e329cee36a447acc66e686ea">thrust::less_equal::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:673</div></div>
+<div class="ttc" id="structthrust_1_1identity_html_a4fc242fa645a4c1f53e7b69d19a487f6"><div class="ttname"><a href="structthrust_1_1identity.html#a4fc242fa645a4c1f53e7b69d19a487f6">thrust::identity::argument_type</a></div><div class="ttdeci">T argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1009</div></div>
+<div class="ttc" id="structthrust_1_1greater__equal_html_a70c0ff242c6b72bc80808bede085dd5b"><div class="ttname"><a href="structthrust_1_1greater__equal.html#a70c0ff242c6b72bc80808bede085dd5b">thrust::greater_equal::result_type</a></div><div class="ttdeci">bool result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:639</div></div>
+<div class="ttc" id="structthrust_1_1bit__or_html_a3d59c014b3df60bf94f5eabf255f87c4"><div class="ttname"><a href="structthrust_1_1bit__or.html#a3d59c014b3df60bf94f5eabf255f87c4">thrust::bit_or::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:918</div></div>
+<div class="ttc" id="structthrust_1_1bit__xor_html_ab39070cb9de8c930844bce8cce5870df"><div class="ttname"><a href="structthrust_1_1bit__xor.html#ab39070cb9de8c930844bce8cce5870df">thrust::bit_xor::operator()</a></div><div class="ttdeci">__host__ __device__ T operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:973</div></div>
+<div class="ttc" id="group__function__object__adaptors_html_gabbb973566242fd692f159d8ab39cf5e9"><div class="ttname"><a href="group__function__object__adaptors.html#gabbb973566242fd692f159d8ab39cf5e9">thrust::not1</a></div><div class="ttdeci">__host__ __device__ unary_negate&lt; Predicate &gt; not1(const Predicate &amp;pred)</div></div>
+<div class="ttc" id="structthrust_1_1plus_html_a1a533a2fa811b322d94dd98299bdaa6e"><div class="ttname"><a href="structthrust_1_1plus.html#a1a533a2fa811b322d94dd98299bdaa6e">thrust::plus::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:190</div></div>
+<div class="ttc" id="structthrust_1_1logical__and_html_a33c2049d6341bc2d7e4331a2296f3cee"><div class="ttname"><a href="structthrust_1_1logical__and.html#a33c2049d6341bc2d7e4331a2296f3cee">thrust::logical_and::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:710</div></div>
+<div class="ttc" id="structthrust_1_1not__equal__to_html_aa42c9e2b305fe3b2a0c96e9a60b01be2"><div class="ttname"><a href="structthrust_1_1not__equal__to.html#aa42c9e2b305fe3b2a0c96e9a60b01be2">thrust::not_equal_to::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:527</div></div>
+<div class="ttc" id="structthrust_1_1identity_html_ab49295ededef504245bff6c1151f25c2"><div class="ttname"><a href="structthrust_1_1identity.html#ab49295ededef504245bff6c1151f25c2">thrust::identity::operator()</a></div><div class="ttdeci">__host__ __device__ const T &amp; operator()(const T &amp;x) const </div><div class="ttdef"><b>Definition:</b> functional.h:1018</div></div>
+<div class="ttc" id="structthrust_1_1less__equal_html_a1d099d17e084e73d50fa9728021c2219"><div class="ttname"><a href="structthrust_1_1less__equal.html#a1d099d17e084e73d50fa9728021c2219">thrust::less_equal::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:663</div></div>
+<div class="ttc" id="structthrust_1_1plus_html_a816da1dcd50d577b04793e19a0f1e02d"><div class="ttname"><a href="structthrust_1_1plus.html#a816da1dcd50d577b04793e19a0f1e02d">thrust::plus::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:185</div></div>
+<div class="ttc" id="structthrust_1_1unary__negate_html_a5fa0f16affb645867ae56f067ad5bca8"><div class="ttname"><a href="structthrust_1_1unary__negate.html#a5fa0f16affb645867ae56f067ad5bca8">thrust::unary_negate::unary_negate</a></div><div class="ttdeci">__host__ __device__ unary_negate(Predicate p)</div><div class="ttdef"><b>Definition:</b> functional.h:1225</div></div>
+<div class="ttc" id="structthrust_1_1greater_html_ac4d040a5ef14cb36d23a089d0c917c12"><div class="ttname"><a href="structthrust_1_1greater.html#ac4d040a5ef14cb36d23a089d0c917c12">thrust::greater::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:566</div></div>
+<div class="ttc" id="structthrust_1_1bit__or_html_a514c4300640adbbe7fdcdcee1f83db10"><div class="ttname"><a href="structthrust_1_1bit__or.html#a514c4300640adbbe7fdcdcee1f83db10">thrust::bit_or::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:904</div></div>
+<div class="ttc" id="structthrust_1_1project2nd_html_ae7d3d1f293e5996cdafb850894a9cb67"><div class="ttname"><a href="structthrust_1_1project2nd.html#ae7d3d1f293e5996cdafb850894a9cb67">thrust::project2nd::second_argument_type</a></div><div class="ttdeci">T2 second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1185</div></div>
+<div class="ttc" id="structthrust_1_1unary__negate_html_a6023a7c1d67f63e644c899c47ce7d58f"><div class="ttname"><a href="structthrust_1_1unary__negate.html#a6023a7c1d67f63e644c899c47ce7d58f">thrust::unary_negate::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const typename Predicate::argument_type &amp;x)</div><div class="ttdef"><b>Definition:</b> functional.h:1230</div></div>
+<div class="ttc" id="structthrust_1_1logical__or_html_a2313e2a5403f79adbf9ce43797cf5ff2"><div class="ttname"><a href="structthrust_1_1logical__or.html#a2313e2a5403f79adbf9ce43797cf5ff2">thrust::logical_or::operator()</a></div><div class="ttdeci">__host__ __device__ bool operator()(const T &amp;lhs, const T &amp;rhs) const </div><div class="ttdef"><b>Definition:</b> functional.h:753</div></div>
+<div class="ttc" id="structthrust_1_1maximum_html_a77753b2d3d9275385cb62edb4872f716"><div class="ttname"><a href="structthrust_1_1maximum.html#a77753b2d3d9275385cb62edb4872f716">thrust::maximum::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1056</div></div>
+<div class="ttc" id="structthrust_1_1logical__and_html_ad3d87f755f8d48bf1ebf143029979de7"><div class="ttname"><a href="structthrust_1_1logical__and.html#ad3d87f755f8d48bf1ebf143029979de7">thrust::logical_and::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:705</div></div>
+<div class="ttc" id="structthrust_1_1logical__not_html_a912397d5cfdd24d7ff8d228a2e3b34aa"><div class="ttname"><a href="structthrust_1_1logical__not.html#a912397d5cfdd24d7ff8d228a2e3b34aa">thrust::logical_not::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:792</div></div>
+<div class="ttc" id="structthrust_1_1project1st_html_ae3906bdf66266016c2c532a224d7a0fd"><div class="ttname"><a href="structthrust_1_1project1st.html#ae3906bdf66266016c2c532a224d7a0fd">thrust::project1st::second_argument_type</a></div><div class="ttdeci">T2 second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:1144</div></div>
+<div class="ttc" id="structthrust_1_1negate_html_a25132d3f4fe85bf205a3e8f199b3895d"><div class="ttname"><a href="structthrust_1_1negate.html#a25132d3f4fe85bf205a3e8f199b3895d">thrust::negate::argument_type</a></div><div class="ttdeci">T argument_type</div><div class="ttdoc">The type of the function object&#39;s argument. </div><div class="ttdef"><b>Definition:</b> functional.h:457</div></div>
+<div class="ttc" id="structthrust_1_1modulus_html_a4d7e7438ff6ea69402dce6f9eb5e0a9c"><div class="ttname"><a href="structthrust_1_1modulus.html#a4d7e7438ff6ea69402dce6f9eb5e0a9c">thrust::modulus::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:409</div></div>
+<div class="ttc" id="structthrust_1_1divides_html"><div class="ttname"><a href="structthrust_1_1divides.html">thrust::divides</a></div><div class="ttdef"><b>Definition:</b> functional.h:343</div></div>
+<div class="ttc" id="structthrust_1_1logical__or_html_a8423409d58f51661128476c00dcf1fec"><div class="ttname"><a href="structthrust_1_1logical__or.html#a8423409d58f51661128476c00dcf1fec">thrust::logical_or::second_argument_type</a></div><div class="ttdeci">T second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:744</div></div>
+<div class="ttc" id="structthrust_1_1logical__or_html_a9e80932b2eede446b0c5b74097806a92"><div class="ttname"><a href="structthrust_1_1logical__or.html#a9e80932b2eede446b0c5b74097806a92">thrust::logical_or::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:739</div></div>
+<div class="ttc" id="structthrust_1_1binary__function_html_ae0ae5ce7917836da8a4c60ea1748816f"><div class="ttname"><a href="structthrust_1_1binary__function.html#ae0ae5ce7917836da8a4c60ea1748816f">thrust::binary_function::second_argument_type</a></div><div class="ttdeci">Argument2 second_argument_type</div><div class="ttdoc">The type of the function object&#39;s second argument. </div><div class="ttdef"><b>Definition:</b> functional.h:121</div></div>
+<div class="ttc" id="structthrust_1_1minus_html"><div class="ttname"><a href="structthrust_1_1minus.html">thrust::minus</a></div><div class="ttdef"><b>Definition:</b> functional.h:231</div></div>
+<div class="ttc" id="structthrust_1_1modulus_html_a57ed078f75c2aeb243659c8c589d5ca1"><div class="ttname"><a href="structthrust_1_1modulus.html#a57ed078f75c2aeb243659c8c589d5ca1">thrust::modulus::first_argument_type</a></div><div class="ttdeci">T first_argument_type</div><div class="ttdoc">The type of the function object&#39;s first argument. </div><div class="ttdef"><b>Definition:</b> functional.h:404</div></div>
+<div class="ttc" id="structthrust_1_1bit__xor_html_a03fa09694623cfd67a1ac0fe47ac2612"><div class="ttname"><a href="structthrust_1_1bit__xor.html#a03fa09694623cfd67a1ac0fe47ac2612">thrust::bit_xor::result_type</a></div><div class="ttdeci">T result_type</div><div class="ttdoc">The type of the function object&#39;s result;. </div><div class="ttdef"><b>Definition:</b> functional.h:969</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:07 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:29 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

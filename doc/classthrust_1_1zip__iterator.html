@@ -92,16 +92,16 @@ class thrust::zip_iterator&lt; IteratorTuple &gt;</h3>
 <div class="line">thrust::device_vector&lt;<span class="keywordtype">int</span>&gt; int_v(3);</div>
 <div class="line">int_v[0] = 0; int_v[1] = 1; int_v[2] = 2;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;float&gt; float_v(3);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> float_v(3);</div>
 <div class="line">float_v[0] = 0.0f; float_v[1] = 1.0;f float_v[2] = 2.0f;</div>
 <div class="line"></div>
-<div class="line">thrust::device_vector&lt;char&gt; char_v(3);</div>
+<div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;char&gt;</a> char_v(3);</div>
 <div class="line">char_v[0] = <span class="charliteral">&#39;a&#39;</span>; char_v[1] = <span class="charliteral">&#39;b&#39;</span>; char_v[2] = <span class="charliteral">&#39;c&#39;</span>;</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// typedef these iterators for shorthand</span></div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;int&gt;::iterator   IntIterator;</div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;float&gt;::iterator FloatIterator;</div>
-<div class="line"><span class="keyword">typedef</span> thrust::device_vector&lt;char&gt;::iterator  CharIterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;::iterator</a>   IntIterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;::iterator</a> FloatIterator;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;char&gt;::iterator</a>  CharIterator;</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// typedef a tuple of these iterators</span></div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="classthrust_1_1tuple.html">thrust::tuple&lt;IntIterator, FloatIterator, CharIterator&gt;</a> IteratorTuple;</div>
@@ -129,12 +129,12 @@ class thrust::zip_iterator&lt; IteratorTuple &gt;</h3>
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  thrust::device_vector&lt;int&gt; int_in(3), int_out(3);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;int&gt;</a> int_in(3), int_out(3);</div>
 <div class="line">  int_in[0] = 0;</div>
 <div class="line">  int_in[1] = 1;</div>
 <div class="line">  int_in[2] = 2;</div>
 <div class="line"></div>
-<div class="line">  thrust::device_vector&lt;float&gt; float_in(3), float_out(3);</div>
+<div class="line">  <a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> float_in(3), float_out(3);</div>
 <div class="line">  float_in[0] =  0.0f;</div>
 <div class="line">  float_in[1] = 10.0f;</div>
 <div class="line">  float_in[2] = 20.0f;</div>
@@ -295,7 +295,7 @@ template&lt;typename IteratorTuple&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 12 2015 13:59:08 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 2 2015 13:21:31 for thrust by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
