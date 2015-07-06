@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Thrust v1.8.1 release
+title: Thrust v1.5.1 release
 category: news
 ---
 ## {{ page.title }} ##
 
-We've posted a new download for [Thrust v1.8.1] [1].  This version is being distributed with CUDA 7.0 and fixes a [`for_each` bug][2] discovered in v1.8.0.
+We've posted a new download for [Thrust v1.5.1] [1].  This version is being distributed with CUDA 4.1 (final) and fixes an uncommon [sort bug][2] discovered in v1.5.0.
 
- [1]: http://github.com/thrust/thrust/releases/tag/1.8.1 
- [2]: http://github.com/thrust/thrust/blob/1.8.1/CHANGELOG
+ [1]: http://code.google.com/p/thrust/downloads/list
+ [2]: http://code.google.com/p/thrust/source/browse/CHANGELOG?name=1.5.1
 
