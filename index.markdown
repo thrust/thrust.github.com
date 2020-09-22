@@ -14,6 +14,7 @@ GPUs and multicore CPUs. **Interoperability** with established technologies
 (such as CUDA, TBB, and OpenMP) facilitates integration with existing
 software. Develop **high-performance** applications rapidly with Thrust!
 
+<!--
 Recent News
 -----------
 
@@ -24,6 +25,7 @@ Recent News
 </ul>
 		
 <p><a href="/news.html" class="more">View all news »</a></p>
+--->
 
 Examples
 --------
