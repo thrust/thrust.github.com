@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::device_ptr&lt; T &gt; Class Template Reference</title>
+<title>Thrust: thrust::device_ptr&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -45,44 +45,64 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classthrust_1_1device__ptr-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">thrust::device_ptr&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a> &raquo; <a class="el" href="group__memory__management__classes.html">Memory Management Classes</a></div></div>  </div>
+<div class="title">thrust::device_ptr&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="device__ptr_8h_source.html">thrust/device_ptr.h</a>&gt;</code></p>
+<p><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> is a pointer-like object which points to an object that resides in memory associated with the <a class="el" href="group__execution__policies_ga330d16be82b0518b6a37d026c2811e7e.html#ga330d16be82b0518b6a37d026c2811e7e">device</a> system.  
+ <a href="classthrust_1_1device__ptr.html#details">More...</a></p>
 
-<p>Inherits pointer&lt; T, thrust::device_system_tag, thrust::device_reference&lt; T &gt;, thrust::device_ptr&lt; T &gt; &gt;.</p>
+<p><code>#include &lt;<a class="el" href="device__ptr_8h_source.html">thrust/device_ptr.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6bfd5b09378e07114b33bc363796abf4"><td class="memItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_a6bfd5b09378e07114b33bc363796abf4.html#a6bfd5b09378e07114b33bc363796abf4">device_ptr</a> ()</td></tr>
+<tr class="memdesc:a6bfd5b09378e07114b33bc363796abf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a null <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>.  <a href="classthrust_1_1device__ptr_a6bfd5b09378e07114b33bc363796abf4.html#a6bfd5b09378e07114b33bc363796abf4">More...</a><br /></td></tr>
 <tr class="separator:a6bfd5b09378e07114b33bc363796abf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb11dc76ec3cb631c9d54803a703a234"><td class="memTemplParams" colspan="2">template&lt;typename OtherT &gt; </td></tr>
-<tr class="memitem:abb11dc76ec3cb631c9d54803a703a234"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_abb11dc76ec3cb631c9d54803a703a234.html#abb11dc76ec3cb631c9d54803a703a234">device_ptr</a> (OtherT *ptr)</td></tr>
-<tr class="separator:abb11dc76ec3cb631c9d54803a703a234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85edb8dc94d23189dd1ffcdc0849a764"><td class="memTemplParams" colspan="2">template&lt;typename OtherT &gt; </td></tr>
-<tr class="memitem:a85edb8dc94d23189dd1ffcdc0849a764"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_a85edb8dc94d23189dd1ffcdc0849a764.html#a85edb8dc94d23189dd1ffcdc0849a764">device_ptr</a> (const <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; OtherT &gt; &amp;other)</td></tr>
-<tr class="separator:a85edb8dc94d23189dd1ffcdc0849a764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd9ea4bf1effec577f09e25f17548ed"><td class="memTemplParams" colspan="2">template&lt;typename OtherT &gt; </td></tr>
-<tr class="memitem:accd9ea4bf1effec577f09e25f17548ed"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_accd9ea4bf1effec577f09e25f17548ed.html#accd9ea4bf1effec577f09e25f17548ed">operator=</a> (const <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; OtherT &gt; &amp;other)</td></tr>
-<tr class="separator:accd9ea4bf1effec577f09e25f17548ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364ab64a6ba00de2d593a570d97810cf"><td class="memItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_a364ab64a6ba00de2d593a570d97810cf.html#a364ab64a6ba00de2d593a570d97810cf">device_ptr</a> (std::nullptr_t)</td></tr>
+<tr class="memdesc:a364ab64a6ba00de2d593a570d97810cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a null <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>.  <a href="classthrust_1_1device__ptr_a364ab64a6ba00de2d593a570d97810cf.html#a364ab64a6ba00de2d593a570d97810cf">More...</a><br /></td></tr>
+<tr class="separator:a364ab64a6ba00de2d593a570d97810cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f9cc00e679253aeb20af70190c61bb"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ad1f9cc00e679253aeb20af70190c61bb"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_ad1f9cc00e679253aeb20af70190c61bb.html#ad1f9cc00e679253aeb20af70190c61bb">device_ptr</a> (U *ptr)</td></tr>
+<tr class="memdesc:ad1f9cc00e679253aeb20af70190c61bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from a raw pointer which is convertible to <code>T*</code>.  <a href="classthrust_1_1device__ptr_ad1f9cc00e679253aeb20af70190c61bb.html#ad1f9cc00e679253aeb20af70190c61bb">More...</a><br /></td></tr>
+<tr class="separator:ad1f9cc00e679253aeb20af70190c61bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3261aac503e154bb9fbd2cab39463880"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a3261aac503e154bb9fbd2cab39463880"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_a3261aac503e154bb9fbd2cab39463880.html#a3261aac503e154bb9fbd2cab39463880">device_ptr</a> (<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; U &gt; const &amp;other)</td></tr>
+<tr class="memdesc:a3261aac503e154bb9fbd2cab39463880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construct a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from another <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> whose pointer type is convertible to <code>T*</code>.  <a href="classthrust_1_1device__ptr_a3261aac503e154bb9fbd2cab39463880.html#a3261aac503e154bb9fbd2cab39463880">More...</a><br /></td></tr>
+<tr class="separator:a3261aac503e154bb9fbd2cab39463880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2face8b7e21c1f254c482069e8e260f4"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a2face8b7e21c1f254c482069e8e260f4"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_a2face8b7e21c1f254c482069e8e260f4.html#a2face8b7e21c1f254c482069e8e260f4">operator=</a> (<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; U &gt; const &amp;other)</td></tr>
+<tr class="memdesc:a2face8b7e21c1f254c482069e8e260f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> to point to the same object as another <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> whose pointer type is convertible to <code>T*</code>.  <a href="classthrust_1_1device__ptr_a2face8b7e21c1f254c482069e8e260f4.html#a2face8b7e21c1f254c482069e8e260f4">More...</a><br /></td></tr>
+<tr class="separator:a2face8b7e21c1f254c482069e8e260f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe57fd7ee7cf339e1b69e7fb48b76880"><td class="memItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr_afe57fd7ee7cf339e1b69e7fb48b76880.html#afe57fd7ee7cf339e1b69e7fb48b76880">operator=</a> (std::nullptr_t)</td></tr>
+<tr class="memdesc:afe57fd7ee7cf339e1b69e7fb48b76880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> to null.  <a href="classthrust_1_1device__ptr_afe57fd7ee7cf339e1b69e7fb48b76880.html#afe57fd7ee7cf339e1b69e7fb48b76880">More...</a><br /></td></tr>
+<tr class="separator:afe57fd7ee7cf339e1b69e7fb48b76880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d0b90a8f30fdf4061369b8d0b11e19"><td class="memItemLeft" align="right" valign="top"><a id="a92d0b90a8f30fdf4061369b8d0b11e19"></a>
+__host__ __device__ T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr.html#a92d0b90a8f30fdf4061369b8d0b11e19">get</a> () const</td></tr>
+<tr class="memdesc:a92d0b90a8f30fdf4061369b8d0b11e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the raw pointer that this <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> points to. <br /></td></tr>
+<tr class="separator:a92d0b90a8f30fdf4061369b8d0b11e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class thrust::device_ptr&lt; T &gt;</h3>
 
-<p><code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> stores a pointer to an object allocated in device memory. This type provides type safety when dispatching standard algorithms on ranges resident in device memory.</p>
-<p><code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> has pointer semantics: it may be dereferenced safely from the host and may be manipulated with pointer arithmetic.</p>
-<p><code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> can be created with the functions device_malloc, device_new, or device_pointer_cast, or by explicitly calling its constructor with a raw pointer.</p>
-<p>The raw pointer encapsulated by a <code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> may be obtained by either its <code>get</code> method or the <code>raw_pointer_cast</code> free function.</p>
-<dl class="section note"><dt>Note</dt><dd><code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> is not a smart pointer; it is the programmer's responsibility to deallocate memory pointed to by <code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code>.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__allocation__functions_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">device_malloc</a> </dd>
+<p><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> is a pointer-like object which points to an object that resides in memory associated with the <a class="el" href="group__execution__policies_ga330d16be82b0518b6a37d026c2811e7e.html#ga330d16be82b0518b6a37d026c2811e7e">device</a> system. </p>
+<p><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> has pointer semantics: it may be dereferenced safely from anywhere, including the <a class="el" href="group__execution__policies_ga98394c05ebaaac46c17cf0ec970695e0.html#ga98394c05ebaaac46c17cf0ec970695e0">host</a>, and may be manipulated with pointer arithmetic.</p>
+<p><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> can be created with <a class="el" href="group__memory__management_ga6a56463dcea00aaefa0371f80a462f4e.html#ga6a56463dcea00aaefa0371f80a462f4e">device_new</a>, <a class="el" href="group__memory__management_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">device_malloc</a>, <a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a>, <a class="el" href="classthrust_1_1device__allocator.html">device_allocator</a>, or <a class="el" href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">device_pointer_cast</a>, or by explicitly calling its constructor with a raw pointer.</p>
+<p>The raw pointer contained in a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> may be obtained via <code>get</code> member function or the <a class="el" href="group__memory__management_ga8855ccf5c15c0529206c3cc9cf348af1.html#ga8855ccf5c15c0529206c3cc9cf348af1">raw_pointer_cast</a> free function.</p>
+<p><a class="el" href="group__algorithms.html">Algorithms</a> operating on <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> types will automatically be dispatched to the <a class="el" href="group__execution__policies_ga330d16be82b0518b6a37d026c2811e7e.html#ga330d16be82b0518b6a37d026c2811e7e">device</a> system.</p>
+<dl class="section note"><dt>Note</dt><dd><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> is not a smart pointer; it is the programmer's responsibility to deallocate memory pointed to by <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__memory__management_ga6a56463dcea00aaefa0371f80a462f4e.html#ga6a56463dcea00aaefa0371f80a462f4e">device_new</a> </dd>
 <dd>
-<a class="el" href="group__allocation__functions_ga6a56463dcea00aaefa0371f80a462f4e.html#ga6a56463dcea00aaefa0371f80a462f4e">device_new</a> </dd>
+<a class="el" href="group__memory__management_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">device_malloc</a> </dd>
 <dd>
-<a class="el" href="group__memory__management__functions_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">device_pointer_cast</a> </dd>
+<a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a> </dd>
 <dd>
-<a class="el" href="group__memory__management__functions_ga8855ccf5c15c0529206c3cc9cf348af1.html#ga8855ccf5c15c0529206c3cc9cf348af1">raw_pointer_cast</a> </dd></dl>
+<a class="el" href="classthrust_1_1device__allocator.html" title="An allocator which creates new elements in memory accessible by devices. ">device_allocator</a> </dd>
+<dd>
+<a class="el" href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110" title="Create a device_ptr from a raw pointer. ">device_pointer_cast</a> </dd>
+<dd>
+<a class="el" href="group__memory__management_ga8855ccf5c15c0529206c3cc9cf348af1.html#ga8855ccf5c15c0529206c3cc9cf348af1">raw_pointer_cast</a> </dd></dl>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>thrust/<a class="el" href="device__malloc__allocator_8h_source.html">device_malloc_allocator.h</a></li>
 <li>thrust/<a class="el" href="device__ptr_8h_source.html">device_ptr.h</a></li>

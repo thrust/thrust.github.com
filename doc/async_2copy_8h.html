@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/async/copy.h File Reference</title>
+<title>Thrust: thrust/async/copy.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -41,20 +41,33 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">copy.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Functions for asynchronously copying a range.  
+<p>Algorithms for asynchronously copying a range.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
-<code>#include &lt;thrust/detail/cpp11_required.h&gt;</code><br />
-<code>#include &lt;thrust/detail/modern_gcc_required.h&gt;</code><br />
+<code>#include &lt;thrust/detail/cpp14_required.h&gt;</code><br />
+<code>#include &lt;thrust/detail/static_assert.h&gt;</code><br />
+<code>#include &lt;thrust/detail/select_system.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="remove__cvref_8h_source.html">thrust/type_traits/remove_cvref.h</a>&gt;</code><br />
+<code>#include &lt;thrust/system/detail/adl/async/copy.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="event_8h_source.html">thrust/event.h</a>&gt;</code><br />
 </div>
 <p><a href="async_2copy_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
+<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functions for asynchronously copying a range. </p>
+<div class="textblock"><p>Algorithms for asynchronously copying a range. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

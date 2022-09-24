@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::tuple&lt; T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 &gt; Class Template Reference</title>
+<title>Thrust: thrust::tuple&lt; T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -49,9 +49,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="tuple_8h_source.html">thrust/tuple.h</a>&gt;</code></p>
+<p><code>tuple</code> is a class template that can be instantiated with up to ten arguments. Each template argument specifies the type of element in the <code>tuple</code>. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of <code>tuple</code> with two arguments is similar to an instantiation of <code>pair</code> with the same two arguments. Individual elements of a <code>tuple</code> may be accessed with the <code>get</code> function.  
+ <a href="classthrust_1_1tuple.html#details">More...</a></p>
 
-<p>Inherits type&lt; T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 &gt;.</p>
+<p><code>#include &lt;<a class="el" href="tuple_8h_source.html">thrust/tuple.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -71,7 +72,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;class T0, class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9&gt;<br />
 class thrust::tuple&lt; T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 &gt;</h3>
 
-<p><code>tuple</code> is a class template that can be instantiated with up to ten arguments. Each template argument specifies the type of element in the <code>tuple</code>. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of <code>tuple</code> with two arguments is similar to an instantiation of <code>pair</code> with the same two arguments. Individual elements of a <code>tuple</code> may be accessed with the <code>get</code> function.</p>
+<p><code>tuple</code> is a class template that can be instantiated with up to ten arguments. Each template argument specifies the type of element in the <code>tuple</code>. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of <code>tuple</code> with two arguments is similar to an instantiation of <code>pair</code> with the same two arguments. Individual elements of a <code>tuple</code> may be accessed with the <code>get</code> function. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TN</td><td>The type of the <code>N</code> <code>tuple</code> element. Thrust's <code>tuple</code> type currently supports up to ten elements.</td></tr>
@@ -79,7 +80,7 @@ class thrust::tuple&lt; T0, T1, T2, T3, T4, T5, T6, T7, T8, T9 &gt;</h3>
   </dd>
 </dl>
 <p>The following code snippet demonstrates how to create a new <code>tuple</code> object and inspect and modify the value of its elements.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="tuple_8h.html">thrust/tuple.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line">...</div><div class="line"><span class="comment">// create a tuple containing an int, a float, and a string</span></div><div class="line">thrust::tuple&lt;int, float, <span class="keyword">const</span> <span class="keywordtype">char</span>*&gt; t(13, 0.1f, <span class="stringliteral">&quot;thrust&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// individual members are accessed with the free function get</span></div><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;The first element&#39;s value is &quot;</span> &lt;&lt; thrust::get&lt;0&gt;(t) &lt;&lt; std::endl; </div><div class="line"></div><div class="line"><span class="comment">// or the member function get</span></div><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;The second element&#39;s value is &quot;</span> &lt;&lt; t.get&lt;1&gt;() &lt;&lt; std::endl;</div><div class="line"></div><div class="line"><span class="comment">// we can also modify elements with the same function</span></div><div class="line">thrust::get&lt;0&gt;(t) += 10;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="structthrust_1_1pair.html">pair</a> </dd>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="tuple_8h.html">thrust/tuple.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main() {</div><div class="line">  <span class="comment">// Create a tuple containing an `int`, a `float`, and a string.</span></div><div class="line">  <a class="code" href="classthrust_1_1tuple.html">thrust::tuple&lt;int, float, const char*&gt;</a> t(13, 0.1f, <span class="stringliteral">&quot;thrust&quot;</span>);</div><div class="line"></div><div class="line">  <span class="comment">// Individual members are accessed with the free function `get`.</span></div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;The first element&#39;s value is &quot;</span> &lt;&lt; thrust::get&lt;0&gt;(t) &lt;&lt; std::endl;</div><div class="line"></div><div class="line">  <span class="comment">// ... or the member function `get`.</span></div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;The second element&#39;s value is &quot;</span> &lt;&lt; t.get&lt;1&gt;() &lt;&lt; std::endl;</div><div class="line"></div><div class="line">  <span class="comment">// We can also modify elements with the same function.</span></div><div class="line">  thrust::get&lt;0&gt;(t) += 10;</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="structthrust_1_1pair.html">pair</a> </dd>
 <dd>
 <a class="el" href="group__tuple_ga7f76a56c78a92f8df13813b91ea46f47.html#ga7f76a56c78a92f8df13813b91ea46f47">get</a> </dd>
 <dd>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/device_ptr.h File Reference</title>
+<title>Thrust: thrust/device_ptr.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -50,7 +50,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A pointer to a variable which resides in the "device" system's memory space.  
+<p>A pointer to an object which resides in memory associated with the <code>device</code> system.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="memory_8h_source.html">thrust/memory.h</a>&gt;</code><br />
@@ -64,6 +64,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__reference.html">thrust::device_reference&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr.html">thrust::device_ptr&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> is a pointer-like object which points to an object that resides in memory associated with the <a class="el" href="group__execution__policies_ga330d16be82b0518b6a37d026c2811e7e.html#ga330d16be82b0518b6a37d026c2811e7e">device</a> system.  <a href="classthrust_1_1device__ptr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -74,15 +75,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memTemplItemLeft" align="right" valign="top">__host__ std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga289e3e5d769a7530b0eabe06a1d52fd3.html#ga289e3e5d769a7530b0eabe06a1d52fd3">thrust::operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, device_ptr&lt; T &gt; const &amp;dp)</td></tr>
+<tr class="separator:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab16468f547bc65cdcb3d240d0c023110"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gab16468f547bc65cdcb3d240d0c023110"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ device_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management__functions_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">thrust::device_pointer_cast</a> (T *ptr)</td></tr>
+<tr class="memitem:gab16468f547bc65cdcb3d240d0c023110"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ device_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">thrust::device_pointer_cast</a> (T *ptr)</td></tr>
+<tr class="memdesc:gab16468f547bc65cdcb3d240d0c023110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from a raw pointer.  <a href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">More...</a><br /></td></tr>
 <tr class="separator:gab16468f547bc65cdcb3d240d0c023110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4f463a34cc4b411206ef0a6a4e7ef83"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gac4f463a34cc4b411206ef0a6a4e7ef83"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ device_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management__functions_gac4f463a34cc4b411206ef0a6a4e7ef83.html#gac4f463a34cc4b411206ef0a6a4e7ef83">thrust::device_pointer_cast</a> (const device_ptr&lt; T &gt; &amp;ptr)</td></tr>
-<tr class="separator:gac4f463a34cc4b411206ef0a6a4e7ef83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga581b37e01831649b38c2dd8ae25597ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga581b37e01831649b38c2dd8ae25597ee"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ device_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga581b37e01831649b38c2dd8ae25597ee.html#ga581b37e01831649b38c2dd8ae25597ee">thrust::device_pointer_cast</a> (device_ptr&lt; T &gt; const &amp;dptr)</td></tr>
+<tr class="memdesc:ga581b37e01831649b38c2dd8ae25597ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from another <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>.  <a href="group__memory__management_ga581b37e01831649b38c2dd8ae25597ee.html#ga581b37e01831649b38c2dd8ae25597ee">More...</a><br /></td></tr>
+<tr class="separator:ga581b37e01831649b38c2dd8ae25597ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A pointer to a variable which resides in the "device" system's memory space. </p>
+<div class="textblock"><p>A pointer to an object which resides in memory associated with the <code>device</code> system. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

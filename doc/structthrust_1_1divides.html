@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::divides&lt; T &gt; Struct Template Reference</title>
+<title>Thrust: thrust::divides&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -69,22 +69,22 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada8e012d04f4967565ef24f99361121f"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1divides_ada8e012d04f4967565ef24f99361121f.html#ada8e012d04f4967565ef24f99361121f">operator()</a> (const T &amp;lhs, const T &amp;rhs) const</td></tr>
-<tr class="separator:ada8e012d04f4967565ef24f99361121f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a4fb72787ea98c9001b671f19968b2"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1divides_a60a4fb72787ea98c9001b671f19968b2.html#a60a4fb72787ea98c9001b671f19968b2">operator()</a> (const T &amp;lhs, const T &amp;rhs) const</td></tr>
+<tr class="separator:a60a4fb72787ea98c9001b671f19968b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
+<div class="textblock"><h3>template&lt;typename T = void&gt;<br />
 struct thrust::divides&lt; T &gt;</h3>
 
 <p><code>divides</code> is a function object. Specifically, it is an Adaptable Binary Function. If <code>f</code> is an object of class <code>divides&lt;T&gt;</code>, and <code>x</code> and <code>y</code> are objects of class <code>T</code>, then <code>f(x,y)</code> returns <code>x/y</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>is a model of <a href="http://www.sgi.com/tech/stl/Assignable.html">Assignable</a>, and if <code>x</code> and <code>y</code> are objects of type <code>T</code>, then <code>x/y</code> must be defined and must have a return type that is convertible to <code>T</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/named_req/CopyAssignable">Assignable</a>, and if <code>x</code> and <code>y</code> are objects of type <code>T</code>, then <code>x/y</code> must be defined and must have a return type that is convertible to <code>T</code>.</td></tr>
   </table>
   </dd>
 </dl>
 <p>The following code snippet demonstrates how to use <code>divides</code> to divide one device_vectors of <code>floats</code> by another.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sequence_8h.html">thrust/sequence.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fill_8h.html">thrust/fill.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line">...</div><div class="line">const <span class="keywordtype">int</span> N = 1000;</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V1(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V2(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V3(N);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html#ga233a3db0c5031023c8e9385acd4b9759">thrust::sequence</a>(V1.begin(), V1.end(), 1);</div><div class="line"><a class="code" href="group__filling_gae2637d0d68bfdde69b3081039ba22796.html#gae2637d0d68bfdde69b3081039ba22796">thrust::fill</a>(V2.begin(), V2.end(), 75);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga281b2e453bfa53807eda1d71614fb504.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(V1.begin(), V1.end(), V2.begin(), V3.begin(),</div><div class="line">                  <a class="code" href="structthrust_1_1divides.html">thrust::divides&lt;float&gt;</a>());</div><div class="line"><span class="comment">// V3 is now {1/75, 2/75, 3/75, ..., 1000/75}</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="http://www.sgi.com/tech/stl/divides.html">http://www.sgi.com/tech/stl/divides.html</a> </dd>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sequence_8h.html">thrust/sequence.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fill_8h.html">thrust/fill.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line">...</div><div class="line">const <span class="keywordtype">int</span> N = 1000;</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V1(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V2(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V3(N);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html#ga233a3db0c5031023c8e9385acd4b9759">thrust::sequence</a>(V1.begin(), V1.end(), 1);</div><div class="line"><a class="code" href="group__filling_gae2637d0d68bfdde69b3081039ba22796.html#gae2637d0d68bfdde69b3081039ba22796">thrust::fill</a>(V2.begin(), V2.end(), 75);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga281b2e453bfa53807eda1d71614fb504.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(V1.begin(), V1.end(), V2.begin(), V3.begin(),</div><div class="line">                  <a class="code" href="structthrust_1_1divides.html">thrust::divides&lt;float&gt;</a>());</div><div class="line"><span class="comment">// V3 is now {1/75, 2/75, 3/75, ..., 1000/75}</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="https://en.cppreference.com/w/cpp/utility/functional/divides">https://en.cppreference.com/w/cpp/utility/functional/divides</a> </dd>
 <dd>
 <a class="el" href="structthrust_1_1binary__function.html">binary_function</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

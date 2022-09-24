@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/complex.h File Reference</title>
+<title>Thrust: thrust/complex.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -75,17 +75,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab58ac3aa67f1e484c62ded4191c22431"><td class="memItemLeft" align="right" valign="top"><a id="ab58ac3aa67f1e484c62ded4191c22431"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_REAL</b>(z)&#160;&#160;&#160;(z).real()</td></tr>
+<tr class="memitem:ab58ac3aa67f1e484c62ded4191c22431"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_REAL</b>(z)</td></tr>
 <tr class="separator:ab58ac3aa67f1e484c62ded4191c22431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c6fc82096f4489a47e74973a6d8155"><td class="memItemLeft" align="right" valign="top"><a id="a34c6fc82096f4489a47e74973a6d8155"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_IMAG</b>(z)&#160;&#160;&#160;(z).imag()</td></tr>
+<tr class="memitem:a34c6fc82096f4489a47e74973a6d8155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_IMAG</b>(z)</td></tr>
 <tr class="separator:a34c6fc82096f4489a47e74973a6d8155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4187f5c585d6f74135338d01169206a0"><td class="memItemLeft" align="right" valign="top"><a id="a4187f5c585d6f74135338d01169206a0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_DEVICE</b></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_STD_COMPLEX_DEVICE</b>&#160;&#160;&#160;__device__</td></tr>
 <tr class="separator:a4187f5c585d6f74135338d01169206a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga487cc526609a56a60a541d39e81bf125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_DEFINE_COMPLEX_STORAGE_SPECIALIZATION</b>(X)</td></tr>
-<tr class="separator:ga487cc526609a56a60a541d39e81bf125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -215,12 +211,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gafcd9fc41bcf64a4d329825269c2e6d65"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
 <tr class="memitem:gafcd9fc41bcf64a4d329825269c2e6d65"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_gafcd9fc41bcf64a4d329825269c2e6d65.html#gafcd9fc41bcf64a4d329825269c2e6d65">thrust::operator==</a> (const complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
 <tr class="separator:gafcd9fc41bcf64a4d329825269c2e6d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62a54651ffad7c32f446c6a892083778"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
-<tr class="memitem:ga62a54651ffad7c32f446c6a892083778"><td class="memTemplItemLeft" align="right" valign="top">__host__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga62a54651ffad7c32f446c6a892083778.html#ga62a54651ffad7c32f446c6a892083778">thrust::operator==</a> (const complex&lt; T0 &gt; &amp;x, const std::complex&lt; T1 &gt; &amp;y)</td></tr>
-<tr class="separator:ga62a54651ffad7c32f446c6a892083778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a59e9ca760c1727a00806f59e7ce689"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
-<tr class="memitem:ga0a59e9ca760c1727a00806f59e7ce689"><td class="memTemplItemLeft" align="right" valign="top">__host__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga0a59e9ca760c1727a00806f59e7ce689.html#ga0a59e9ca760c1727a00806f59e7ce689">thrust::operator==</a> (const std::complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
-<tr class="separator:ga0a59e9ca760c1727a00806f59e7ce689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf94e038d90dc63d56115262f956a07ad"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
+<tr class="memitem:gaf94e038d90dc63d56115262f956a07ad"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_gaf94e038d90dc63d56115262f956a07ad.html#gaf94e038d90dc63d56115262f956a07ad">thrust::operator==</a> (const complex&lt; T0 &gt; &amp;x, const std::complex&lt; T1 &gt; &amp;y)</td></tr>
+<tr class="separator:gaf94e038d90dc63d56115262f956a07ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ddf25a701c5aadb6c959a2cda1c1458"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
+<tr class="memitem:ga4ddf25a701c5aadb6c959a2cda1c1458"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga4ddf25a701c5aadb6c959a2cda1c1458.html#ga4ddf25a701c5aadb6c959a2cda1c1458">thrust::operator==</a> (const std::complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
+<tr class="separator:ga4ddf25a701c5aadb6c959a2cda1c1458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcd3df3dc470bbe445395eb8d4199d74"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
 <tr class="memitem:gafcd3df3dc470bbe445395eb8d4199d74"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_gafcd3df3dc470bbe445395eb8d4199d74.html#gafcd3df3dc470bbe445395eb8d4199d74">thrust::operator==</a> (const T0 &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
 <tr class="separator:gafcd3df3dc470bbe445395eb8d4199d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,12 +226,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga342f74aa7a11eba35866a2349e346096"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
 <tr class="memitem:ga342f74aa7a11eba35866a2349e346096"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga342f74aa7a11eba35866a2349e346096.html#ga342f74aa7a11eba35866a2349e346096">thrust::operator!=</a> (const complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
 <tr class="separator:ga342f74aa7a11eba35866a2349e346096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga452def55a69e6731b2b91ebb5ca83ed1"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
-<tr class="memitem:ga452def55a69e6731b2b91ebb5ca83ed1"><td class="memTemplItemLeft" align="right" valign="top">__host__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga452def55a69e6731b2b91ebb5ca83ed1.html#ga452def55a69e6731b2b91ebb5ca83ed1">thrust::operator!=</a> (const complex&lt; T0 &gt; &amp;x, const std::complex&lt; T1 &gt; &amp;y)</td></tr>
-<tr class="separator:ga452def55a69e6731b2b91ebb5ca83ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga489413ad24c76561475c8db50a5746f8"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
-<tr class="memitem:ga489413ad24c76561475c8db50a5746f8"><td class="memTemplItemLeft" align="right" valign="top">__host__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga489413ad24c76561475c8db50a5746f8.html#ga489413ad24c76561475c8db50a5746f8">thrust::operator!=</a> (const std::complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
-<tr class="separator:ga489413ad24c76561475c8db50a5746f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae39d2484d48ac6237ae6bb89238e57fa"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
+<tr class="memitem:gae39d2484d48ac6237ae6bb89238e57fa"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_gae39d2484d48ac6237ae6bb89238e57fa.html#gae39d2484d48ac6237ae6bb89238e57fa">thrust::operator!=</a> (const complex&lt; T0 &gt; &amp;x, const std::complex&lt; T1 &gt; &amp;y)</td></tr>
+<tr class="separator:gae39d2484d48ac6237ae6bb89238e57fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac83260c7462d2b0be0abb07418460b9a"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
+<tr class="memitem:gac83260c7462d2b0be0abb07418460b9a"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_gac83260c7462d2b0be0abb07418460b9a.html#gac83260c7462d2b0be0abb07418460b9a">thrust::operator!=</a> (const std::complex&lt; T0 &gt; &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
+<tr class="separator:gac83260c7462d2b0be0abb07418460b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e41b07055a0d89757b5776da98391fa"><td class="memTemplParams" colspan="2">template&lt;typename T0 , typename T1 &gt; </td></tr>
 <tr class="memitem:ga3e41b07055a0d89757b5776da98391fa"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__complex__numbers_ga3e41b07055a0d89757b5776da98391fa.html#ga3e41b07055a0d89757b5776da98391fa">thrust::operator!=</a> (const T0 &amp;x, const complex&lt; T1 &gt; &amp;y)</td></tr>
 <tr class="separator:ga3e41b07055a0d89757b5776da98391fa"><td class="memSeparator" colspan="2">&#160;</td></tr>

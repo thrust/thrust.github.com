@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::negate&lt; T &gt; Struct Template Reference</title>
+<title>Thrust: thrust::negate&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -65,22 +65,22 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae25854aa4c7bd0dc5e7b01ce456ffb8e"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1negate_ae25854aa4c7bd0dc5e7b01ce456ffb8e.html#ae25854aa4c7bd0dc5e7b01ce456ffb8e">operator()</a> (const T &amp;x) const</td></tr>
-<tr class="separator:ae25854aa4c7bd0dc5e7b01ce456ffb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c8adb6be006904749d7c927b37e704"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1negate_a96c8adb6be006904749d7c927b37e704.html#a96c8adb6be006904749d7c927b37e704">operator()</a> (const T &amp;x) const</td></tr>
+<tr class="separator:a96c8adb6be006904749d7c927b37e704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
+<div class="textblock"><h3>template&lt;typename T = void&gt;<br />
 struct thrust::negate&lt; T &gt;</h3>
 
 <p><code>negate</code> is a function object. Specifically, it is an Adaptable Unary Function. If <code>f</code> is an object of class <code>negate&lt;T&gt;</code>, and <code>x</code> is an object of class <code>T</code>, then <code>f(x)</code> returns <code>-x</code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>is a model of <a href="http://www.sgi.com/tech/stl/Assignable.html">Assignable</a>, and if <code>x</code> is an object of type <code>T</code>, then <code>-x</code> must be defined and must have a return type that is convertible to <code>T</code>.</td></tr>
+    <tr><td class="paramname">T</td><td>is a model of <a href="https://en.cppreference.com/w/cpp/named_req/CopyAssignable">Assignable</a>, and if <code>x</code> is an object of type <code>T</code>, then <code>-x</code> must be defined and must have a return type that is convertible to <code>T</code>.</td></tr>
   </table>
   </dd>
 </dl>
 <p>The following code snippet demonstrates how to use <code>negate</code> to negate the elements of a <a class="el" href="classthrust_1_1device__vector.html">device_vector</a> of <code>floats</code>.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sequence_8h.html">thrust/sequence.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line">...</div><div class="line">const <span class="keywordtype">int</span> N = 1000;</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V1(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V2(N);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html#ga233a3db0c5031023c8e9385acd4b9759">thrust::sequence</a>(V1.begin(), V1.end(), 1);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga281b2e453bfa53807eda1d71614fb504.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(V1.begin(), V1.end(), V2.begin(),</div><div class="line">                  <a class="code" href="structthrust_1_1negate.html">thrust::negate&lt;float&gt;</a>());</div><div class="line"><span class="comment">// V2 is now {-1, -2, -3, ..., -1000}</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="http://www.sgi.com/tech/stl/negate.html">http://www.sgi.com/tech/stl/negate.html</a> </dd>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sequence_8h.html">thrust/sequence.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line">...</div><div class="line">const <span class="keywordtype">int</span> N = 1000;</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V1(N);</div><div class="line"><a class="code" href="classthrust_1_1device__vector.html">thrust::device_vector&lt;float&gt;</a> V2(N);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga233a3db0c5031023c8e9385acd4b9759.html#ga233a3db0c5031023c8e9385acd4b9759">thrust::sequence</a>(V1.begin(), V1.end(), 1);</div><div class="line"></div><div class="line"><a class="code" href="group__transformations_ga281b2e453bfa53807eda1d71614fb504.html#ga281b2e453bfa53807eda1d71614fb504">thrust::transform</a>(V1.begin(), V1.end(), V2.begin(),</div><div class="line">                  <a class="code" href="structthrust_1_1negate.html">thrust::negate&lt;float&gt;</a>());</div><div class="line"><span class="comment">// V2 is now {-1, -2, -3, ..., -1000}</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="https://en.cppreference.com/w/cpp/utility/functional/negate">https://en.cppreference.com/w/cpp/utility/functional/negate</a> </dd>
 <dd>
 <a class="el" href="structthrust_1_1unary__function.html">unary_function</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

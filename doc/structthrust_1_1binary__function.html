@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::binary_function&lt; Argument1, Argument2, Result &gt; Struct Template Reference</title>
+<title>Thrust: thrust::binary_function&lt; Argument1, Argument2, Result &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -73,7 +73,7 @@ struct thrust::binary_function&lt; Argument1, Argument2, Result &gt;</h3>
 <p><code><a class="el" href="structthrust_1_1binary__function.html">binary_function</a></code> is an empty base class: it contains no member functions or member variables, but only type information. The only reason it exists is to make it more convenient to define types that are models of the concept Adaptable Binary Function. Specifically, any model of Adaptable Binary Function must define nested <code>typedefs</code>. Those <code>typedefs</code> are provided by the base class <code><a class="el" href="structthrust_1_1binary__function.html">binary_function</a></code>.</p>
 <p>The following code snippet demonstrates how to construct an Adaptable Binary Function using <code><a class="el" href="structthrust_1_1binary__function.html">binary_function</a></code>.</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>exponentiate : <span class="keyword">public</span> <a class="code" href="structthrust_1_1binary__function.html">thrust::binary_function</a>&lt;float,float,float&gt;</div><div class="line">{</div><div class="line">  __host__ __device__</div><div class="line">  <span class="keywordtype">float</span> operator()(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) { <span class="keywordflow">return</span> powf(x,y); }</div><div class="line">};</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Because C++11 language support makes the functionality of <code><a class="el" href="structthrust_1_1binary__function.html">binary_function</a></code> obsolete, its use is optional if C++11 language features are enabled.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://www.sgi.com/tech/stl/binary_function.html">http://www.sgi.com/tech/stl/binary_function.html</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a href="https://en.cppreference.com/w/cpp/utility/functional/binary_function">https://en.cppreference.com/w/cpp/utility/functional/binary_function</a> </dd>
 <dd>
 <a class="el" href="structthrust_1_1unary__function.html">unary_function</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

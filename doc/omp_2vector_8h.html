@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/system/omp/vector.h File Reference</title>
+<title>Thrust: thrust/system/omp/vector.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,8 +42,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">vector.h File Reference</div>  </div>
 </div><!--header-->
@@ -55,31 +55,29 @@ $(function() {
 <code>#include &lt;<a class="el" href="system_2omp_2memory_8h_source.html">thrust/system/omp/memory.h</a>&gt;</code><br />
 <code>#include &lt;thrust/detail/vector_base.h&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;thrust/system/omp/detail/vector.inl&gt;</code><br />
 </div>
 <p><a href="omp_2vector_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1host__vector.html">thrust::host_vector&lt; T, Alloc &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1system_1_1omp_1_1vector.html">thrust::system::omp::vector&lt; T, Allocator &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
 <tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacethrust_1_1system"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system.html">thrust::system</a></td></tr>
-<tr class="memdesc:namespacethrust_1_1system"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains functionality for manipulating memory specific to one ...">thrust::system</a></code> is the namespace which contains functionality for manipulating memory specific to one of Thrust's backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacethrust_1_1system_1_1omp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system_1_1omp.html">thrust::system::omp</a></td></tr>
-<tr class="memdesc:namespacethrust_1_1system_1_1omp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system_1_1omp.html" title="thrust::system::omp is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust&#39;s OpenMP backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::omp namespace for easy access. ">thrust::system::omp</a></code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's OpenMP backend system. The identifiers are provided in a separate namespace underneath <code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains functionality for manipulating memory specific to one ...">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a class="el" href="namespacethrust_1_1omp.html" title="thrust::omp is a top-level alias for thrust::system::omp. ">thrust::omp</a></code> namespace for easy access. <br /></td></tr>
+<tr class="memdesc:namespacethrust_1_1system"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains specific Thrust backend systems. It also contains func...">thrust::system</a></code> is the namespace which contains specific Thrust backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacethrust_1_1omp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1omp.html">thrust::omp</a></td></tr>
-<tr class="memdesc:namespacethrust_1_1omp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1omp.html" title="thrust::omp is a top-level alias for thrust::system::omp. ">thrust::omp</a></code> is a top-level alias for <a class="el" href="namespacethrust_1_1system_1_1omp.html" title="thrust::system::omp is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust&#39;s OpenMP backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::omp namespace for easy access. ">thrust::system::omp</a>. <br /></td></tr>
+<tr class="memdesc:namespacethrust_1_1omp"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1omp.html" title="thrust::omp is a top-level alias for thrust::system::omp. ">thrust::omp</a></code> is a top-level alias for thrust::system::omp. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a5ff429eac8443646ded343fe95868785"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Allocator  = thrust::system::omp::allocator&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:a5ff429eac8443646ded343fe95868785"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="omp_2vector_8h_a5ff429eac8443646ded343fe95868785.html#a5ff429eac8443646ded343fe95868785">thrust::system::omp::vector</a> = thrust::detail::vector_base&lt; T, Allocator &gt;</td></tr>
+<tr class="separator:a5ff429eac8443646ded343fe95868785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9009ed4bf7002d9393b46e4137aa4d4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Allocator  = thrust::system::omp::universal_allocator&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ad9009ed4bf7002d9393b46e4137aa4d4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="omp_2vector_8h_ad9009ed4bf7002d9393b46e4137aa4d4.html#ad9009ed4bf7002d9393b46e4137aa4d4">thrust::system::omp::universal_vector</a> = thrust::detail::vector_base&lt; T, Allocator &gt;</td></tr>
+<tr class="separator:ad9009ed4bf7002d9393b46e4137aa4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A dynamically-sizable array of elements which reside in memory available to Thrust's OpenMP system. </p>

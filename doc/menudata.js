@@ -1,5 +1,6 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
 {text:"Modules",url:"modules.html"},
 {text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
@@ -43,10 +44,22 @@ var menudata={children:[
 {text:"t",url:"namespacemembers_func_t.html#index_t"},
 {text:"u",url:"namespacemembers_func_u.html#index_u"}]},
 {text:"Variables",url:"namespacemembers_vars.html"},
-{text:"Typedefs",url:"namespacemembers_type.html"},
+{text:"Typedefs",url:"namespacemembers_type.html",children:[
+{text:"b",url:"namespacemembers_type.html#index_b"},
+{text:"c",url:"namespacemembers_type.html#index_c"},
+{text:"d",url:"namespacemembers_type.html#index_d"},
+{text:"f",url:"namespacemembers_type.html#index_f"},
+{text:"i",url:"namespacemembers_type.html#index_i"},
+{text:"m",url:"namespacemembers_type.html#index_m"},
+{text:"n",url:"namespacemembers_type.html#index_n"},
+{text:"o",url:"namespacemembers_type.html#index_o"},
+{text:"r",url:"namespacemembers_type.html#index_r"},
+{text:"t",url:"namespacemembers_type.html#index_t"},
+{text:"u",url:"namespacemembers_type.html#index_u"}]},
 {text:"Enumerations",url:"namespacemembers_enum.html"}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"},
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
@@ -109,7 +122,6 @@ var menudata={children:[
 {text:"m",url:"functions_vars.html#index_m"},
 {text:"s",url:"functions_vars.html#index_s"},
 {text:"u",url:"functions_vars.html#index_u"},
-{text:"v",url:"functions_vars.html#index_v"},
 {text:"w",url:"functions_vars.html#index_w"}]},
 {text:"Typedefs",url:"functions_type.html",children:[
 {text:"a",url:"functions_type.html#index_a"},
@@ -122,7 +134,6 @@ var menudata={children:[
 {text:"p",url:"functions_type.html#index_p"},
 {text:"r",url:"functions_type.html#index_r"},
 {text:"s",url:"functions_type.html#index_s"},
-{text:"t",url:"functions_type.html#index_t"},
 {text:"v",url:"functions_type.html#index_v"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},

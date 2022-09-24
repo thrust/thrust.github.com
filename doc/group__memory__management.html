@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: Memory Management</title>
+<title>Thrust: Memory Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -38,7 +38,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#groups">Modules</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Memory Management</div>  </div>
 </div><!--header-->
@@ -46,10 +48,78 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__memory__management__classes"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__management__classes.html">Memory Management Classes</a></td></tr>
+<tr class="memitem:group__allocators"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__allocators.html">Allocators</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__memory__management__functions"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__management__functions.html">Memory Management Functions</a></td></tr>
+<tr class="memitem:group__memory__resources"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources.html">Memory Resources</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__reference.html">thrust::device_reference&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr.html">thrust::device_ptr&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> is a pointer-like object which points to an object that resides in memory associated with the <a class="el" href="group__execution__policies_ga330d16be82b0518b6a37d026c2811e7e.html#ga330d16be82b0518b6a37d026c2811e7e">device</a> system.  <a href="classthrust_1_1device__ptr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1c393e01036d27ed0c0ab2a1750957dc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga1c393e01036d27ed0c0ab2a1750957dc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga1c393e01036d27ed0c0ab2a1750957dc.html#ga1c393e01036d27ed0c0ab2a1750957dc">thrust::device_delete</a> (<a class="el" href="classthrust_1_1device__ptr.html">thrust::device_ptr</a>&lt; T &gt; ptr, const size_t n=1)</td></tr>
+<tr class="separator:ga1c393e01036d27ed0c0ab2a1750957dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a350740a6ade432f3781096df91f162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__management_ga1a350740a6ade432f3781096df91f162.html#ga1a350740a6ade432f3781096df91f162">thrust::device_free</a> (<a class="el" href="classthrust_1_1device__ptr.html">thrust::device_ptr</a>&lt; void &gt; ptr)</td></tr>
+<tr class="separator:ga1a350740a6ade432f3781096df91f162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53081c2b134f091a080c976a1cbaf8cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrust_1_1device__ptr.html">thrust::device_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__management_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">thrust::device_malloc</a> (const std::size_t n)</td></tr>
+<tr class="separator:ga53081c2b134f091a080c976a1cbaf8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a56463dcea00aaefa0371f80a462f4e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga6a56463dcea00aaefa0371f80a462f4e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga6a56463dcea00aaefa0371f80a462f4e.html#ga6a56463dcea00aaefa0371f80a462f4e">thrust::device_new</a> (<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; void &gt; p, const size_t n=1)</td></tr>
+<tr class="separator:ga6a56463dcea00aaefa0371f80a462f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96490187c73f6eea15dcabb2428b91bd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga96490187c73f6eea15dcabb2428b91bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga96490187c73f6eea15dcabb2428b91bd.html#ga96490187c73f6eea15dcabb2428b91bd">thrust::device_new</a> (<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; void &gt; p, const T &amp;exemplar, const size_t n=1)</td></tr>
+<tr class="separator:ga96490187c73f6eea15dcabb2428b91bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42229aba5a66dfaf58456bd8e393ec5a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga42229aba5a66dfaf58456bd8e393ec5a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga42229aba5a66dfaf58456bd8e393ec5a.html#ga42229aba5a66dfaf58456bd8e393ec5a">thrust::device_new</a> (const size_t n=1)</td></tr>
+<tr class="separator:ga42229aba5a66dfaf58456bd8e393ec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename CharT , typename Traits &gt; </td></tr>
+<tr class="memitem:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memTemplItemLeft" align="right" valign="top">__host__ std::basic_ostream&lt; CharT, Traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga289e3e5d769a7530b0eabe06a1d52fd3.html#ga289e3e5d769a7530b0eabe06a1d52fd3">thrust::operator&lt;&lt;</a> (std::basic_ostream&lt; CharT, Traits &gt; &amp;os, <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt; const &amp;dp)</td></tr>
+<tr class="separator:ga289e3e5d769a7530b0eabe06a1d52fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab16468f547bc65cdcb3d240d0c023110"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gab16468f547bc65cdcb3d240d0c023110"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">thrust::device_pointer_cast</a> (T *ptr)</td></tr>
+<tr class="memdesc:gab16468f547bc65cdcb3d240d0c023110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from a raw pointer.  <a href="group__memory__management_gab16468f547bc65cdcb3d240d0c023110.html#gab16468f547bc65cdcb3d240d0c023110">More...</a><br /></td></tr>
+<tr class="separator:gab16468f547bc65cdcb3d240d0c023110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga581b37e01831649b38c2dd8ae25597ee"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga581b37e01831649b38c2dd8ae25597ee"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga581b37e01831649b38c2dd8ae25597ee.html#ga581b37e01831649b38c2dd8ae25597ee">thrust::device_pointer_cast</a> (<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a>&lt; T &gt; const &amp;dptr)</td></tr>
+<tr class="memdesc:ga581b37e01831649b38c2dd8ae25597ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> from another <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>.  <a href="group__memory__management_ga581b37e01831649b38c2dd8ae25597ee.html#ga581b37e01831649b38c2dd8ae25597ee">More...</a><br /></td></tr>
+<tr class="separator:ga581b37e01831649b38c2dd8ae25597ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gaa677af4b24a5b9067359809a1f5df3e7.html#gaa677af4b24a5b9067359809a1f5df3e7">thrust::swap</a> (<a class="el" href="classthrust_1_1device__reference.html">device_reference</a>&lt; T &gt; &amp;x, <a class="el" href="classthrust_1_1device__reference.html">device_reference</a>&lt; T &gt; &amp;y)</td></tr>
+<tr class="separator:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37e81400f1c016baaaad65e5fda755f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename charT , typename traits &gt; </td></tr>
+<tr class="memitem:ga37e81400f1c016baaaad65e5fda755f6"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; charT, traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga37e81400f1c016baaaad65e5fda755f6.html#ga37e81400f1c016baaaad65e5fda755f6">thrust::operator&lt;&lt;</a> (std::basic_ostream&lt; charT, traits &gt; &amp;os, const <a class="el" href="classthrust_1_1device__reference.html">device_reference</a>&lt; T &gt; &amp;y)</td></tr>
+<tr class="separator:ga37e81400f1c016baaaad65e5fda755f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6371d262cf49b52d38812d4b30b037dc"><td class="memTemplParams" colspan="2">template&lt;typename DerivedPolicy &gt; </td></tr>
+<tr class="memitem:ga6371d262cf49b52d38812d4b30b037dc"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ pointer&lt; void, DerivedPolicy &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga6371d262cf49b52d38812d4b30b037dc.html#ga6371d262cf49b52d38812d4b30b037dc">thrust::malloc</a> (const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;system, std::size_t n)</td></tr>
+<tr class="separator:ga6371d262cf49b52d38812d4b30b037dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7075f6e18aba749f68041ad8df662b4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename DerivedPolicy &gt; </td></tr>
+<tr class="memitem:gaa7075f6e18aba749f68041ad8df662b4"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ pointer&lt; T, DerivedPolicy &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gaa7075f6e18aba749f68041ad8df662b4.html#gaa7075f6e18aba749f68041ad8df662b4">thrust::malloc</a> (const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;system, std::size_t n)</td></tr>
+<tr class="separator:gaa7075f6e18aba749f68041ad8df662b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae37ea7f653e599788a83c6d27e303640"><td class="memTemplParams" colspan="2">template&lt;typename T , typename DerivedPolicy &gt; </td></tr>
+<tr class="memitem:gae37ea7f653e599788a83c6d27e303640"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="structthrust_1_1pair.html">thrust::pair</a>&lt; thrust::pointer&lt; T, DerivedPolicy &gt;, typename thrust::pointer&lt; T, DerivedPolicy &gt;::difference_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gae37ea7f653e599788a83c6d27e303640.html#gae37ea7f653e599788a83c6d27e303640">thrust::get_temporary_buffer</a> (const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;system, typename thrust::pointer&lt; T, DerivedPolicy &gt;::difference_type n)</td></tr>
+<tr class="separator:gae37ea7f653e599788a83c6d27e303640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65f74f777939ffdc62572853eee2c7ae"><td class="memTemplParams" colspan="2">template&lt;typename DerivedPolicy , typename Pointer &gt; </td></tr>
+<tr class="memitem:ga65f74f777939ffdc62572853eee2c7ae"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga65f74f777939ffdc62572853eee2c7ae.html#ga65f74f777939ffdc62572853eee2c7ae">thrust::free</a> (const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;system, Pointer ptr)</td></tr>
+<tr class="separator:ga65f74f777939ffdc62572853eee2c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga429af5322806389fbdcf4ed015c0aa47"><td class="memTemplParams" colspan="2">template&lt;typename DerivedPolicy , typename Pointer &gt; </td></tr>
+<tr class="memitem:ga429af5322806389fbdcf4ed015c0aa47"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga429af5322806389fbdcf4ed015c0aa47.html#ga429af5322806389fbdcf4ed015c0aa47">thrust::return_temporary_buffer</a> (const thrust::detail::execution_policy_base&lt; DerivedPolicy &gt; &amp;system, Pointer p, std::ptrdiff_t n)</td></tr>
+<tr class="separator:ga429af5322806389fbdcf4ed015c0aa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8855ccf5c15c0529206c3cc9cf348af1"><td class="memTemplParams" colspan="2">template&lt;typename Pointer &gt; </td></tr>
+<tr class="memitem:ga8855ccf5c15c0529206c3cc9cf348af1"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ thrust::detail::pointer_traits&lt; Pointer &gt;::raw_pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga8855ccf5c15c0529206c3cc9cf348af1.html#ga8855ccf5c15c0529206c3cc9cf348af1">thrust::raw_pointer_cast</a> (Pointer ptr)</td></tr>
+<tr class="separator:ga8855ccf5c15c0529206c3cc9cf348af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae3b00c6bd907e7de3760b3b7437ecb1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaae3b00c6bd907e7de3760b3b7437ecb1"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ detail::raw_reference&lt; T &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gaae3b00c6bd907e7de3760b3b7437ecb1.html#gaae3b00c6bd907e7de3760b3b7437ecb1">thrust::raw_reference_cast</a> (T &amp;ref)</td></tr>
+<tr class="separator:gaae3b00c6bd907e7de3760b3b7437ecb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81ac29e222d3f4dad7d42f76c1fafbf3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga81ac29e222d3f4dad7d42f76c1fafbf3"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ detail::raw_reference&lt; const T &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga81ac29e222d3f4dad7d42f76c1fafbf3.html#ga81ac29e222d3f4dad7d42f76c1fafbf3">thrust::raw_reference_cast</a> (const T &amp;ref)</td></tr>
+<tr class="separator:ga81ac29e222d3f4dad7d42f76c1fafbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All Thrust functionalities related to memory allocation and deallocation. </p>

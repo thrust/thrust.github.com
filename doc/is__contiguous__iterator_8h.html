@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/is_contiguous_iterator.h File Reference</title>
+<title>Thrust: thrust/type_traits/is_contiguous_iterator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -44,26 +44,34 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">is_contiguous_iterator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An extensible type trait for determining if an iterator satisifies the <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a> requirements (e.g. is pointer-like).  
+<p>An extensible type trait for determining if an iterator satisifies the <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a> requirements (aka is pointer-like).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
+<code>#include &lt;thrust/detail/raw_pointer_cast.h&gt;</code><br />
 <code>#include &lt;thrust/detail/type_traits.h&gt;</code><br />
 <code>#include &lt;thrust/detail/type_traits/pointer_traits.h&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 </div>
 <p><a href="is__contiguous__iterator_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__contiguous__iterator.html">thrust::is_contiguous_iterator&lt; Iterator &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1proclaim__contiguous__iterator.html">thrust::proclaim_contiguous_iterator&lt; Iterator &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customization point that can be customized to indicate that an iterator type <code>Iterator</code> satisfies <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a>, aka it points to elements that are contiguous in memory.  <a href="structthrust_1_1proclaim__contiguous__iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -74,11 +82,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6481610468498fdee166a05ec3f6e270"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__contiguous__iterator_8h_a6481610468498fdee166a05ec3f6e270.html#a6481610468498fdee166a05ec3f6e270">THRUST_PROCLAIM_CONTIGUOUS_ITERATOR</a>(Iterator)</td></tr>
-<tr class="separator:a6481610468498fdee166a05ec3f6e270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6481610468498fdee166a05ec3f6e270"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__type__traits_ga6481610468498fdee166a05ec3f6e270.html#ga6481610468498fdee166a05ec3f6e270">THRUST_PROCLAIM_CONTIGUOUS_ITERATOR</a>(Iterator)</td></tr>
+<tr class="memdesc:ga6481610468498fdee166a05ec3f6e270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares that the iterator <code>Iterator</code> is <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a> by specializing <code>proclaim_contiguous_iterator</code>.  <a href="group__type__traits_ga6481610468498fdee166a05ec3f6e270.html#ga6481610468498fdee166a05ec3f6e270">More...</a><br /></td></tr>
+<tr class="separator:ga6481610468498fdee166a05ec3f6e270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gadb26491471e3c992c0872345ca374505"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:gadb26491471e3c992c0872345ca374505"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gadb26491471e3c992c0872345ca374505.html#gadb26491471e3c992c0872345ca374505">thrust::is_contiguous_iterator</a> = detail::is_contiguous_iterator_impl&lt; Iterator &gt;</td></tr>
+<tr class="memdesc:gadb26491471e3c992c0872345ca374505"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait"><em>UnaryTypeTrait</em></a> that returns <code>true_type</code> if <code>Iterator</code> satisfies <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a>, aka it points to elements that are contiguous in memory, and <code>false_type</code> otherwise.  <a href="group__type__traits_gadb26491471e3c992c0872345ca374505.html#gadb26491471e3c992c0872345ca374505">More...</a><br /></td></tr>
+<tr class="separator:gadb26491471e3c992c0872345ca374505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga1da323e7acfe527a28ea6bd940488584"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:ga1da323e7acfe527a28ea6bd940488584"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga1da323e7acfe527a28ea6bd940488584.html#ga1da323e7acfe527a28ea6bd940488584">thrust::is_contiguous_iterator_v</a> = is_contiguous_iterator&lt;Iterator&gt;::value</td></tr>
+<tr class="memdesc:ga1da323e7acfe527a28ea6bd940488584"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> that is <code>true</code> if <code>Iterator</code> satisfies <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a>, aka it points to elements that are contiguous in memory, and <code>false</code> otherwise.  <a href="group__type__traits_ga1da323e7acfe527a28ea6bd940488584.html#ga1da323e7acfe527a28ea6bd940488584">More...</a><br /></td></tr>
+<tr class="separator:ga1da323e7acfe527a28ea6bd940488584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An extensible type trait for determining if an iterator satisifies the <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a> requirements (e.g. is pointer-like). </p>
+<div class="textblock"><p>An extensible type trait for determining if an iterator satisifies the <a href="https://en.cppreference.com/w/cpp/named_req/ContiguousIterator">ContiguousIterator</a> requirements (aka is pointer-like). </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

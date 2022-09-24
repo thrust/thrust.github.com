@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: Memory Resources</title>
+<title>Thrust: Memory Resources</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,15 +42,15 @@ $(function() {
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Memory Resources<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a> &raquo; <a class="el" href="group__memory__management__classes.html">Memory Management Classes</a></div></div>  </div>
+<div class="title">Memory Resources<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr__memory__resource.html">thrust::device_ptr_memory_resource&lt; Upstream &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1mr_1_1disjoint__unsynchronized__pool__resource.html">thrust::mr::disjoint_unsynchronized_pool_resource&lt; Upstream, Bookkeeper &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1mr_1_1disjoint__synchronized__pool__resource.html">thrust::mr::disjoint_synchronized_pool_resource&lt; Upstream, Bookkeeper &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1mr_1_1memory__resource.html">thrust::mr::memory_resource&lt; Pointer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -58,24 +58,40 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1mr_1_1unsynchronized__pool__resource.html">thrust::mr::unsynchronized_pool_resource&lt; Upstream &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1mr_1_1pool__options.html">thrust::mr::pool_options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1mr_1_1synchronized__pool__resource.html">thrust::mr::synchronized_pool_resource&lt; Upstream &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga6a898e1cb4266697796cf3b95cb3efe6"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga6a898e1cb4266697796cf3b95cb3efe6.html#ga6a898e1cb4266697796cf3b95cb3efe6">thrust::system::cpp::memory_resource</a></td></tr>
+<tr class="separator:ga6a898e1cb4266697796cf3b95cb3efe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6105ab11bec82ea6c53f24b2a243bfd6"><td class="memItemLeft" align="right" valign="top">typedef detail::universal_native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga6105ab11bec82ea6c53f24b2a243bfd6.html#ga6105ab11bec82ea6c53f24b2a243bfd6">thrust::system::cpp::universal_memory_resource</a></td></tr>
+<tr class="separator:ga6105ab11bec82ea6c53f24b2a243bfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aa767989643837c22dcd341c7738cca"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga7aa767989643837c22dcd341c7738cca.html#ga7aa767989643837c22dcd341c7738cca">thrust::system::cpp::universal_host_pinned_memory_resource</a></td></tr>
+<tr class="separator:ga7aa767989643837c22dcd341c7738cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga596395dc6ece99a8162406f6a23578d5"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga596395dc6ece99a8162406f6a23578d5.html#ga596395dc6ece99a8162406f6a23578d5">thrust::system::omp::memory_resource</a></td></tr>
 <tr class="separator:ga596395dc6ece99a8162406f6a23578d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93cfcd7c1fbee377db42cd4999938b05"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga93cfcd7c1fbee377db42cd4999938b05.html#ga93cfcd7c1fbee377db42cd4999938b05">thrust::system::omp::universal_memory_resource</a></td></tr>
-<tr class="separator:ga93cfcd7c1fbee377db42cd4999938b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e2243768f6e78997944584175c91884"><td class="memItemLeft" align="right" valign="top">typedef detail::universal_native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga6e2243768f6e78997944584175c91884.html#ga6e2243768f6e78997944584175c91884">thrust::system::omp::universal_memory_resource</a></td></tr>
+<tr class="separator:ga6e2243768f6e78997944584175c91884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7826e41aad69314c57c060b5c1ee07cf"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga7826e41aad69314c57c060b5c1ee07cf.html#ga7826e41aad69314c57c060b5c1ee07cf">thrust::system::omp::universal_host_pinned_memory_resource</a></td></tr>
 <tr class="separator:ga7826e41aad69314c57c060b5c1ee07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7de41564f3f4053bec0125b376c9b1e7"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga7de41564f3f4053bec0125b376c9b1e7.html#ga7de41564f3f4053bec0125b376c9b1e7">thrust::system::tbb::memory_resource</a></td></tr>
 <tr class="separator:ga7de41564f3f4053bec0125b376c9b1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga836cec6a73642e619d02819c6110fb4d"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga836cec6a73642e619d02819c6110fb4d.html#ga836cec6a73642e619d02819c6110fb4d">thrust::system::tbb::universal_memory_resource</a></td></tr>
-<tr class="separator:ga836cec6a73642e619d02819c6110fb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7fd369d2c079c9064e080d028368893"><td class="memItemLeft" align="right" valign="top">typedef detail::universal_native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_gaa7fd369d2c079c9064e080d028368893.html#gaa7fd369d2c079c9064e080d028368893">thrust::system::tbb::universal_memory_resource</a></td></tr>
+<tr class="separator:gaa7fd369d2c079c9064e080d028368893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a90944e89050cd28a0d4bcb1d624f81"><td class="memItemLeft" align="right" valign="top">typedef detail::native_resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga1a90944e89050cd28a0d4bcb1d624f81.html#ga1a90944e89050cd28a0d4bcb1d624f81">thrust::system::tbb::universal_host_pinned_memory_resource</a></td></tr>
 <tr class="separator:ga1a90944e89050cd28a0d4bcb1d624f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac349015c75728ebc709912a192d2ec55"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac349015c75728ebc709912a192d2ec55"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__resources_gac349015c75728ebc709912a192d2ec55.html#gac349015c75728ebc709912a192d2ec55">thrust::universal_ptr</a> = thrust::system::__THRUST_DEVICE_SYSTEM_NAMESPACE::universal_pointer&lt; T &gt;</td></tr>
+<tr class="separator:gac349015c75728ebc709912a192d2ec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga9007dc09ef42a94c6799c3cab1252654"><td class="memTemplParams" colspan="2">template&lt;typename Upstream , typename Bookkeeper &gt; </td></tr>
+<tr class="memitem:ga9007dc09ef42a94c6799c3cab1252654"><td class="memTemplItemLeft" align="right" valign="top">__host__ <a class="el" href="classthrust_1_1mr_1_1disjoint__unsynchronized__pool__resource.html">thrust::mr::disjoint_unsynchronized_pool_resource</a>&lt; Upstream, Bookkeeper &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga9007dc09ef42a94c6799c3cab1252654.html#ga9007dc09ef42a94c6799c3cab1252654">thrust::mr::tls_disjoint_pool</a> (Upstream *upstream=NULL, Bookkeeper *bookkeeper=NULL)</td></tr>
+<tr class="separator:ga9007dc09ef42a94c6799c3cab1252654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea7e16173d053d33c62e428a5030eab3"><td class="memTemplParams" colspan="2">template&lt;typename Pointer &gt; </td></tr>
 <tr class="memitem:gaea7e16173d053d33c62e428a5030eab3"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__resources_gaea7e16173d053d33c62e428a5030eab3.html#gaea7e16173d053d33c62e428a5030eab3">thrust::mr::operator==</a> (const <a class="el" href="classthrust_1_1mr_1_1memory__resource.html">memory_resource</a>&lt; Pointer &gt; &amp;lhs, const <a class="el" href="classthrust_1_1mr_1_1memory__resource.html">memory_resource</a>&lt; Pointer &gt; &amp;rhs) noexcept</td></tr>
 <tr class="separator:gaea7e16173d053d33c62e428a5030eab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,6 +101,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae001e485f4f1fad041ffd72fa96cabbb"><td class="memTemplParams" colspan="2">template&lt;typename MR &gt; </td></tr>
 <tr class="memitem:gae001e485f4f1fad041ffd72fa96cabbb"><td class="memTemplItemLeft" align="right" valign="top">__host__ MR *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__resources_gae001e485f4f1fad041ffd72fa96cabbb.html#gae001e485f4f1fad041ffd72fa96cabbb">thrust::mr::get_global_resource</a> ()</td></tr>
 <tr class="separator:gae001e485f4f1fad041ffd72fa96cabbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a0ee956ae03eee4bb9dceeb43b14471"><td class="memTemplParams" colspan="2">template&lt;typename Upstream , typename Bookkeeper &gt; </td></tr>
+<tr class="memitem:ga9a0ee956ae03eee4bb9dceeb43b14471"><td class="memTemplItemLeft" align="right" valign="top">__host__ <a class="el" href="classthrust_1_1mr_1_1unsynchronized__pool__resource.html">thrust::mr::unsynchronized_pool_resource</a>&lt; Upstream &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__resources_ga9a0ee956ae03eee4bb9dceeb43b14471.html#ga9a0ee956ae03eee4bb9dceeb43b14471">thrust::mr::tls_pool</a> (Upstream *upstream=NULL)</td></tr>
+<tr class="separator:ga9a0ee956ae03eee4bb9dceeb43b14471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 </div><!-- contents -->

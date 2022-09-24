@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/is_operator_less_or_greater_function_object.h File Reference</title>
+<title>Thrust: thrust/type_traits/is_operator_less_or_greater_function_object.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,14 +42,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">is_operator_less_or_greater_function_object.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Type traits for determining if a <code>BinaryFunction</code> is equivalent to / either <code>operator&lt;</code> or <code>operator&gt;</code>.  
+<p>Type traits for determining if a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> is equivalent to either <code>operator&lt;</code> or <code>operator&gt;</code>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="functional_8h_source.html">thrust/functional.h</a>&gt;</code><br />
@@ -58,23 +59,44 @@ $(function() {
 </div>
 <p><a href="is__operator__less__or__greater__function__object_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__operator__less__function__object.html">thrust::is_operator_less_function_object&lt; FunctionObject &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__operator__greater__function__object.html">thrust::is_operator_greater_function_object&lt; FunctionObject &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__operator__less__or__greater__function__object.html">thrust::is_operator_less_or_greater_function_object&lt; FunctionObject &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
 <tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga89fa2cd21cf618ac3f6742e015347bd4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga89fa2cd21cf618ac3f6742e015347bd4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga89fa2cd21cf618ac3f6742e015347bd4.html#ga89fa2cd21cf618ac3f6742e015347bd4">thrust::is_operator_less_function_object</a> = detail::is_operator_less_function_object_impl&lt; T &gt;</td></tr>
+<tr class="memdesc:ga89fa2cd21cf618ac3f6742e015347bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait"><em>UnaryTypeTrait</em></a> that returns <code>true_type</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&lt;</code>, and <code>false_type</code> otherwise.  <a href="group__type__traits_ga89fa2cd21cf618ac3f6742e015347bd4.html#ga89fa2cd21cf618ac3f6742e015347bd4">More...</a><br /></td></tr>
+<tr class="separator:ga89fa2cd21cf618ac3f6742e015347bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80899866447b02e95640aa86cb3b9d5b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga80899866447b02e95640aa86cb3b9d5b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga80899866447b02e95640aa86cb3b9d5b.html#ga80899866447b02e95640aa86cb3b9d5b">thrust::is_operator_greater_function_object</a> = detail::is_operator_greater_function_object_impl&lt; T &gt;</td></tr>
+<tr class="memdesc:ga80899866447b02e95640aa86cb3b9d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait"><em>UnaryTypeTrait</em></a> that returns <code>true_type</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&gt;</code>, and <code>false_type</code> otherwise.  <a href="group__type__traits_ga80899866447b02e95640aa86cb3b9d5b.html#ga80899866447b02e95640aa86cb3b9d5b">More...</a><br /></td></tr>
+<tr class="separator:ga80899866447b02e95640aa86cb3b9d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04754b3985cf345f47aaca8068ca5d58"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga04754b3985cf345f47aaca8068ca5d58"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga04754b3985cf345f47aaca8068ca5d58.html#ga04754b3985cf345f47aaca8068ca5d58">thrust::is_operator_less_or_greater_function_object</a> = integral_constant&lt; bool, detail::is_operator_less_function_object_impl&lt; T &gt;::value||detail::is_operator_greater_function_object_impl&lt; T &gt;::value &gt;</td></tr>
+<tr class="memdesc:ga04754b3985cf345f47aaca8068ca5d58"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait"><em>UnaryTypeTrait</em></a> that returns <code>true_type</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&lt;</code> or <code>operator&gt;</code>, and <code>false_type</code> otherwise.  <a href="group__type__traits_ga04754b3985cf345f47aaca8068ca5d58.html#ga04754b3985cf345f47aaca8068ca5d58">More...</a><br /></td></tr>
+<tr class="separator:ga04754b3985cf345f47aaca8068ca5d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga38d413b5daee16a97fa7d9da9f3c4b29"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga38d413b5daee16a97fa7d9da9f3c4b29"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga38d413b5daee16a97fa7d9da9f3c4b29.html#ga38d413b5daee16a97fa7d9da9f3c4b29">thrust::is_operator_less_function_object_v</a> = is_operator_less_function_object&lt;T&gt;::value</td></tr>
+<tr class="memdesc:ga38d413b5daee16a97fa7d9da9f3c4b29"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> that is <code>true</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&lt;</code>, and <code>false</code> otherwise.  <a href="group__type__traits_ga38d413b5daee16a97fa7d9da9f3c4b29.html#ga38d413b5daee16a97fa7d9da9f3c4b29">More...</a><br /></td></tr>
+<tr class="separator:ga38d413b5daee16a97fa7d9da9f3c4b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42415f71c7b50c51763edc7a3591a400"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga42415f71c7b50c51763edc7a3591a400"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga42415f71c7b50c51763edc7a3591a400.html#ga42415f71c7b50c51763edc7a3591a400">thrust::is_operator_greater_function_object_v</a> = is_operator_greater_function_object&lt;T&gt;::value</td></tr>
+<tr class="memdesc:ga42415f71c7b50c51763edc7a3591a400"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> that is <code>true</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&gt;</code>, and <code>false</code> otherwise.  <a href="group__type__traits_ga42415f71c7b50c51763edc7a3591a400.html#ga42415f71c7b50c51763edc7a3591a400">More...</a><br /></td></tr>
+<tr class="separator:ga42415f71c7b50c51763edc7a3591a400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4884b2dd3b4d114ebc739d254c9d505"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac4884b2dd3b4d114ebc739d254c9d505"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gac4884b2dd3b4d114ebc739d254c9d505.html#gac4884b2dd3b4d114ebc739d254c9d505">thrust::is_operator_less_or_greater_function_object_v</a> = is_operator_less_or_greater_function_object&lt;T&gt;::value</td></tr>
+<tr class="memdesc:gac4884b2dd3b4d114ebc739d254c9d505"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> that is <code>true</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> equivalent to <code>operator&lt;</code> or <code>operator&gt;</code>, and <code>false</code> otherwise.  <a href="group__type__traits_gac4884b2dd3b4d114ebc739d254c9d505.html#gac4884b2dd3b4d114ebc739d254c9d505">More...</a><br /></td></tr>
+<tr class="separator:gac4884b2dd3b4d114ebc739d254c9d505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Type traits for determining if a <code>BinaryFunction</code> is equivalent to / either <code>operator&lt;</code> or <code>operator&gt;</code>. </p>
+<div class="textblock"><p>Type traits for determining if a <a href="https://en.cppreference.com/w/cpp/named_req/BinaryPredicate">BinaryPredicate</a> is equivalent to either <code>operator&lt;</code> or <code>operator&gt;</code>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

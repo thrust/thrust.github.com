@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/is_trivially_relocatable.h File Reference</title>
+<title>Thrust: thrust/type_traits/is_trivially_relocatable.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,51 +42,29 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">is_trivially_relocatable.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="https://wg21.link/P1144R0">P1144R0</a>'s <code>is_trivially_relocatable</code>, an extensible type trait indicating whether a type can be bitwise copied (e.g. via <code>memcpy</code>).  
+<p><a href="https://wg21.link/P1144">P1144</a>'s proposed <code>std::is_trivially_relocatable</code>, an extensible type trait indicating whether a type can be bitwise copied with a facility like <a href="https://en.cppreference.com/w/cpp/string/byte/memcpy"><code>std::memcpy</code></a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;thrust/detail/static_assert.h&gt;</code><br />
 <code>#include &lt;thrust/detail/type_traits.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="is__contiguous__iterator_8h_source.html">thrust/type_traits/is_contiguous_iterator.h</a>&gt;</code><br />
-<code>#include &lt;thrust/system/cuda/detail/guarded_cuda_runtime_api.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="is__trivially__relocatable_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__trivially__relocatable.html">thrust::is_trivially_relocatable&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__trivially__relocatable__to.html">thrust::is_trivially_relocatable_to&lt; From, To &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__indirectly__trivially__relocatable__to.html">thrust::is_indirectly_trivially_relocatable_to&lt; FromIterator, ToIterator &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1proclaim__trivially__relocatable.html">thrust::proclaim_trivially_relocatable&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
-<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afaa6e65861d2a568ea736856eca5d351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="is__trivially__relocatable_8h_afaa6e65861d2a568ea736856eca5d351.html#afaa6e65861d2a568ea736856eca5d351">THRUST_PROCLAIM_TRIVIALLY_RELOCATABLE</a>(T)</td></tr>
+<tr class="memitem:afaa6e65861d2a568ea736856eca5d351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>THRUST_PROCLAIM_TRIVIALLY_RELOCATABLE</b>(T)</td></tr>
 <tr class="separator:afaa6e65861d2a568ea736856eca5d351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af989845e24678c452b9222afdac95e7f"><td class="memItemLeft" align="right" valign="top"><a id="af989845e24678c452b9222afdac95e7f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>__has_feature</b>(x)&#160;&#160;&#160;0</td></tr>
-<tr class="separator:af989845e24678c452b9222afdac95e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a href="https://wg21.link/P1144R0">P1144R0</a>'s <code>is_trivially_relocatable</code>, an extensible type trait indicating whether a type can be bitwise copied (e.g. via <code>memcpy</code>). </p>
+<div class="textblock"><p><a href="https://wg21.link/P1144">P1144</a>'s proposed <code>std::is_trivially_relocatable</code>, an extensible type trait indicating whether a type can be bitwise copied with a facility like <a href="https://en.cppreference.com/w/cpp/string/byte/memcpy"><code>std::memcpy</code></a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
