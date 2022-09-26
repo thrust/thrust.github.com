@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/system/cuda/memory.h File Reference</title>
+<title>Thrust: thrust/system/cuda/memory.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,8 +42,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">memory.h File Reference</div>  </div>
@@ -62,37 +62,40 @@ $(function() {
 </div>
 <p><a href="system_2cuda_2memory_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1system_1_1cuda_1_1allocator.html">thrust::system::cuda::allocator&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1system_1_1cuda_1_1allocator_1_1rebind.html">thrust::system::cuda::allocator&lt; T &gt;::rebind&lt; U &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
 <tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacethrust_1_1system_1_1cuda"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system_1_1cuda.html">thrust::system::cuda</a></td></tr>
-<tr class="memdesc:namespacethrust_1_1system_1_1cuda"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system_1_1cuda.html" title="thrust::system::cuda is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust&#39;s CUDA backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::cuda namespace for easy access. ">thrust::system::cuda</a></code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains functionality for manipulating memory specific to one ...">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a class="el" href="namespacethrust_1_1cuda.html" title="thrust::cuda is a top-level alias for thrust::system::cuda. ">thrust::cuda</a></code> namespace for easy access. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacethrust_1_1system"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system.html">thrust::system</a></td></tr>
-<tr class="memdesc:namespacethrust_1_1system"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains functionality for manipulating memory specific to one ...">thrust::system</a></code> is the namespace which contains functionality for manipulating memory specific to one of Thrust's backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access. <br /></td></tr>
+<tr class="memdesc:namespacethrust_1_1system"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains specific Thrust backend systems. It also contains func...">thrust::system</a></code> is the namespace which contains specific Thrust backend systems. It also contains functionality for reporting error conditions originating from the operating system or other low-level application program interfaces such as the CUDA runtime. They are provided in a separate namespace for import convenience but are also aliased in the top-level <code>thrust</code> namespace for easy access. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacethrust_1_1system_1_1cuda"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system_1_1cuda.html">thrust::system::cuda</a></td></tr>
+<tr class="memdesc:namespacethrust_1_1system_1_1cuda"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1system_1_1cuda.html" title="thrust::system::cuda is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust&#39;s CUDA backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::cuda namespace for easy access. ">thrust::system::cuda</a></code> is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust's CUDA backend system. The identifiers are provided in a separate namespace underneath <code><a class="el" href="namespacethrust_1_1system.html" title="thrust::system is the namespace which contains specific Thrust backend systems. It also contains func...">thrust::system</a></code> for import convenience but are also aliased in the top-level <code><a class="el" href="namespacethrust_1_1cuda.html" title="thrust::cuda is a top-level alias for thrust::system::cuda. ">thrust::cuda</a></code> namespace for easy access. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacethrust_1_1cuda"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1cuda.html">thrust::cuda</a></td></tr>
 <tr class="memdesc:namespacethrust_1_1cuda"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code><a class="el" href="namespacethrust_1_1cuda.html" title="thrust::cuda is a top-level alias for thrust::system::cuda. ">thrust::cuda</a></code> is a top-level alias for <code><a class="el" href="namespacethrust_1_1system_1_1cuda.html" title="thrust::system::cuda is the namespace containing functionality for allocating, manipulating, and deallocating memory available to Thrust&#39;s CUDA backend system. The identifiers are provided in a separate namespace underneath thrust::system for import convenience but are also aliased in the top-level thrust::cuda namespace for easy access. ">thrust::system::cuda</a></code>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a887e73d6f3d98ef26b75f9581f5c102d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a887e73d6f3d98ef26b75f9581f5c102d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="system_2cuda_2memory_8h_a887e73d6f3d98ef26b75f9581f5c102d.html#a887e73d6f3d98ef26b75f9581f5c102d">thrust::cuda_cub::allocator</a> = <a class="el" href="classthrust_1_1mr_1_1stateless__resource__allocator.html">thrust::mr::stateless_resource_allocator</a>&lt; T, <a class="el" href="namespacethrust_1_1system_1_1cuda_a927b855a6966e82bfd6ccf5d7d8fe243.html#a927b855a6966e82bfd6ccf5d7d8fe243">thrust::system::cuda::memory_resource</a> &gt;</td></tr>
+<tr class="separator:a887e73d6f3d98ef26b75f9581f5c102d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166bcf0c6662ac9b1f1d25722dca6b58"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a166bcf0c6662ac9b1f1d25722dca6b58"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="system_2cuda_2memory_8h_a166bcf0c6662ac9b1f1d25722dca6b58.html#a166bcf0c6662ac9b1f1d25722dca6b58">thrust::cuda_cub::universal_allocator</a> = <a class="el" href="classthrust_1_1mr_1_1stateless__resource__allocator.html">thrust::mr::stateless_resource_allocator</a>&lt; T, <a class="el" href="namespacethrust_1_1system_1_1cuda_abfa94561623235b4a6b6b85d7546b02f.html#abfa94561623235b4a6b6b85d7546b02f">thrust::system::cuda::universal_memory_resource</a> &gt;</td></tr>
+<tr class="separator:a166bcf0c6662ac9b1f1d25722dca6b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7e06da03fe5a40580730f6a4958fabc8"><td class="memItemLeft" align="right" valign="top">__host__ __device__ pointer&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system_1_1cuda_a7e06da03fe5a40580730f6a4958fabc8.html#a7e06da03fe5a40580730f6a4958fabc8">thrust::system::cuda::malloc</a> (std::size_t n)</td></tr>
-<tr class="separator:a7e06da03fe5a40580730f6a4958fabc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a41c45f9055179c3ef0667fc8fb53af"><td class="memItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust_1_1system_1_1cuda_a4a41c45f9055179c3ef0667fc8fb53af.html#a4a41c45f9055179c3ef0667fc8fb53af">thrust::system::cuda::free</a> (pointer&lt; void &gt; ptr)</td></tr>
-<tr class="separator:a4a41c45f9055179c3ef0667fc8fb53af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c21b4bc8c1cf1c50a6a4b00b7f5e0cd"><td class="memItemLeft" align="right" valign="top">__host__ __device__ pointer&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_2cuda_2memory_8h_a8c21b4bc8c1cf1c50a6a4b00b7f5e0cd.html#a8c21b4bc8c1cf1c50a6a4b00b7f5e0cd">thrust::cuda_cub::malloc</a> (std::size_t n)</td></tr>
+<tr class="separator:a8c21b4bc8c1cf1c50a6a4b00b7f5e0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81bf400c5db03ad1689a0907b5856aab"><td class="memItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system_2cuda_2memory_8h_a81bf400c5db03ad1689a0907b5856aab.html#a81bf400c5db03ad1689a0907b5856aab">thrust::cuda_cub::free</a> (pointer&lt; void &gt; ptr)</td></tr>
+<tr class="separator:a81bf400c5db03ad1689a0907b5856aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Managing memory associated with Thrust's CUDA system. </p>
+<p>Managing memory associated with Thrust's Standard C++ system.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

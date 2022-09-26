@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::logical_not&lt; T &gt; Struct Template Reference</title>
+<title>Thrust: thrust::logical_not&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -69,11 +69,11 @@ typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae050969e742ea4af19ed8c9f74aded92"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1logical__not_ae050969e742ea4af19ed8c9f74aded92.html#ae050969e742ea4af19ed8c9f74aded92">operator()</a> (const T &amp;x) const</td></tr>
-<tr class="separator:ae050969e742ea4af19ed8c9f74aded92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e2043845a7fce188582751cb250374"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1logical__not_ae4e2043845a7fce188582751cb250374.html#ae4e2043845a7fce188582751cb250374">operator()</a> (const T &amp;x) const</td></tr>
+<tr class="separator:ae4e2043845a7fce188582751cb250374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
+<div class="textblock"><h3>template&lt;typename T = void&gt;<br />
 struct thrust::logical_not&lt; T &gt;</h3>
 
 <p><code><a class="el" href="structthrust_1_1logical__not.html">logical_not</a></code> is a function object. Specifically, it is an Adaptable Predicate, which means it is a function object that tests the truth or falsehood of some condition. If <code>f</code> is an object of class <code>logical_not&lt;T&gt;</code> and <code>x</code> is an object of class <code>T</code> (where <code>T</code> is convertible to <code>bool</code>) then <code>f(x)</code> returns <code>true</code> if and only if <code>x</code> is <code>false</code>.</p>
@@ -84,7 +84,7 @@ struct thrust::logical_not&lt; T &gt;</h3>
   </dd>
 </dl>
 <p>The following code snippet demonstrates how to use <code><a class="el" href="structthrust_1_1logical__not.html">logical_not</a></code> to transform a <a class="el" href="classthrust_1_1device__vector.html">device_vector</a> of <code>bools</code> into its logical complement.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line">...</div><div class="line">thrust::device_vector&lt;<span class="keywordtype">bool</span>&gt; V;</div><div class="line">...</div><div class="line">thrust::transform(V.begin(), V.end(), V.begin(), <a class="code" href="structthrust_1_1logical__not.html">thrust::logical_not&lt;bool&gt;</a>());</div><div class="line"><span class="comment">// The elements of V are now the logical complement of what they were prior</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="http://www.sgi.com/tech/stl/logical_not.html">http://www.sgi.com/tech/stl/logical_not.html</a> </dd>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transform_8h.html">thrust/transform.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line">...</div><div class="line">thrust::device_vector&lt;<span class="keywordtype">bool</span>&gt; V;</div><div class="line">...</div><div class="line">thrust::transform(V.begin(), V.end(), V.begin(), <a class="code" href="structthrust_1_1logical__not.html">thrust::logical_not&lt;bool&gt;</a>());</div><div class="line"><span class="comment">// The elements of V are now the logical complement of what they were prior</span></div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="https://en.cppreference.com/w/cpp/utility/functional/logical_not">https://en.cppreference.com/w/cpp/utility/functional/logical_not</a> </dd>
 <dd>
 <a class="el" href="structthrust_1_1unary__function.html">unary_function</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/integer_sequence.h File Reference</title>
+<title>Thrust: thrust/type_traits/integer_sequence.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -41,19 +41,67 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">integer_sequence.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++14's <code>integer_sequence</code> and associated helper aliases plus some extensions.  
+<p>C++14's <a href="https://en.cppreference.com/w/cpp/utility/integer_sequence"><code>std::index_sequence</code></a>, associated helper aliases, and some related extensions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;thrust/detail/cpp11_required.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 </div>
 <p><a href="integer__sequence_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
+<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga6c50c39a0607c7530a6e81ab2a796c4e"><td class="memTemplParams" colspan="2">template&lt;typename T , T... Is&gt; </td></tr>
+<tr class="memitem:ga6c50c39a0607c7530a6e81ab2a796c4e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga6c50c39a0607c7530a6e81ab2a796c4e.html#ga6c50c39a0607c7530a6e81ab2a796c4e">thrust::integer_sequence</a> = std::integer_sequence&lt; T, Is... &gt;</td></tr>
+<tr class="memdesc:ga6c50c39a0607c7530a6e81ab2a796c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compile-time sequence of <a href="https://en.cppreference.com/w/cpp/language/constant_expression#Integral_constant_expression"><em>integral constants</em></a> of type <code>T</code> with values <code>Is...</code>.  <a href="group__type__traits_ga6c50c39a0607c7530a6e81ab2a796c4e.html#ga6c50c39a0607c7530a6e81ab2a796c4e">More...</a><br /></td></tr>
+<tr class="separator:ga6c50c39a0607c7530a6e81ab2a796c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbf6877cf7c76f7a9797c15e46ec126a"><td class="memTemplParams" colspan="2">template&lt;std::size_t... Is&gt; </td></tr>
+<tr class="memitem:gafbf6877cf7c76f7a9797c15e46ec126a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gafbf6877cf7c76f7a9797c15e46ec126a.html#gafbf6877cf7c76f7a9797c15e46ec126a">thrust::index_sequence</a> = std::index_sequence&lt; Is... &gt;</td></tr>
+<tr class="memdesc:gafbf6877cf7c76f7a9797c15e46ec126a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compile-time sequence of type <a href="https://en.cppreference.com/w/cpp/types/size_t">std::size_t</a> with values <code>Is...</code>.  <a href="group__type__traits_gafbf6877cf7c76f7a9797c15e46ec126a.html#gafbf6877cf7c76f7a9797c15e46ec126a">More...</a><br /></td></tr>
+<tr class="separator:gafbf6877cf7c76f7a9797c15e46ec126a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b61df4c9a80875b3f7aaa3ba0b09592"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ga0b61df4c9a80875b3f7aaa3ba0b09592"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga0b61df4c9a80875b3f7aaa3ba0b09592.html#ga0b61df4c9a80875b3f7aaa3ba0b09592">thrust::make_integer_sequence</a> = std::make_integer_sequence&lt; T, N &gt;</td></tr>
+<tr class="memdesc:ga0b61df4c9a80875b3f7aaa3ba0b09592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <code>integer_sequence</code> with elements <code>0, 1, 2, ..., N - 1</code> of type <code>T</code>.  <a href="group__type__traits_ga0b61df4c9a80875b3f7aaa3ba0b09592.html#ga0b61df4c9a80875b3f7aaa3ba0b09592">More...</a><br /></td></tr>
+<tr class="separator:ga0b61df4c9a80875b3f7aaa3ba0b09592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7208a6310979d8c3e642756cc88dba97"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:ga7208a6310979d8c3e642756cc88dba97"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga7208a6310979d8c3e642756cc88dba97.html#ga7208a6310979d8c3e642756cc88dba97">thrust::make_index_sequence</a> = std::make_index_sequence&lt; N &gt;</td></tr>
+<tr class="memdesc:ga7208a6310979d8c3e642756cc88dba97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <code>integer_sequence</code> with elements <code>0, 1, 2, ..., N - 1</code> of type <a href="https://en.cppreference.com/w/cpp/types/size_t">std::size_t</a>.  <a href="group__type__traits_ga7208a6310979d8c3e642756cc88dba97.html#ga7208a6310979d8c3e642756cc88dba97">More...</a><br /></td></tr>
+<tr class="separator:ga7208a6310979d8c3e642756cc88dba97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga902b3a0313d9d2dffe1b71785fbc17f7"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:ga902b3a0313d9d2dffe1b71785fbc17f7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga902b3a0313d9d2dffe1b71785fbc17f7.html#ga902b3a0313d9d2dffe1b71785fbc17f7">thrust::make_reversed_integer_sequence</a> = typename detail::make_reversed_integer_sequence_impl&lt; T, N &gt;::type</td></tr>
+<tr class="memdesc:ga902b3a0313d9d2dffe1b71785fbc17f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <code>integer_sequence</code> with elements <code>N - 1, N - 2, N - 3, ..., 0</code>.  <a href="group__type__traits_ga902b3a0313d9d2dffe1b71785fbc17f7.html#ga902b3a0313d9d2dffe1b71785fbc17f7">More...</a><br /></td></tr>
+<tr class="separator:ga902b3a0313d9d2dffe1b71785fbc17f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd17444a4ddc93798cd0970207e2c1bc"><td class="memTemplParams" colspan="2">template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:gacd17444a4ddc93798cd0970207e2c1bc"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gacd17444a4ddc93798cd0970207e2c1bc.html#gacd17444a4ddc93798cd0970207e2c1bc">thrust::make_reversed_index_sequence</a> = make_reversed_integer_sequence&lt; std::size_t, N &gt;</td></tr>
+<tr class="memdesc:gacd17444a4ddc93798cd0970207e2c1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <code>index_sequence</code> with elements <code>N - 1, N - 2, N - 3, ..., 0</code>.  <a href="group__type__traits_gacd17444a4ddc93798cd0970207e2c1bc.html#gacd17444a4ddc93798cd0970207e2c1bc">More...</a><br /></td></tr>
+<tr class="separator:gacd17444a4ddc93798cd0970207e2c1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30dd0858022330597b14a4c034e1936d"><td class="memTemplParams" colspan="2">template&lt;typename T , T Value, typename Sequence &gt; </td></tr>
+<tr class="memitem:ga30dd0858022330597b14a4c034e1936d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga30dd0858022330597b14a4c034e1936d.html#ga30dd0858022330597b14a4c034e1936d">thrust::integer_sequence_push_front</a> = typename detail::integer_sequence_push_front_impl&lt; T, Value, Sequence &gt;::type</td></tr>
+<tr class="memdesc:ga30dd0858022330597b14a4c034e1936d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new element to the front of an <code>integer_sequence</code>.  <a href="group__type__traits_ga30dd0858022330597b14a4c034e1936d.html#ga30dd0858022330597b14a4c034e1936d">More...</a><br /></td></tr>
+<tr class="separator:ga30dd0858022330597b14a4c034e1936d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a0f2c1da32b7b14180366265894c192"><td class="memTemplParams" colspan="2">template&lt;typename T , T Value, typename Sequence &gt; </td></tr>
+<tr class="memitem:ga9a0f2c1da32b7b14180366265894c192"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga9a0f2c1da32b7b14180366265894c192.html#ga9a0f2c1da32b7b14180366265894c192">thrust::integer_sequence_push_back</a> = typename detail::integer_sequence_push_back_impl&lt; T, Value, Sequence &gt;::type</td></tr>
+<tr class="memdesc:ga9a0f2c1da32b7b14180366265894c192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new element to the back of an <code>integer_sequence</code>.  <a href="group__type__traits_ga9a0f2c1da32b7b14180366265894c192.html#ga9a0f2c1da32b7b14180366265894c192">More...</a><br /></td></tr>
+<tr class="separator:ga9a0f2c1da32b7b14180366265894c192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++14's <code>integer_sequence</code> and associated helper aliases plus some extensions. </p>
+<div class="textblock"><p>C++14's <a href="https://en.cppreference.com/w/cpp/utility/integer_sequence"><code>std::index_sequence</code></a>, associated helper aliases, and some related extensions. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::device_reference::device_reference</title>
+<title>Thrust: thrust::device_reference::device_reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -77,21 +77,19 @@ template&lt;typename T&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This copy constructor initializes this <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> to refer to an object pointed to by the given <code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code>. After this <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> is constructed, it shall refer to the object pointed to by <code>ptr</code>.</p>
+<p>This copy constructor initializes this <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> to refer to an object pointed to by the given <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code>. After this <code><a class="el" href="classthrust_1_1device__reference.html">device_reference</a></code> is constructed, it shall refer to the object pointed to by <code>ptr</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ptr</td><td>A <code><a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a></code> to copy from.</td></tr>
+    <tr><td class="paramname">ptr</td><td>A <code><a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a></code> to copy from.</td></tr>
   </table>
   </dd>
 </dl>
 <p>The following code snippet demonstrates the semantic of this copy constructor.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="device__vector_8h.html">thrust/device_vector.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;assert.h&gt;</span></div><div class="line">...</div><div class="line">thrust::device_vector&lt;<span class="keywordtype">int</span>&gt; v(1,0);</div><div class="line"><a class="code" href="classthrust_1_1device__ptr.html">thrust::device_ptr&lt;int&gt;</a> ptr = &amp;v[0];</div><div class="line"><a class="code" href="classthrust_1_1device__reference.html">thrust::device_reference&lt;int&gt;</a> ref(ptr);</div><div class="line"></div><div class="line"><span class="comment">// ref equals the object pointed to by ptr</span></div><div class="line">assert(ref == *ptr);</div><div class="line"></div><div class="line"><span class="comment">// the address of ref equals ptr</span></div><div class="line">assert(&amp;ref == ptr);</div><div class="line"></div><div class="line"><span class="comment">// modifying *ptr modifies ref</span></div><div class="line">*ptr = 13;</div><div class="line">assert(ref == 13);</div></div><!-- fragment --> 
-<p class="reference">References <a class="el" href="classthrust_1_1device__reference_a797a3905cc3520b9378c20eb98bb0551.html#a797a3905cc3520b9378c20eb98bb0551">thrust::device_reference&lt; T &gt;::operator=()</a>, and <a class="el" href="group__memory__management__classes_ga6037bf38f65950baed7fe4caab9892ff.html#ga6037bf38f65950baed7fe4caab9892ff">thrust::swap()</a>.</p>
-
 </div>
 </div>
     </td>

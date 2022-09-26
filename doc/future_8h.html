@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/future.h File Reference</title>
+<title>Thrust: thrust/future.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -41,6 +41,12 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">future.h File Reference</div>  </div>
 </div><!--header-->
@@ -49,10 +55,87 @@ $(function() {
 <p><code>thrust::future</code>, an asynchronous value type.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
-<code>#include &lt;thrust/detail/cpp11_required.h&gt;</code><br />
-<code>#include &lt;thrust/detail/modern_gcc_required.h&gt;</code><br />
+<code>#include &lt;thrust/detail/cpp14_required.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="execution__policy_8h_source.html">thrust/execution_policy.h</a>&gt;</code><br />
+<code>#include &lt;thrust/detail/static_assert.h&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;__THRUST_DEVICE_SYSTEM_ROOT/pointer.h&gt;</code><br />
+<code>#include &lt;__THRUST_DEVICE_SYSTEM_ROOT/future.h&gt;</code><br />
 </div>
 <p><a href="future_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
+<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a210254f157cde848b9a583be35765fb0"><td class="memItemLeft" align="right" valign="top"><a id="a210254f157cde848b9a583be35765fb0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__THRUST_DEVICE_SYSTEM_POINTER_HEADER</b>&#160;&#160;&#160;&lt;__THRUST_DEVICE_SYSTEM_ROOT/pointer.h&gt;</td></tr>
+<tr class="separator:a210254f157cde848b9a583be35765fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0e0bd5b9c93643f6b4e54a5145c960"><td class="memItemLeft" align="right" valign="top"><a id="a4a0e0bd5b9c93643f6b4e54a5145c960"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__THRUST_DEVICE_SYSTEM_FUTURE_HEADER</b>&#160;&#160;&#160;&lt;__THRUST_DEVICE_SYSTEM_ROOT/future.h&gt;</td></tr>
+<tr class="separator:a4a0e0bd5b9c93643f6b4e54a5145c960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a347cd79b55928e5af527ea17b3b9445a"><td class="memTemplParams" colspan="2"><a id="a347cd79b55928e5af527ea17b3b9445a"></a>
+template&lt;typename System &gt; </td></tr>
+<tr class="memitem:a347cd79b55928e5af527ea17b3b9445a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::unique_eager_event_type_detail::select</b> = decltype(unique_eager_event_type(std::declval&lt; System &gt;()))</td></tr>
+<tr class="separator:a347cd79b55928e5af527ea17b3b9445a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e91bba31179b2c7293f57cec2eaf49"><td class="memTemplParams" colspan="2"><a id="a38e91bba31179b2c7293f57cec2eaf49"></a>
+template&lt;typename System , typename T &gt; </td></tr>
+<tr class="memitem:a38e91bba31179b2c7293f57cec2eaf49"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::unique_eager_future_type_detail::select</b> = decltype(unique_eager_future_type&lt; T &gt;(std::declval&lt; System &gt;()))</td></tr>
+<tr class="separator:a38e91bba31179b2c7293f57cec2eaf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0480a5e16a7015d988a77777e01f74e8"><td class="memTemplParams" colspan="2"><a id="a0480a5e16a7015d988a77777e01f74e8"></a>
+template&lt;typename System &gt; </td></tr>
+<tr class="memitem:a0480a5e16a7015d988a77777e01f74e8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::unique_eager_event</b> = unique_eager_event_type_detail::select&lt; System &gt;</td></tr>
+<tr class="separator:a0480a5e16a7015d988a77777e01f74e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80efe727db88f7d9321c16ec0cddaa33"><td class="memTemplParams" colspan="2"><a id="a80efe727db88f7d9321c16ec0cddaa33"></a>
+template&lt;typename System &gt; </td></tr>
+<tr class="memitem:a80efe727db88f7d9321c16ec0cddaa33"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::event</b> = unique_eager_event&lt; System &gt;</td></tr>
+<tr class="separator:a80efe727db88f7d9321c16ec0cddaa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2fb4d79c43dcf2d4e942f1d9be6609"><td class="memTemplParams" colspan="2"><a id="a0e2fb4d79c43dcf2d4e942f1d9be6609"></a>
+template&lt;typename System , typename T &gt; </td></tr>
+<tr class="memitem:a0e2fb4d79c43dcf2d4e942f1d9be6609"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::unique_eager_future</b> = unique_eager_future_type_detail::select&lt; System, T &gt;</td></tr>
+<tr class="separator:a0e2fb4d79c43dcf2d4e942f1d9be6609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef884068cb1f530925347b894805a5de"><td class="memTemplParams" colspan="2"><a id="aef884068cb1f530925347b894805a5de"></a>
+template&lt;typename System , typename T &gt; </td></tr>
+<tr class="memitem:aef884068cb1f530925347b894805a5de"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::future</b> = unique_eager_future&lt; System, T &gt;</td></tr>
+<tr class="separator:aef884068cb1f530925347b894805a5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f17a9e95f4c927e9875b1b77b97d848"><td class="memItemLeft" align="right" valign="top"><a id="a9f17a9e95f4c927e9875b1b77b97d848"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>thrust::device_unique_eager_event</b> = unique_eager_event_type_detail::select&lt; thrust::system::__THRUST_DEVICE_SYSTEM_NAMESPACE::tag &gt;</td></tr>
+<tr class="separator:a9f17a9e95f4c927e9875b1b77b97d848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60a8711e145fd5b53e183f42d481785"><td class="memItemLeft" align="right" valign="top"><a id="ab60a8711e145fd5b53e183f42d481785"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>thrust::device_event</b> = device_unique_eager_event</td></tr>
+<tr class="separator:ab60a8711e145fd5b53e183f42d481785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886860ed77d7fea230fc5a12024fae7c"><td class="memTemplParams" colspan="2"><a id="a886860ed77d7fea230fc5a12024fae7c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a886860ed77d7fea230fc5a12024fae7c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::device_unique_eager_future</b> = unique_eager_future_type_detail::select&lt; thrust::system::__THRUST_DEVICE_SYSTEM_NAMESPACE::tag, T &gt;</td></tr>
+<tr class="separator:a886860ed77d7fea230fc5a12024fae7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38076dfdaf36a7883f5df1360658946"><td class="memTemplParams" colspan="2"><a id="aa38076dfdaf36a7883f5df1360658946"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa38076dfdaf36a7883f5df1360658946"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::device_future</b> = device_unique_eager_future&lt; T &gt;</td></tr>
+<tr class="separator:aa38076dfdaf36a7883f5df1360658946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a02b84e0bcbd1d5e73136175e2a5e27d7"><td class="memItemLeft" align="right" valign="top"><a id="a02b84e0bcbd1d5e73136175e2a5e27d7"></a>
+__host__ no_unique_eager_event_type_found&#160;</td><td class="memItemRight" valign="bottom"><b>thrust::unimplemented::unique_eager_event_type</b> (...) noexcept</td></tr>
+<tr class="separator:a02b84e0bcbd1d5e73136175e2a5e27d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97445b29c58fcfc71477393e89c04d12"><td class="memTemplParams" colspan="2"><a id="a97445b29c58fcfc71477393e89c04d12"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a97445b29c58fcfc71477393e89c04d12"><td class="memTemplItemLeft" align="right" valign="top">__host__ no_unique_eager_future_type_found&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::unimplemented::unique_eager_future_type</b> (...) noexcept</td></tr>
+<tr class="separator:a97445b29c58fcfc71477393e89c04d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab6b0d5a8e417f3977f8a86a4f3e82e9c"><td class="memItemLeft" align="right" valign="top"><a id="ab6b0d5a8e417f3977f8a86a4f3e82e9c"></a>
+THRUST_INLINE_CONSTANT new_stream_t&#160;</td><td class="memItemRight" valign="bottom"><b>thrust::new_stream</b> {}</td></tr>
+<tr class="separator:ab6b0d5a8e417f3977f8a86a4f3e82e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><code>thrust::future</code>, an asynchronous value type. </p>
 </div></div><!-- contents -->

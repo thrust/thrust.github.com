@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/iterator/zip_iterator.h File Reference</title>
+<title>Thrust: thrust/iterator/zip_iterator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -73,9 +73,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga338d4f994660c4dc89e2bb3cf0a6a60f"><td class="memTemplParams" colspan="2">template&lt;typename IteratorTuple &gt; </td></tr>
-<tr class="memitem:ga338d4f994660c4dc89e2bb3cf0a6a60f"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ zip_iterator&lt; IteratorTuple &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fancyiterator_ga338d4f994660c4dc89e2bb3cf0a6a60f.html#ga338d4f994660c4dc89e2bb3cf0a6a60f">thrust::make_zip_iterator</a> (IteratorTuple t)</td></tr>
-<tr class="separator:ga338d4f994660c4dc89e2bb3cf0a6a60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf74666e01294d296ab8aca7c295bdeb1"><td class="memTemplParams" colspan="2">template&lt;typename... Iterators&gt; </td></tr>
+<tr class="memitem:gaf74666e01294d296ab8aca7c295bdeb1"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ zip_iterator&lt; <a class="el" href="classthrust_1_1tuple.html">thrust::tuple</a>&lt; Iterators... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fancyiterator_gaf74666e01294d296ab8aca7c295bdeb1.html#gaf74666e01294d296ab8aca7c295bdeb1">thrust::make_zip_iterator</a> (<a class="el" href="classthrust_1_1tuple.html">thrust::tuple</a>&lt; Iterators... &gt; t)</td></tr>
+<tr class="separator:gaf74666e01294d296ab8aca7c295bdeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga126d71dd0666e755eaaa16500f16b9c6"><td class="memTemplParams" colspan="2">template&lt;typename... Iterators&gt; </td></tr>
+<tr class="memitem:ga126d71dd0666e755eaaa16500f16b9c6"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ zip_iterator&lt; <a class="el" href="classthrust_1_1tuple.html">thrust::tuple</a>&lt; Iterators... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fancyiterator_ga126d71dd0666e755eaaa16500f16b9c6.html#ga126d71dd0666e755eaaa16500f16b9c6">thrust::make_zip_iterator</a> (Iterators... its)</td></tr>
+<tr class="separator:ga126d71dd0666e755eaaa16500f16b9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An iterator which returns a tuple of the result of dereferencing a tuple of iterators when dereferenced. </p>

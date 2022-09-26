@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/device_allocator.h File Reference</title>
+<title>Thrust: thrust/device_allocator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -49,12 +49,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>An allocator which creates new elements in device memory.  
+<p>An allocator which creates new elements in memory accessible by devices.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="device__ptr_8h_source.html">thrust/device_ptr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="allocator_8h_source.html">thrust/mr/allocator.h</a>&gt;</code><br />
-<code>#include &lt;thrust/memory/detail/device_system_resource.h&gt;</code><br />
+<code>#include &lt;thrust/mr/device_memory_resource.h&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 </div>
@@ -63,6 +63,9 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__ptr__memory__resource.html">thrust::device_ptr_memory_resource&lt; Upstream &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__allocator.html">thrust::device_allocator&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An allocator which creates new elements in memory accessible by devices.  <a href="classthrust_1_1device__allocator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1device__allocator_1_1rebind.html">thrust::device_allocator&lt; T &gt;::rebind&lt; U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -74,7 +77,7 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An allocator which creates new elements in device memory. </p>
+<div class="textblock"><p>An allocator which creates new elements in memory accessible by devices. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

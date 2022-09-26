@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::identity&lt; T &gt; Struct Template Reference</title>
+<title>Thrust: thrust::identity&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -65,11 +65,11 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a931868c2e242ebc2b09311f7d5b642c9"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1identity_a931868c2e242ebc2b09311f7d5b642c9.html#a931868c2e242ebc2b09311f7d5b642c9">operator()</a> (const T &amp;x) const</td></tr>
-<tr class="separator:a931868c2e242ebc2b09311f7d5b642c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0077d70922f7ec0ca60eaf8eba538820"><td class="memItemLeft" align="right" valign="top">__thrust_exec_check_disable__ __host__ __device__ constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1identity_a0077d70922f7ec0ca60eaf8eba538820.html#a0077d70922f7ec0ca60eaf8eba538820">operator()</a> (const T &amp;x) const</td></tr>
+<tr class="separator:a0077d70922f7ec0ca60eaf8eba538820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br />
+<div class="textblock"><h3>template&lt;typename T = void&gt;<br />
 struct thrust::identity&lt; T &gt;</h3>
 
 <p><code>identity</code> is a Unary Function that represents the identity function: it takes a single argument <code>x</code>, and returns <code>x</code>.</p>
@@ -80,7 +80,7 @@ struct thrust::identity&lt; T &gt;</h3>
   </dd>
 </dl>
 <p>The following code snippet demonstrates that <code>identity</code> returns its argument.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;assert.h&gt;</span></div><div class="line">...</div><div class="line">int x = 137;</div><div class="line"><a class="code" href="structthrust_1_1identity.html">thrust::identity&lt;int&gt;</a> id;</div><div class="line">assert(x == <span class="keywordtype">id</span>(x));</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="http://www.sgi.com/tech/stl/identity.html">http://www.sgi.com/tech/stl/identity.html</a> </dd>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="functional_8h.html">thrust/functional.h</a>&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;assert.h&gt;</span></div><div class="line">...</div><div class="line">int x = 137;</div><div class="line"><a class="code" href="structthrust_1_1identity.html">thrust::identity&lt;int&gt;</a> id;</div><div class="line">assert(x == <span class="keywordtype">id</span>(x));</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a href="https://en.cppreference.com/w/cpp/utility/functional/identity">https://en.cppreference.com/w/cpp/utility/functional/identity</a> </dd>
 <dd>
 <a class="el" href="structthrust_1_1unary__function.html">unary_function</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

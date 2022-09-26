@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/device_reference.h File Reference</title>
+<title>Thrust: thrust/device_reference.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -50,13 +50,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A reference to a variable which resides in the "device" system's memory space.  
+<p>A reference to an object which resides in memory associated with the device system.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="device__ptr_8h_source.html">thrust/device_ptr.h</a>&gt;</code><br />
 <code>#include &lt;thrust/detail/type_traits.h&gt;</code><br />
 <code>#include &lt;thrust/detail/reference.h&gt;</code><br />
-<code>#include &lt;thrust/detail/device_reference.inl&gt;</code><br />
 </div>
 <p><a href="device__reference_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -73,12 +72,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6037bf38f65950baed7fe4caab9892ff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga6037bf38f65950baed7fe4caab9892ff"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management__classes_ga6037bf38f65950baed7fe4caab9892ff.html#ga6037bf38f65950baed7fe4caab9892ff">thrust::swap</a> (device_reference&lt; T &gt; x, device_reference&lt; T &gt; y)</td></tr>
-<tr class="separator:ga6037bf38f65950baed7fe4caab9892ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_gaa677af4b24a5b9067359809a1f5df3e7.html#gaa677af4b24a5b9067359809a1f5df3e7">thrust::swap</a> (device_reference&lt; T &gt; &amp;x, device_reference&lt; T &gt; &amp;y)</td></tr>
+<tr class="separator:gaa677af4b24a5b9067359809a1f5df3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37e81400f1c016baaaad65e5fda755f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename charT , typename traits &gt; </td></tr>
+<tr class="memitem:ga37e81400f1c016baaaad65e5fda755f6"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; charT, traits &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__memory__management_ga37e81400f1c016baaaad65e5fda755f6.html#ga37e81400f1c016baaaad65e5fda755f6">thrust::operator&lt;&lt;</a> (std::basic_ostream&lt; charT, traits &gt; &amp;os, const device_reference&lt; T &gt; &amp;y)</td></tr>
+<tr class="separator:ga37e81400f1c016baaaad65e5fda755f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A reference to a variable which resides in the "device" system's memory space. </p>
+<div class="textblock"><p>A reference to an object which resides in memory associated with the device system. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

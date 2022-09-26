@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::device_malloc_allocator&lt; T &gt; Class Template Reference</title>
+<title>Thrust: thrust::device_malloc_allocator&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -47,7 +47,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classthrust_1_1device__malloc__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">thrust::device_malloc_allocator&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a> &raquo; <a class="el" href="group__memory__management__classes.html">Memory Management Classes</a></div></div>  </div>
+<div class="title">thrust::device_malloc_allocator&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__memory__management.html">Memory Management</a> &raquo; <a class="el" href="group__allocators.html">Allocators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,6 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20891faad837681fc82ad284d27a73fd"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a20891faad837681fc82ad284d27a73fd"><td class="memTemplItemLeft" align="right" valign="top">__host__ __device__&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__malloc__allocator_a20891faad837681fc82ad284d27a73fd.html#a20891faad837681fc82ad284d27a73fd">device_malloc_allocator</a> (<a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a>&lt; U &gt; const &amp;)</td></tr>
 <tr class="separator:a20891faad837681fc82ad284d27a73fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cdd46967678cab06b63253f6fb4039f"><td class="memItemLeft" align="right" valign="top"><a id="a2cdd46967678cab06b63253f6fb4039f"></a>
+<a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a> &amp;)=default</td></tr>
+<tr class="separator:a2cdd46967678cab06b63253f6fb4039f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfce3044148e6b28352751d960ffe6d1"><td class="memItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__malloc__allocator_a3884971c0a92a775ea05c0ce7e2d0b99.html#a3884971c0a92a775ea05c0ce7e2d0b99">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__malloc__allocator_abfce3044148e6b28352751d960ffe6d1.html#abfce3044148e6b28352751d960ffe6d1">address</a> (<a class="el" href="classthrust_1_1device__malloc__allocator_a564fd667458f0f4d1838c07f8b9391ad.html#a564fd667458f0f4d1838c07f8b9391ad">reference</a> r)</td></tr>
 <tr class="separator:abfce3044148e6b28352751d960ffe6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f327c41ea19a5fc921227f856ccf8a1"><td class="memItemLeft" align="right" valign="top">__host__ __device__ <a class="el" href="classthrust_1_1device__malloc__allocator_abd47ab6dfaffac98f77ec76129c5288a.html#abd47ab6dfaffac98f77ec76129c5288a">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrust_1_1device__malloc__allocator_a9f327c41ea19a5fc921227f856ccf8a1.html#a9f327c41ea19a5fc921227f856ccf8a1">address</a> (<a class="el" href="classthrust_1_1device__malloc__allocator_ab3352c628d4fe9ef9172eb94c7982cca.html#ab3352c628d4fe9ef9172eb94c7982cca">const_reference</a> r)</td></tr>
@@ -107,13 +110,13 @@ class thrust::device_malloc_allocator&lt; T &gt;</h3>
 
 <p><code><a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a></code> is a device memory allocator that employs the <code>device_malloc</code> function for allocation.</p>
 <p><code><a class="el" href="classthrust_1_1device__malloc__allocator.html">device_malloc_allocator</a></code> is deprecated in favor of <code><a class="el" href="namespacethrust_1_1mr.html" title="thrust::mr is the namespace containing system agnostic types and functions for memory_resource relate...">thrust::mr</a></code> memory resource-based allocators.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__allocation__functions_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">device_malloc</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__memory__management_ga53081c2b134f091a080c976a1cbaf8cd.html#ga53081c2b134f091a080c976a1cbaf8cd">device_malloc</a> </dd>
 <dd>
-<a class="el" href="classthrust_1_1device__ptr.html">device_ptr</a> </dd>
+<a class="el" href="classthrust_1_1device__ptr.html" title="device_ptr is a pointer-like object which points to an object that resides in memory associated with ...">device_ptr</a> </dd>
 <dd>
-device_allocator </dd>
+<a class="el" href="classthrust_1_1device__allocator.html" title="An allocator which creates new elements in memory accessible by devices. ">device_allocator</a> </dd>
 <dd>
-<a href="http://www.sgi.com/tech/stl/Allocators.html">http://www.sgi.com/tech/stl/Allocators.html</a> </dd></dl>
+<a href="https://en.cppreference.com/w/cpp/memory/allocator">https://en.cppreference.com/w/cpp/memory/allocator</a> </dd></dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>thrust/<a class="el" href="device__malloc__allocator_8h_source.html">device_malloc_allocator.h</a></li>
 </ul>

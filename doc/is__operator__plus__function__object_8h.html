@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/is_operator_plus_function_object.h File Reference</title>
+<title>Thrust: thrust/type_traits/is_operator_plus_function_object.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -42,14 +42,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">is_operator_plus_function_object.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Type traits for determining if a <code>BinaryFunction</code> is equivalent to / <code>operator+</code>.  
+<p>Type traits for determining if a <a href="https://en.cppreference.com/w/cpp/named_req/FunctionObject">FunctionObject</a> is equivalent to <code>operator+</code>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="functional_8h_source.html">thrust/functional.h</a>&gt;</code><br />
@@ -58,19 +59,28 @@ $(function() {
 </div>
 <p><a href="is__operator__plus__function__object_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1is__operator__plus__function__object.html">thrust::is_operator_plus_function_object&lt; FunctionObject &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
 <tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga4951501a3c7337be79222a966d1f9d73"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga4951501a3c7337be79222a966d1f9d73"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga4951501a3c7337be79222a966d1f9d73.html#ga4951501a3c7337be79222a966d1f9d73">thrust::is_operator_plus_function_object</a> = detail::is_operator_plus_function_object_impl&lt; T &gt;</td></tr>
+<tr class="memdesc:ga4951501a3c7337be79222a966d1f9d73"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/named_req/UnaryTypeTrait"><em>UnaryTypeTrait</em></a> that returns <code>true_type</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/FunctionObject">FunctionObject</a> equivalent to <code>operator+</code>, and <code>false_type</code> otherwise.  <a href="group__type__traits_ga4951501a3c7337be79222a966d1f9d73.html#ga4951501a3c7337be79222a966d1f9d73">More...</a><br /></td></tr>
+<tr class="separator:ga4951501a3c7337be79222a966d1f9d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gad5d7207e2d28604f48cef2daccf1ed22"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gad5d7207e2d28604f48cef2daccf1ed22"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gad5d7207e2d28604f48cef2daccf1ed22.html#gad5d7207e2d28604f48cef2daccf1ed22">thrust::is_operator_plus_function_object_v</a> = is_operator_plus_function_object&lt;T&gt;::value</td></tr>
+<tr class="memdesc:gad5d7207e2d28604f48cef2daccf1ed22"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> that is <code>true</code> if <code>T</code> is a <a href="https://en.cppreference.com/w/cpp/named_req/FunctionObject">FunctionObject</a> equivalent to <code>operator&lt;</code>, and <code>false</code> otherwise.  <a href="group__type__traits_gad5d7207e2d28604f48cef2daccf1ed22.html#gad5d7207e2d28604f48cef2daccf1ed22">More...</a><br /></td></tr>
+<tr class="separator:gad5d7207e2d28604f48cef2daccf1ed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Type traits for determining if a <code>BinaryFunction</code> is equivalent to / <code>operator+</code>. </p>
+<div class="textblock"><p>Type traits for determining if a <a href="https://en.cppreference.com/w/cpp/named_req/FunctionObject">FunctionObject</a> is equivalent to <code>operator+</code>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -86,7 +86,7 @@ int main(void)
 }
 {% endhighlight %}
     
-Refer to the [Quick Start Guide](http://github.com/thrust/thrust/wiki/Quick-Start-Guide) page for further information and examples.
+Refer to the [Quick Start Guide](https://docs.nvidia.com/cuda/thrust/index.html) page for further information and examples.
 
 Contributors
 ------------

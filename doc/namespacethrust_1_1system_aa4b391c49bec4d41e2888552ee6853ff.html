@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust::system::cuda_category</title>
+<title>Thrust: thrust::system::cuda_category</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -73,9 +73,6 @@ $(function() {
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classthrust_1_1system_1_1error__category.html">error_category</a>&amp; thrust::system::cuda_category </td>
@@ -85,17 +82,10 @@ $(function() {
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>A reference to an object of a type derived from class <code>thrust::error_category</code>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The object's <code>equivalent</code> virtual functions shall behave as specified for the class <code>thrust::error_category</code>. The object's <code>name</code> virtual function shall return a pointer to the string <code>"cuda"</code>. The object's <code>default_error_condition</code> virtual function shall behave as follows:</dd></dl>
 <p>If the argument <code>ev</code> corresponds to a CUDA error value, the function shall return <code>error_condition(ev,cuda_category())</code>. Otherwise, the function shall return <code>system_category.default_error_condition(ev)</code>. </p>
-
-<p class="reference">Referenced by <a class="el" href="classthrust_1_1system_1_1cuda_1_1experimental_1_1pinned__allocator_aea8e7d79038a524fd998778fffc094a1.html#aea8e7d79038a524fd998778fffc094a1">thrust::system::cuda::experimental::pinned_allocator&lt; T &gt;::deallocate()</a>.</p>
 
 </div>
 </div>

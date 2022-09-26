@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/type_traits/logical_metafunctions.h File Reference</title>
+<title>Thrust: thrust/type_traits/logical_metafunctions.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -41,19 +41,86 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">logical_metafunctions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++17's <code>conjunction</code>, <code>disjunction</code>, and <code>negation</code> metafunctions.  
+<p>C++17's <a href="https://en.cppreference.com/w/cpp/types/conjunction"><code>std::conjunction</code></a>, <a href="https://en.cppreference.com/w/cpp/types/disjunction"><code>std::disjunction</code></a>, and <a href="https://en.cppreference.com/w/cpp/types/negation"><code>std::negation</code></a> metafunctions and related extensions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;thrust/detail/cpp11_required.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
 <p><a href="logical__metafunctions_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1conjunction__value.html">thrust::conjunction_value&lt; Bs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>(... &amp;&amp; Bs)</code>.  <a href="structthrust_1_1conjunction__value.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1disjunction__value.html">thrust::disjunction_value&lt; Bs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>(... || Bs)</code>.  <a href="structthrust_1_1disjunction__value.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrust_1_1negation__value.html">thrust::negation_value&lt; B &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>!Bs</code>.  <a href="structthrust_1_1negation__value.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
+<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaa0ef198acfe55f8943097b334760c0f2"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:gaa0ef198acfe55f8943097b334760c0f2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gaa0ef198acfe55f8943097b334760c0f2.html#gaa0ef198acfe55f8943097b334760c0f2">thrust::conjunction</a> = std::conjunction&lt; Ts... &gt;</td></tr>
+<tr class="memdesc:gaa0ef198acfe55f8943097b334760c0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>(... &amp;&amp; Ts::value)</code>.  <a href="group__type__traits_gaa0ef198acfe55f8943097b334760c0f2.html#gaa0ef198acfe55f8943097b334760c0f2">More...</a><br /></td></tr>
+<tr class="separator:gaa0ef198acfe55f8943097b334760c0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e44a8f527a2ce294a8b2d9e825482a7"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:ga9e44a8f527a2ce294a8b2d9e825482a7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga9e44a8f527a2ce294a8b2d9e825482a7.html#ga9e44a8f527a2ce294a8b2d9e825482a7">thrust::disjunction</a> = std::disjunction&lt; Ts... &gt;</td></tr>
+<tr class="memdesc:ga9e44a8f527a2ce294a8b2d9e825482a7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>(... || Ts::value)</code>.  <a href="group__type__traits_ga9e44a8f527a2ce294a8b2d9e825482a7.html#ga9e44a8f527a2ce294a8b2d9e825482a7">More...</a><br /></td></tr>
+<tr class="separator:ga9e44a8f527a2ce294a8b2d9e825482a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfb73a9048bbc5df1d3e362259815d16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gabfb73a9048bbc5df1d3e362259815d16"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gabfb73a9048bbc5df1d3e362259815d16.html#gabfb73a9048bbc5df1d3e362259815d16">thrust::negation</a> = std::negation&lt; T &gt;</td></tr>
+<tr class="memdesc:gabfb73a9048bbc5df1d3e362259815d16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a href="https://en.cppreference.com/w/cpp/types/integral_constant"><code>std::integral_constant</code></a> whose value is <code>!Ts::value</code>.  <a href="group__type__traits_gabfb73a9048bbc5df1d3e362259815d16.html#gabfb73a9048bbc5df1d3e362259815d16">More...</a><br /></td></tr>
+<tr class="separator:gabfb73a9048bbc5df1d3e362259815d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gad5aef36eee458ee3490adee771949a9d"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:gad5aef36eee458ee3490adee771949a9d"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gad5aef36eee458ee3490adee771949a9d.html#gad5aef36eee458ee3490adee771949a9d">thrust::conjunction_v</a> = conjunction&lt;Ts...&gt;::value</td></tr>
+<tr class="memdesc:gad5aef36eee458ee3490adee771949a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>(... &amp;&amp; Ts::value)</code>.  <a href="group__type__traits_gad5aef36eee458ee3490adee771949a9d.html#gad5aef36eee458ee3490adee771949a9d">More...</a><br /></td></tr>
+<tr class="separator:gad5aef36eee458ee3490adee771949a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e27bc0bc00c7225bf3721a1e9a69c0a"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:ga6e27bc0bc00c7225bf3721a1e9a69c0a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga6e27bc0bc00c7225bf3721a1e9a69c0a.html#ga6e27bc0bc00c7225bf3721a1e9a69c0a">thrust::disjunction_v</a> = disjunction&lt;Ts...&gt;::value</td></tr>
+<tr class="memdesc:ga6e27bc0bc00c7225bf3721a1e9a69c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>(... || Ts::value)</code>.  <a href="group__type__traits_ga6e27bc0bc00c7225bf3721a1e9a69c0a.html#ga6e27bc0bc00c7225bf3721a1e9a69c0a">More...</a><br /></td></tr>
+<tr class="separator:ga6e27bc0bc00c7225bf3721a1e9a69c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0edeb370ca2f79c4349d3ab396b9b2a8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga0edeb370ca2f79c4349d3ab396b9b2a8"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga0edeb370ca2f79c4349d3ab396b9b2a8.html#ga0edeb370ca2f79c4349d3ab396b9b2a8">thrust::negation_v</a> = negation&lt;T&gt;::value</td></tr>
+<tr class="memdesc:ga0edeb370ca2f79c4349d3ab396b9b2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>!Ts::value</code>.  <a href="group__type__traits_ga0edeb370ca2f79c4349d3ab396b9b2a8.html#ga0edeb370ca2f79c4349d3ab396b9b2a8">More...</a><br /></td></tr>
+<tr class="separator:ga0edeb370ca2f79c4349d3ab396b9b2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2afe8abd5e2bbb4867f207afbacb9dbc"><td class="memTemplParams" colspan="2">template&lt;bool... Bs&gt; </td></tr>
+<tr class="memitem:ga2afe8abd5e2bbb4867f207afbacb9dbc"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga2afe8abd5e2bbb4867f207afbacb9dbc.html#ga2afe8abd5e2bbb4867f207afbacb9dbc">thrust::conjunction_value_v</a> = conjunction_value&lt;Bs...&gt;::value</td></tr>
+<tr class="memdesc:ga2afe8abd5e2bbb4867f207afbacb9dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>(... &amp;&amp; Bs)</code>.  <a href="group__type__traits_ga2afe8abd5e2bbb4867f207afbacb9dbc.html#ga2afe8abd5e2bbb4867f207afbacb9dbc">More...</a><br /></td></tr>
+<tr class="separator:ga2afe8abd5e2bbb4867f207afbacb9dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8844a4aad02812ad7f3496a5a3924e0e"><td class="memTemplParams" colspan="2">template&lt;bool... Bs&gt; </td></tr>
+<tr class="memitem:ga8844a4aad02812ad7f3496a5a3924e0e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_ga8844a4aad02812ad7f3496a5a3924e0e.html#ga8844a4aad02812ad7f3496a5a3924e0e">thrust::disjunction_value_v</a> = disjunction_value&lt;Bs...&gt;::value</td></tr>
+<tr class="memdesc:ga8844a4aad02812ad7f3496a5a3924e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>(... || Bs)</code>.  <a href="group__type__traits_ga8844a4aad02812ad7f3496a5a3924e0e.html#ga8844a4aad02812ad7f3496a5a3924e0e">More...</a><br /></td></tr>
+<tr class="separator:ga8844a4aad02812ad7f3496a5a3924e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5c5c72432414a0a50942d8a6f5898c0"><td class="memTemplParams" colspan="2">template&lt;bool B&gt; </td></tr>
+<tr class="memitem:gad5c5c72432414a0a50942d8a6f5898c0"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits_gad5c5c72432414a0a50942d8a6f5898c0.html#gad5c5c72432414a0a50942d8a6f5898c0">thrust::negation_value_v</a> = negation_value&lt;B&gt;::value</td></tr>
+<tr class="memdesc:gad5c5c72432414a0a50942d8a6f5898c0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>constexpr bool</code> whose value is <code>!Ts::value</code>.  <a href="group__type__traits_gad5c5c72432414a0a50942d8a6f5898c0.html#gad5c5c72432414a0a50942d8a6f5898c0">More...</a><br /></td></tr>
+<tr class="separator:gad5c5c72432414a0a50942d8a6f5898c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++17's <code>conjunction</code>, <code>disjunction</code>, and <code>negation</code> metafunctions. </p>
+<div class="textblock"><p>C++17's <a href="https://en.cppreference.com/w/cpp/types/conjunction"><code>std::conjunction</code></a>, <a href="https://en.cppreference.com/w/cpp/types/disjunction"><code>std::disjunction</code></a>, and <a href="https://en.cppreference.com/w/cpp/types/negation"><code>std::negation</code></a> metafunctions and related extensions. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

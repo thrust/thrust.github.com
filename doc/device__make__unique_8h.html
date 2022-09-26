@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>thrust: thrust/device_make_unique.h File Reference</title>
+<title>Thrust: thrust/device_make_unique.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">thrust
+   <div id="projectname">Thrust
    </div>
   </td>
  </tr>
@@ -41,6 +41,9 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">device_make_unique.h File Reference</div>  </div>
 </div><!--header-->
@@ -50,8 +53,27 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/detail/config.h&gt;</code><br />
 <code>#include &lt;thrust/detail/cpp11_required.h&gt;</code><br />
+<code>#include &lt;thrust/allocate_unique.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="device__new_8h_source.html">thrust/device_new.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="device__ptr_8h_source.html">thrust/device_ptr.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="device__allocator_8h_source.html">thrust/device_allocator.h</a>&gt;</code><br />
+<code>#include &lt;thrust/detail/type_deduction.h&gt;</code><br />
 </div>
 <p><a href="device__make__unique_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacethrust"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrust.html">thrust</a></td></tr>
+<tr class="memdesc:namespacethrust"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>thrust</code> is the top-level namespace which contains all Thrust functions and types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5dcecfbe6b0c0aed0553691463033bcd"><td class="memTemplParams" colspan="2"><a id="a5dcecfbe6b0c0aed0553691463033bcd"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a5dcecfbe6b0c0aed0553691463033bcd"><td class="memTemplItemLeft" align="right" valign="top">__host__ auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>thrust::device_make_unique</b> (Args &amp;&amp;... args) THRUST_TRAILING_RETURN(decltype(uninitialized_allocate_unique&lt; T &gt;(device_allocator&lt; T &gt;</td></tr>
+<tr class="separator:a5dcecfbe6b0c0aed0553691463033bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A factory function for creating <code>unique_ptr</code>s to device objects. </p>
 </div></div><!-- contents -->
